@@ -1,8 +1,10 @@
 {
-    "FR": 
-        {
-            "chapter_intro_title": "Salut",
-            "chapter_intro_description": "Comment ca va ?"
-        }
-    
+    "FR": {
+        "chapter_intro_title": "Salut",
+        "chapter_intro_description": "Comment ca va ?"
+    },
+    "EN": {
+        "chapter_intro_title": "Hello",
+        "chapter_intro_description": "How are you ?"
+    }
 }

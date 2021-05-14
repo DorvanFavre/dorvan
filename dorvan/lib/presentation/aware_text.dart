@@ -13,7 +13,6 @@ class AwareText extends StatelessWidget {
     return Consumer(
       builder: (context, watch, child) {
         final translatedText = watch(translatedTextProvider)[text] ?? '-';
-
         return builder!(translatedText);
       },
     );

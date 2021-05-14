@@ -1,9 +1,20 @@
 import 'package:dorvan/application/constants/translated_text.dart';
 import 'package:dorvan/application/providers/language_state_provider.dart';
 import 'package:dorvan/domain/entity/language.dart';
+import 'package:enum_to_string/enum_to_string.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final translatedTextProvider = Provider<Map<String, String>>((ref) {
+import 'json_text_provider.dart';
+
+final translatedTextProvider = Provider<dynamic>((ref) {
   final language = ref.watch(languageStateProvider).state;
-  return kTranslatedText[language] ?? kTranslatedText[Language.EN]!;
+  final texte = ref.watch(jsonTextProvider);
+  print('build provider');
+  print(texte);
+  if (texte.data == null) {
+    return {};
+  } else {
+    return texte.data!.value[EnumToString.convertToString(language)] ??
+        texte.data!.value['FR'];
+  }
 });

@@ -59,7 +59,6 @@ class _BottomBarState extends State<BottomBar> {
             ValueListenableBuilder<double>(
                 valueListenable: barWidthNotifier,
                 builder: (context, width, child) {
-                  print(width);
                   return Container(
                     width: max(10, width),
                     height: 1,

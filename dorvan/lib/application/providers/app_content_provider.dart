@@ -9,8 +9,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 final appContentProvider = Provider<List<PageContent>>((ref) {
   return [
     Intro(
-      "intro_title",
-      "intro_description",
+      "chapter_intro_title",
+      "chapter_intro_description",
       '00',
     ),
     Picture('02_iphone12.jpg', 'Vans', 'salut'),
