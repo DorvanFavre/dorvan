@@ -121,7 +121,7 @@ class ContactView extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    infoText('au petit-chêne 19'),
+                    infoText('Au petit-chêne 19'),
                     infoText('2502 Bienne'),
                     infoText('Suisse'),
                   ],

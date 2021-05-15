@@ -18,7 +18,9 @@ class SecondScrollView extends StatefulWidget {
 }
 
 class _SecondScrollViewState extends State<SecondScrollView> {
-  PageController detailPageController = PageController();
+  PageController detailPageController = PageController(
+    viewportFraction: 1
+  );
 
   @override
   void dispose() {
@@ -54,11 +56,11 @@ class _SecondScrollViewState extends State<SecondScrollView> {
               children: [
                 Align(
                   alignment: Alignment.topLeft,
-                  child: IconButton(
-                    onPressed: () {
+                  child: GestureDetector(
+                    onTap: () {
                       Navigator.of(context).pop();
                     },
-                    icon: Icon(
+                    child: Icon(
                       Icons.arrow_back_rounded,
                       color: Colors.grey,
                     ),

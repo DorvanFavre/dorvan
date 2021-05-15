@@ -20,8 +20,8 @@ class Hud extends StatelessWidget {
           // Menu
           Align(
               alignment: Alignment.topRight,
-              child: IconButton(
-                  onPressed: () {
+              child: GestureDetector(
+                  onTap: () {
                     showDialog(
                         barrierColor: Colors.black87,
                         context: context,
@@ -29,7 +29,7 @@ class Hud extends StatelessWidget {
                           return Center(child: ChapterSelection());
                         });
                   },
-                  icon: Icon(
+                  child: Icon(
                     Icons.menu_rounded,
                     color: Colors.white70,
                   ))),
@@ -64,7 +64,7 @@ class Hud extends StatelessWidget {
                           return Text(
                             EnumToString.convertToString(language),
                             style:
-                                TextStyle(fontSize: 12, color: Colors.white70),
+                                TextStyle(fontSize: 14, color: Colors.white70),
                           );
                         })),
                     /*SizedBox(height: 2),

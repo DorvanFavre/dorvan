@@ -23,7 +23,7 @@ class ChapterView extends StatelessWidget {
               maxLines: 1,
               softWrap: false,
               overflow: TextOverflow.visible,
-              style: TextStyle(color: Colors.white30, fontSize: 250),
+              style: TextStyle(color: Colors.white10, fontSize: 250),
             ),
           ),
           Align(

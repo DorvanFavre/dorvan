@@ -12,7 +12,7 @@ class AwareText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer(
       builder: (context, watch, child) {
-        final translatedText = watch(translatedTextProvider)[text] ?? '-';
+        final translatedText = watch(translatedTextProvider)[text] ?? '';
         return builder!(translatedText);
       },
     );

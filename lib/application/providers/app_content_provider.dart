@@ -20,50 +20,50 @@ final appContentProvider = Provider<List<PageContent>>((ref) {
       Article('article_entrepreneur_title', 'article_entrepreneur_description',
           '01'),
       Picture('02_iphone12.jpg', 'Vans', 'salut'),
-      Article('article_parlezmoi_title', 'article_parlezmoi_description', '02'),
+      Article('article_parlezmoi_title', 'article_parlezmoi_description', '01'),
       Picture('vans.jpg', 'Vans', 'salut'),
       Article(
-          'article_tirerprofit_title', 'article_tirerprofit_description', '03'),
+          'article_tirerprofit_title', 'article_tirerprofit_description', '01'),
       Picture('vans.jpg', 'Vans', 'salut'),
       Article(
-          'article_boutenbout_title', 'article_boutenbout_description', '04'),
+          'article_boutenbout_title', 'article_boutenbout_description', '01'),
       Picture('vans.jpg', 'Vans', 'salut'),
     ]),
     Picture('02_iphone12.jpg', 'Vans', 'salut'),
     // Architect
-    Chapter('chapter_architect_title', "chapter_architect_description", '05', [
-      Article('article_architect_title', 'article_architect_description', '05'),
+    Chapter('chapter_architect_title', "chapter_architect_description", '02', [
+      Article('article_architect_title', 'article_architect_description', '02'),
       Picture('vans.jpg', 'Vans', 'salut'),
-      Article('article_nature_title', 'article_nature_description', '06'),
+      Article('article_nature_title', 'article_nature_description', '02'),
       Picture('vans.jpg', 'Vans', 'salut'),
-      Article('article_pwa_title', 'article_pwa_description', '07'),
+      Article('article_pwa_title', 'article_pwa_description', '02'),
       Picture('vans.jpg', 'Vans', 'salut'),
     ]),
     Picture('vans.jpg', 'Vans', 'salut'),
-    Chapter('chapter_designer_title', "chapter_designer_description", '08', [
-      Article('article_designer_title', 'article_designer_description', '08'),
+    Chapter('chapter_designer_title', "chapter_designer_description", '03', [
+      Article('article_designer_title', 'article_designer_description', '03'),
       Picture('vans.jpg', 'Vans', 'salut'),
-      Article('article_artetweb_title', 'article_artetweb_description', '09'),
+      Article('article_artetweb_title', 'article_artetweb_description', '03'),
       Picture('vans.jpg', 'Vans', 'salut'),
       Article('article_premiereimpression_title',
-          'article_premiereimpression_description', '10'),
+          'article_premiereimpression_description', '03'),
       Picture('vans.jpg', 'Vans', 'salut'),
       Article(
-          'article_matechnique_title', 'article_matechnique_description', '11'),
+          'article_matechnique_title', 'article_matechnique_description', ''),
       Picture('vans.jpg', 'Vans', 'salut'),
     ]),
     Picture('vans.jpg', 'Vans', 'salut'),
     Chapter(
-        'chapitre_developer_title', "chapitre_developer_description", '12', [
-      Article('article_developer_title', 'article_developer_description', '12'),
+        'chapitre_developer_title', "chapitre_developer_description", '04', [
+      Article('article_developer_title', 'article_developer_description', '04'),
       Picture('vans.jpg', 'Vans', 'salut'),
       Article(
-          'article_technologie_title', 'article_technologie_description', '13'),
+          'article_technologie_title', 'article_technologie_description', '04'),
       Picture('vans.jpg', 'Vans', 'salut'),
-      Article('article_language_title', 'article_language_description', '14'),
+      Article('article_language_title', 'article_language_description', '04'),
       Picture('vans.jpg', 'Vans', 'salut'),
       Article(
-          'article_monsiteweb_title', 'article_monsiteweb_description', '15'),
+          'article_monsiteweb_title', 'article_monsiteweb_description', '04'),
     ]),
     Picture('vans.jpg', 'Vans', 'salut'),
     Contact('contact_title'),
