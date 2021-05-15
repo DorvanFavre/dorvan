@@ -8,6 +8,8 @@ import 'package:flutter/material.dart';
 import 'package:enum_to_string/enum_to_string.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import 'chapter_selection.dart';
+
 class Hud extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -15,12 +17,23 @@ class Hud extends StatelessWidget {
       padding: EdgeInsets.all(30),
       child: Stack(
         children: [
+          // Menu
           Align(
               alignment: Alignment.topRight,
-              child: Icon(
-                Icons.menu_rounded,
-                color: Colors.white70,
-              )),
+              child: IconButton(
+                  onPressed: () {
+                    showDialog(
+                        context: context,
+                        builder: (context) {
+                          return Center(child: ChapterSelection());
+                        });
+                  },
+                  icon: Icon(
+                    Icons.menu_rounded,
+                    color: Colors.white70,
+                  ))),
+
+          // Language
           Align(
             alignment: Alignment.topLeft,
             child: Row(
@@ -52,14 +65,14 @@ class Hud extends StatelessWidget {
                                 TextStyle(fontSize: 12, color: Colors.white70),
                           );
                         })),
-                    SizedBox(height: 2),
+                    /*SizedBox(height: 2),
                     Text(
                       '01',
                       style: TextStyle(
                           color: Colors.white54,
                           fontFamily: 'Futura',
                           fontSize: 12),
-                    ),
+                    ),*/
                   ],
                 )
               ],
