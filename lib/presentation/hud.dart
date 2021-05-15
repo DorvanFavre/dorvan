@@ -23,6 +23,7 @@ class Hud extends StatelessWidget {
               child: IconButton(
                   onPressed: () {
                     showDialog(
+                        barrierColor: Colors.black87,
                         context: context,
                         builder: (context) {
                           return Center(child: ChapterSelection());
@@ -53,6 +54,7 @@ class Hud extends StatelessWidget {
                   children: [
                     GestureDetector(
                         onTap: () => showDialog(
+                            barrierColor: Colors.black87,
                             context: context,
                             builder: (context) {
                               return Center(child: LanguageSelection());

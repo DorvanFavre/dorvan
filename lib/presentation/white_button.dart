@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'aware_text.dart';
+
 class WhiteButton extends StatelessWidget {
   final VoidCallback? onTap;
   final String? text;
@@ -25,9 +27,12 @@ class WhiteButton extends StatelessWidget {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15))),
           child: Center(
-            child: Text(
-              text ?? '',
-              style: TextStyle(color: Colors.black),
+            child: AwareText(
+              text,
+              builder: (text) => Text(
+                text,
+                style: TextStyle(color: Colors.black, fontSize: 10),
+              ),
             ),
           ),
         ));

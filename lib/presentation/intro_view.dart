@@ -50,7 +50,7 @@ class IntroView extends StatelessWidget {
                       duration: Duration(milliseconds: 300),
                       curve: Curves.easeInOutCubic);
                 },
-                text: 'start'),
+                text: 'button_intro'),
           )
         ],
       ),

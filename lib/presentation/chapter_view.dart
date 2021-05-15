@@ -53,7 +53,7 @@ class ChapterView extends StatelessWidget {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => SecondScrollView(chapter: chapter)));
                     },
-                    text: 'see more')
+                    text: 'button_chapter')
               ],
             ),
           ),

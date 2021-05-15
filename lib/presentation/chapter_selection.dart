@@ -3,6 +3,7 @@ import 'package:dorvan/application/providers/language_state_provider.dart';
 import 'package:dorvan/application/providers/page_controller_provider.dart';
 import 'package:dorvan/domain/entity/language.dart';
 import 'package:dorvan/domain/entity/page_content.dart';
+import 'package:dorvan/domain/entity/picture.dart';
 import 'package:dorvan/presentation/aware_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -15,9 +16,11 @@ class ChapterSelection extends StatelessWidget {
     return Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: context.read(appContentProvider).map((pageContent) {
-          return ChapterTitle(
-            pageContent: pageContent,
-          );
+          return !(pageContent is Picture)
+              ? ChapterTitle(
+                  pageContent: pageContent,
+                )
+              : SizedBox.shrink();
         }).toList());
   }
 }
@@ -88,7 +91,9 @@ class _ChapterTitleState extends State<ChapterTitle> {
                 return Text(
                   text,
                   style:
-                      TextStyle(color: enable! ? Colors.white : Colors.white38),
+                      TextStyle(
+                        fontSize: 18,
+                        color: enable! ? Colors.white : Colors.white54),
                 );
               },
             )));

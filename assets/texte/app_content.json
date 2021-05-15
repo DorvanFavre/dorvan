@@ -1,5 +1,7 @@
 {
     "FR": {
+        "button_intro":"commencer",
+        "button_chapter":"en savoir plus",
         "chapter_intro_title": "Bonjour, je m'appelle Dorvan Favre",
         "chapter_intro_description": "Créateur passionné\nje maîtrise l'art du web.\n \nLaissez-moi vous expliquer comment j'y suis parvenu.\n",
         "chapter_entrepreneur_title": "Entrepreneur",
@@ -21,7 +23,7 @@
         "article_pwa_title": "Progressiv Web App (PWA)",
         "article_pwa_description": "J'utilise la technologie appelée PWA. Celle-ci permet d'avoir un site web que l'on peut télécharger comme application et utiliser sans connexion internet. ",
         "chapter_designer_title": "Designer",
-        "chapter_designer_description": "Pas d'idées",
+        "chapter_designer_description": "Le défi du site web est grand car il est l'expression de ce qu'il représente",
         "article_designer_title": "Designer",
         "article_designer_description": "Le dessin est, pour moi, une manière d’exprimer mes émotions. Au crayon de papier, je trouve l'inspiration et travaille chaque détail de mes créations jusqu'à atteindre la perfection. Lorsque j'ai découvert le web développement, je me suis retrouvé devant une feuille blanche pixelisée, voulant connaître toutes les beautés du monde.",
         "article_artetweb_title": "L'art et le web ?",
@@ -40,6 +42,11 @@
         "article_language_description": "Alors que le grand classique est le trio HTLM - CSS -JavaScript, j'ai opté pour une alternative plus fraîche pour le développement de mes sites web : Flutter - Dart - Firebase. Ce logiciel assure un résultat fiable, rapide et performant (développé par Google).        ",
         "article_monsiteweb_title": "Mon site web",
         "article_monsiteweb_description": "Pour votre site vous n'aurai pas une ligne de code à écrire, ni de logiciel à prendre en main. \n \nLa modification du contenu se fera via le site lui-même à la manière dont on crée un poste Facebook ou change sa photo de profil Instagram. Rien de plus facile. \n \nPlus qu’à choisir un nom de domaine\n… et vous voici avec VOTRE SITE INTERNET terminé, clé en main."
+        ,"contact_title":"Contact",
+        "contact_description":"C'est avec plaisir que je repondrai a vos questions.",
+        "tarif_title":"Tarifs",
+        "tarif_description":"Je fais des tarifs fix."
+    
     },
     "EN": {
         "chapter_intro_title": "Hello",

@@ -66,7 +66,6 @@ final appContentProvider = Provider<List<PageContent>>((ref) {
           'article_monsiteweb_title', 'article_monsiteweb_description', '15'),
     ]),
     Picture('vans.jpg', 'Vans', 'salut'),
-    Contact('Contact'),
-    Picture('vans.jpg', 'Vans', 'salut'),
+    Contact('contact_title'),
   ];
 });
