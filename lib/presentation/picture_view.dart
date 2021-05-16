@@ -18,8 +18,8 @@ class PictureView extends StatelessWidget {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               stops: [0, 1])),
-      child: Image.asset(
-        'assets/images/${picture!.imageName}',
+      child: Image(
+        image: picture?.imageAsset ?? AssetImage('assets/images/dorvan.jpg'),
         fit: BoxFit.cover,
       ),
     );

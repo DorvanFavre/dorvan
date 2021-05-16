@@ -1,6 +1,8 @@
 import 'package:dorvan/application/providers/page_controller_provider.dart';
+import 'package:dorvan/application/use_cases/precache_next_image.dart';
 import 'package:dorvan/domain/entity/article.dart';
 import 'package:dorvan/domain/entity/intro.dart';
+import 'package:dorvan/presentation/scroll_animation.dart';
 import 'package:dorvan/presentation/white_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -14,6 +16,8 @@ class IntroView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    PrecacheNextImage(context, intro!);
+
     return Padding(
       padding: const EdgeInsets.all(30.0),
       child: Stack(
@@ -43,14 +47,8 @@ class IntroView extends StatelessWidget {
             ),
           ),
           Align(
-            alignment: Alignment(0.0, 0.5),
-            child: WhiteButton(
-                onTap: () {
-                  context.read(pageControllerProvider).animateToPage(2,
-                      duration: Duration(milliseconds: 300),
-                      curve: Curves.easeInOutCubic);
-                },
-                text: 'button_intro'),
+            alignment: Alignment(0.0, 0.8),
+            child: ScrollAnimation(),
           )
         ],
       ),

@@ -1,3 +1,4 @@
+import 'package:dorvan/application/use_cases/precache_next_image.dart';
 import 'package:dorvan/domain/entity/article.dart';
 import 'package:flutter/material.dart';
 
@@ -10,22 +11,25 @@ class ArticleView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(30.0),
-      child: Stack(
-        children: [
-          Align(
-            alignment: Alignment(-1, -0.3),
-            child: Text(
-              
-              article?.number ?? '-',
-              maxLines: 1,
-              softWrap: false,
-              overflow: TextOverflow.visible,
-              style: TextStyle(color: Colors.white, fontSize: 250),
-            ),
+    PrecacheNextImage(context, article!);
+
+    return Stack(
+      children: [
+        Positioned(
+          left: -50,
+          top: 0,
+          child: Text(
+            article?.number ?? '-',
+            maxLines: 1,
+            softWrap: false,
+            overflow: TextOverflow.visible,
+            style: TextStyle(
+                color: Colors.white, fontSize: 250, fontFamily: 'Futura'),
           ),
-          Align(
+        ),
+        Padding(
+          padding: const EdgeInsets.all(30.0),
+          child: Align(
             alignment: Alignment(-1, 0.5),
             child: Column(
               mainAxisSize: MainAxisSize.min,
@@ -43,14 +47,14 @@ class ArticleView extends StatelessWidget {
                   article!.description,
                   builder: (text) => Text(
                     text,
-                    style: TextStyle(color: Colors.grey[600], fontSize: 14),
+                    style: TextStyle(color: Colors.grey[600], fontSize: 16),
                   ),
                 ),
               ],
             ),
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

@@ -13,25 +13,25 @@ class WhiteButton extends StatelessWidget {
     return GestureDetector(
         onTap: onTap,
         child: Container(
-          height: 30,
-          width: 80,
           decoration: ShapeDecoration(
-              shadows: [
+              /*shadows: [
                 BoxShadow(
                     color: Colors.white60,
                     blurRadius: 15,
                     spreadRadius: 2,
                     offset: Offset(0, -3))
-              ],
-              color: Colors.white,
+              ],*/
+              //color: Colors.white,
               shape: RoundedRectangleBorder(
+                  side: BorderSide(color: Colors.white, width: 1),
                   borderRadius: BorderRadius.circular(15))),
-          child: Center(
+          child: Padding(
+            padding: EdgeInsets.symmetric(vertical: 5, horizontal: 8),
             child: AwareText(
               text,
               builder: (text) => Text(
                 text,
-                style: TextStyle(color: Colors.black, fontSize: 10),
+                style: TextStyle(color: Colors.white, fontSize: 12),
               ),
             ),
           ),

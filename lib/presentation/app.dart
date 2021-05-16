@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
     return ProviderScope(
         child: MaterialApp(
       debugShowCheckedModeBanner: false,
+      //theme: ThemeData(fontFamily: 'Sf'),
       home: Scaffold(
         body: Stack(
           children: [

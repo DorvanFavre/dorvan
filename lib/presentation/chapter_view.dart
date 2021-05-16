@@ -1,7 +1,11 @@
+import 'package:dorvan/application/providers/app_content_provider.dart';
+import 'package:dorvan/application/use_cases/precache_next_image.dart';
 import 'package:dorvan/domain/entity/article.dart';
 import 'package:dorvan/domain/entity/chapter.dart';
+import 'package:dorvan/domain/entity/picture.dart';
 import 'package:dorvan/presentation/white_button.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'aware_text.dart';
 import 'second_scroll_view.dart';
@@ -12,21 +16,26 @@ class ChapterView extends StatelessWidget {
   ChapterView({@required this.chapter});
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(30.0),
-      child: Stack(
-        children: [
-          Align(
-            alignment: Alignment(-1, -0.3),
-            child: Text(
-              chapter?.chapter ?? '-',
-              maxLines: 1,
-              softWrap: false,
-              overflow: TextOverflow.visible,
-              style: TextStyle(color: Colors.white10, fontSize: 250),
-            ),
+    
+    PrecacheNextImage(context, chapter!);
+
+    return Stack(
+      children: [
+        Positioned(
+          left: -50,
+          top: 0,
+          child: Text(
+            chapter?.chapter ?? '-',
+            maxLines: 1,
+            softWrap: false,
+            overflow: TextOverflow.visible,
+            style: TextStyle(
+                color: Colors.white10, fontSize: 250, fontFamily: 'Futura'),
           ),
-          Align(
+        ),
+        Padding(
+          padding: const EdgeInsets.all(30.0),
+          child: Align(
             alignment: Alignment(-1, 0.5),
             child: Column(
               mainAxisSize: MainAxisSize.min,
@@ -44,21 +53,22 @@ class ChapterView extends StatelessWidget {
                   chapter!.description,
                   builder: (text) => Text(
                     text,
-                    style: TextStyle(color: Colors.white60, fontSize: 14),
+                    style: TextStyle(color: Colors.white60, fontSize: 16),
                   ),
                 ),
                 SizedBox(height: 30),
                 WhiteButton(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => SecondScrollView(chapter: chapter)));
+                          builder: (context) =>
+                              SecondScrollView(chapter: chapter)));
                     },
                     text: 'button_chapter')
               ],
             ),
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

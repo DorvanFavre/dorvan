@@ -124,6 +124,7 @@ class ContactView extends StatelessWidget {
                     infoText('Au petit-chêne 19'),
                     infoText('2502 Bienne'),
                     infoText('Suisse'),
+                    infoText(kVersion),
                   ],
                 )
               ],
