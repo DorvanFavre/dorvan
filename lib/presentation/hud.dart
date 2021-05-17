@@ -14,14 +14,14 @@ class Hud extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(30),
+      padding: EdgeInsets.all(20),
       child: Stack(
         children: [
           // Menu
           Align(
               alignment: Alignment.topRight,
-              child: GestureDetector(
-                  onTap: () {
+              child: IconButton(
+                  onPressed: () {
                     showDialog(
                         barrierColor: Colors.black87,
                         context: context,
@@ -29,7 +29,7 @@ class Hud extends StatelessWidget {
                           return Center(child: ChapterSelection());
                         });
                   },
-                  child: Icon(
+                  icon: Icon(
                     Icons.menu_rounded,
                     color: Colors.white70,
                   ))),
@@ -37,47 +37,47 @@ class Hud extends StatelessWidget {
           // Language
           Align(
             alignment: Alignment.topLeft,
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Container(
-                  height: 30,
-                  width: 1,
-                  color: Colors.white,
-                ),
-                SizedBox(width: 2),
-                Column(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    GestureDetector(
-                        onTap: () => showDialog(
-                            barrierColor: Colors.black87,
-                            context: context,
-                            builder: (context) {
-                              return Center(child: LanguageSelection());
-                            }),
-                        child: Consumer(builder: (context, watch, child) {
-                          final language = watch(languageStateProvider).state;
-                          return Text(
-                            EnumToString.convertToString(language),
-                            style:
-                                TextStyle(fontSize: 14, color: Colors.white70),
-                          );
-                        })),
-                    /*SizedBox(height: 2),
-                    Text(
-                      '01',
-                      style: TextStyle(
-                          color: Colors.white54,
-                          fontFamily: 'Futura',
-                          fontSize: 12),
-                    ),*/
-                  ],
-                )
-              ],
+            child: IconButton(
+              onPressed: () => showDialog(
+                  barrierColor: Colors.black87,
+                  context: context,
+                  builder: (context) {
+                    return Center(child: LanguageSelection());
+                  }),
+              icon: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Container(
+                    height: 30,
+                    width: 1,
+                    color: Colors.white,
+                  ),
+                  SizedBox(width: 2),
+                  Column(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Consumer(builder: (context, watch, child) {
+                        final language = watch(languageStateProvider).state;
+                        return Text(
+                          EnumToString.convertToString(language),
+                          style: TextStyle(fontSize: 14, color: Colors.white70),
+                        );
+                      }),
+                      /*SizedBox(height: 2),
+                      Text(
+                        '01',
+                        style: TextStyle(
+                            color: Colors.white54,
+                            fontFamily: 'Futura',
+                            fontSize: 12),
+                      ),*/
+                    ],
+                  )
+                ],
+              ),
             ),
           ),
           Align(

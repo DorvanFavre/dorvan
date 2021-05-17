@@ -9,7 +9,6 @@ class ScrollAnimation extends StatelessWidget {
         future: _getArtboard(),
         //future: Future.delayed(Duration(seconds: 1)),
         builder: (context, artboard) {
-          print(artboard.connectionState);
           if (artboard.connectionState == ConnectionState.done) {
             return Column(
               mainAxisSize: MainAxisSize.min,
@@ -40,7 +39,6 @@ class ScrollAnimation extends StatelessWidget {
 
   Future<Artboard>? _getArtboard() {
     return rootBundle.load('assets/animations/005_scroll.riv').then((data) {
-      print('ok');
       return RiveFile.import(data).mainArtboard
         ..addController(SimpleAnimation('idle')..isActive = true);
     }).catchError((e) {

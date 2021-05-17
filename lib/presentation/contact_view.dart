@@ -146,7 +146,7 @@ class ContactView extends StatelessWidget {
   }
 
   void _launchWhatsapp(BuildContext context) async {
-    //var whatsappUrl = "whatsapp://send?phone=$kPhoneNumber";
+
     final whatsappUrl = "https://api.whatsapp.com/send/?phone=$kWhatsappPhoneNumber";
     try {
       launch(whatsappUrl);

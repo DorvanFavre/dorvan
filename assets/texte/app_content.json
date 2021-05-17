@@ -1,7 +1,8 @@
 {
     "FR": {
-        "button_intro":"Commencer",
-        "button_chapter":"En savoir plus",
+        "button_intro": "Commencer",
+        "button_chapter": "En savoir plus",
+        "article_exit": "Retour au menu principal",
         "chapter_intro_title": "Bonjour, je m'appelle Dorvan Favre",
         "chapter_intro_description": "Créateur web passionné.\nLaissez-moi vous expliquer comment j'y suis parvenu.",
         "chapter_entrepreneur_title": "Entrepreneur",
@@ -29,9 +30,9 @@
         "article_artetweb_title": "L'art et le web ?",
         "article_artetweb_description": "Le défi du site web est grand, car il est l'expression de ce qu'il représente. Chaque personne, chaque marque, chaque entreprise a un message différent à transmettre, un style qui lui est propre. L'apparence joue un rôle essentiel dans notre société.",
         "article_premiereimpression_title": "Première impression",
-        "article_premiereimpression_description": "De plus, de nos jours, tout se joue au premier coup d'oeil. Les premières secondes sont décisives pour un visiteur reste sur le site.",
+        "article_premiereimpression_description": "De nos jours, tout se joue au premier coup d'oeil. Les premières secondes sont décisives pour qu'un visiteur reste sur le site.",
         "article_matechnique_title": "Ma technique",
-        "article_matechnique_description": "Lorsque le crayon a atteint ses limites, j'utilise des logiciels tels qu'Abode Photoshop, Adobe Xd et Adobe After Effect, pour réaliser des designs que j'utiliserai lors du développement prévu.",
+        "article_matechnique_description": "Lorsque le crayon a atteint ses limites, j'utilise des logiciels tels qu'Abode Photoshop, Adobe Xd, Adobe After Effect et bien d'autres, pour réaliser des designs que j'utiliserai lors du développement prévu.",
         "chapitre_developer_title": "Développeur",
         "chapitre_developer_description": "J'aimerais vous offrir un produit qui est le fruit de nombreuses années d'apprentissage et de passion.",
         "article_developer_title": "Développeur",
@@ -41,12 +42,18 @@
         "article_language_title": "Langage",
         "article_language_description": "Alors que le grand classique est le trio HTLM - CSS - JavaScript, j'ai opté pour une alternative plus fraîche pour le développement de mes sites web : Flutter - Dart - Firebase. Ces outils assurent un résultat fiable, rapide et performant.\n (Développé par Google)",
         "article_monsiteweb_title": "Votre site web",
-        "article_monsiteweb_description": "Pour votre site, vous n'aurez pas une ligne de code à écrire, ni de logiciel à prendre en main. \n \nLa modification du contenu se fera via le site lui-même à la manière dont on crée un post Facebook ou on change sa photo de profil Instagram. Rien de plus facile. \n \nPlus qu’à choisir un nom de domaine et vous voici avec votre site web terminé, clé en main."
-        ,"contact_title":"Contact",
-        "contact_description":"C'est avec plaisir que je repondrai à vos questions.",
-        "tarif_title":"Tarifs",
-        "tarif_description":"Je fais des tarifs fix."
-    
+        "article_monsiteweb_description": "Pour votre site, vous n'aurez pas une ligne de code à écrire, ni de logiciel à prendre en main. \n \nLa modification du contenu se fera via le site lui-même à la manière dont on crée un post Facebook ou on change sa photo de profil Instagram. Rien de plus facile. \n \nPlus qu’à choisir un nom de domaine et vous voici avec votre site web terminé, clé en main.",
+        "contact_title": "Contact",
+        "contact_description": "C'est avec plaisir que je repondrai à vos questions.",
+        "tarif_title": "Tarifs",
+        "tarif_description": "Je fais des tarifs fix.",
+
+        "image_dorvan_title":"Moi",
+        "image_dorvan_description":"Quand je suis concentré",
+        "image_logo_title":"Logo design",
+        "image_logo_description":"Adobe Illustrator",
+        "image_nike_title":"UI Design",
+        "image_nike_description":"Adobe Xd"
     },
     "EN": {
         "chapter_intro_title": "Hello",

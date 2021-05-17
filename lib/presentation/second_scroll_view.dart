@@ -1,8 +1,10 @@
 import 'package:dorvan/domain/entity/article.dart';
 import 'package:dorvan/domain/entity/chapter.dart';
+import 'package:dorvan/domain/entity/exit_page.dart';
 import 'package:dorvan/domain/entity/picture.dart';
 import 'package:dorvan/presentation/article_view.dart';
 import 'package:dorvan/presentation/bottom_bar.dart';
+import 'package:dorvan/presentation/exit_page.dart';
 import 'package:dorvan/presentation/picture_view.dart';
 import 'package:flutter/material.dart';
 
@@ -18,9 +20,7 @@ class SecondScrollView extends StatefulWidget {
 }
 
 class _SecondScrollViewState extends State<SecondScrollView> {
-  PageController detailPageController = PageController(
-    viewportFraction: 1
-  );
+  PageController detailPageController = PageController(viewportFraction: 1);
 
   @override
   void dispose() {
@@ -34,6 +34,23 @@ class _SecondScrollViewState extends State<SecondScrollView> {
       backgroundColor: Color(0xfff2f2f2),
       body: Stack(
         children: [
+          /*PageView(
+            controller: detailPageController,
+            scrollDirection: Axis.vertical,
+            children: [
+              ...?widget.chapter?.pages.map((page) {
+                if (page is Article) {
+                  return ArticleView(article: page);
+                } else if (page is Picture) {
+                  return PictureView(
+                    picture: page,
+                  );
+                } else
+                  return SizedBox.shrink();
+              }).toList(),
+              ExitPage(),
+            ],
+          ),*/
           PageView.builder(
             controller: detailPageController,
             scrollDirection: Axis.vertical,
@@ -45,6 +62,10 @@ class _SecondScrollViewState extends State<SecondScrollView> {
               } else if (page is Picture) {
                 return PictureView(
                   picture: page,
+                );
+              } else if (page is ExitPage) {
+                return ExitPageView(
+                  exitPage: page,
                 );
               } else
                 return SizedBox.shrink();
