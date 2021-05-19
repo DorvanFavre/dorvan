@@ -1,6 +1,9 @@
+import 'package:dorvan/application/constants/theme.dart';
+import 'package:dorvan/application/use_cases/precache_next_image.dart';
 import 'package:dorvan/domain/entity/article.dart';
 import 'package:dorvan/domain/entity/chapter.dart';
 import 'package:dorvan/domain/entity/exit_page.dart';
+import 'package:dorvan/domain/entity/page_content.dart';
 import 'package:dorvan/domain/entity/picture.dart';
 import 'package:dorvan/presentation/article_view.dart';
 import 'package:dorvan/presentation/bottom_bar.dart';
@@ -29,9 +32,19 @@ class _SecondScrollViewState extends State<SecondScrollView> {
   }
 
   @override
+  void initState() {
+    super.initState();
+
+    pages = widget.chapter?.pages ?? [];
+  }
+
+  List<PageContent> pages = [];
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xfff2f2f2),
+      //backgroundColor: Color(0xfff2f2f2), // grey
+      backgroundColor: Color(0xffF6F8F9), // blue
       body: Stack(
         children: [
           /*PageView(
@@ -54,9 +67,14 @@ class _SecondScrollViewState extends State<SecondScrollView> {
           PageView.builder(
             controller: detailPageController,
             scrollDirection: Axis.vertical,
-            itemCount: widget.chapter?.pages.length,
+            itemCount: pages.length,
             itemBuilder: (context, index) {
-              final page = widget.chapter?.pages[index];
+              final page = pages[index];
+
+              // Precache image
+              if (index + 1 < pages.length) {
+                PrecacheNextImage(context, pages[index + 1]);
+              }
               if (page is Article) {
                 return ArticleView(article: page);
               } else if (page is Picture) {
@@ -75,6 +93,7 @@ class _SecondScrollViewState extends State<SecondScrollView> {
             padding: EdgeInsets.all(30),
             child: Stack(
               children: [
+                // Back arrow
                 Align(
                   alignment: Alignment.topLeft,
                   child: GestureDetector(
@@ -83,16 +102,17 @@ class _SecondScrollViewState extends State<SecondScrollView> {
                     },
                     child: Icon(
                       Icons.arrow_back_rounded,
-                      color: Colors.grey,
+                      color: kArticleDescriptionColor,
                     ),
                   ),
                 ),
+                // Scroll bar
                 Align(
                   alignment: Alignment.bottomCenter,
                   child: BottomBar(
                     brightness: Brightness.light,
                     pageController: detailPageController,
-                    totalPage: widget.chapter!.pages.length,
+                    totalPage: pages.length,
                   ),
                 )
               ],

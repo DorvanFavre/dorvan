@@ -1,3 +1,4 @@
+import 'package:dorvan/application/constants/theme.dart';
 import 'package:dorvan/application/providers/app_content_provider.dart';
 import 'package:dorvan/application/use_cases/precache_next_image.dart';
 import 'package:dorvan/domain/entity/article.dart';
@@ -16,9 +17,6 @@ class ChapterView extends StatelessWidget {
   ChapterView({@required this.chapter});
   @override
   Widget build(BuildContext context) {
-    
-    PrecacheNextImage(context, chapter!);
-
     return Stack(
       children: [
         Positioned(
@@ -30,7 +28,9 @@ class ChapterView extends StatelessWidget {
             softWrap: false,
             overflow: TextOverflow.visible,
             style: TextStyle(
-                color: Colors.white10, fontSize: 250, fontFamily: 'Futura'),
+                color: kChapterNumberColor,
+                fontSize: 250,
+                fontFamily: 'Futura'),
           ),
         ),
         Padding(
@@ -53,7 +53,8 @@ class ChapterView extends StatelessWidget {
                   chapter!.description,
                   builder: (text) => Text(
                     text,
-                    style: TextStyle(color: Colors.white60, fontSize: 16),
+                    style: TextStyle(
+                        color: kChapterDescriptionColor, fontSize: 16),
                   ),
                 ),
                 SizedBox(height: 30),

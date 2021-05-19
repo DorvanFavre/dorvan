@@ -53,7 +53,11 @@
         "image_logo_title":"Logo design",
         "image_logo_description":"Adobe Illustrator",
         "image_nike_title":"UI Design",
-        "image_nike_description":"Adobe Xd"
+        "image_nike_description":"Adobe Xd",
+        "image_haveadrink_title":"Have a drink",
+        "image_haveadrink_description":"Projet client",
+        "image_business_card_title":"Carte de visite",
+        "image_business_card_description":"Réalisé avec Adobe photoshop"
     },
     "EN": {
         "chapter_intro_title": "Hello",

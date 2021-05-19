@@ -16,12 +16,14 @@ final appContentProvider = Provider<List<PageContent>>((ref) {
       "chapter_intro_description",
       '00',
     ),
-    Picture(AssetImage('assets/images/dorvan.jpg'), 'image_dorvan_title', 'image_dorvan_description'),
+    Picture('dorvan.jpg', 'image_dorvan_title', 'image_dorvan_description'),
     // Entrepreneur
     Chapter('chapter_entrepreneur_title', "chapter_entrepreneur_description",
         '01', [
       Article('article_entrepreneur_title', 'article_entrepreneur_description',
           '01'),
+      Picture('business_card.jpg', 'image_business_card_title',
+          'image_business_card_description'),
       Article('article_parlezmoi_title', 'article_parlezmoi_description', '01'),
       Article(
           'article_tirerprofit_title', 'article_tirerprofit_description', '01'),
@@ -29,15 +31,15 @@ final appContentProvider = Provider<List<PageContent>>((ref) {
           'article_boutenbout_title', 'article_boutenbout_description', '01'),
       ExitPage('01'),
     ]),
-    Picture(AssetImage('assets/images/logo_presentation.jpg'), 'image_logo_title', 'image_logo_description'),
     // Architect
     Chapter('chapter_architect_title', "chapter_architect_description", '02', [
       Article('article_architect_title', 'article_architect_description', '02'),
+      Picture('uikit_haveadrink.jpg', 'image_haveadrink_title',
+          'image_haveadrink_description'),
       Article('article_nature_title', 'article_nature_description', '02'),
       Article('article_pwa_title', 'article_pwa_description', '02'),
       ExitPage('02'),
     ]),
-    Picture(AssetImage('assets/images/02_iphone12.jpg'), 'image_nike_title', 'image_nike_description'),
     Chapter('chapter_designer_title', "chapter_designer_description", '03', [
       Article('article_designer_title', 'article_designer_description', '03'),
       Article('article_artetweb_title', 'article_artetweb_description', '03'),

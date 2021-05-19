@@ -1,4 +1,6 @@
+import 'package:dorvan/application/constants/app_infos.dart';
 import 'package:dorvan/application/constants/personal_infos.dart';
+import 'package:dorvan/application/constants/theme.dart';
 import 'package:dorvan/domain/entity/article.dart';
 import 'package:dorvan/domain/entity/chapter.dart';
 import 'package:dorvan/presentation/white_button.dart';
@@ -12,122 +14,95 @@ import 'second_scroll_view.dart';
 class ContactView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Stack(
       children: [
-        Expanded(
+        Align(
+            alignment: Alignment(-1, -0.5),
             child: Padding(
-          padding: const EdgeInsets.all(30.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Spacer(
-                flex: 3,
-              ),
-              // Contact
-              AwareText(
-                'contact_title',
-                builder: (text) => Text(
-                  text,
-                  style: TextStyle(color: Colors.white, fontSize: 30),
-                ),
-              ),
-              SizedBox(height: 20),
-              AwareText(
-                'contact_description',
-                builder: (text) => Text(
-                  text,
-                  style: TextStyle(color: Colors.white60, fontSize: 14),
-                ),
-              ),
-              SizedBox(height: 30),
-              Row(
+              padding: const EdgeInsets.all(30.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
                 children: [
-                  IconButton(
-                    icon: FaIcon(
-                      FontAwesomeIcons.instagram,
-                      color: Colors.white,
+                  // Contact
+                  AwareText(
+                    'contact_title',
+                    builder: (text) => Text(
+                      text,
+                      style: TextStyle(color: Colors.white, fontSize: 30),
                     ),
-                    onPressed: () {
-                      _launchInstagram(context);
-                    },
                   ),
-                  IconButton(
-                    icon:
-                        FaIcon(FontAwesomeIcons.whatsapp, color: Colors.white),
-                    onPressed: () {
-                      _launchWhatsapp(context);
-                    },
+                  SizedBox(height: 20),
+                  AwareText(
+                    'contact_description',
+                    builder: (text) => Text(
+                      text,
+                      style: TextStyle(
+                          color: kChapterDescriptionColor, fontSize: 14),
+                    ),
                   ),
-                  IconButton(
-                    icon:
-                        FaIcon(FontAwesomeIcons.envelope, color: Colors.white),
-                    onPressed: () {
-                      _launchMailClient(context);
-                    },
+                  SizedBox(height: 30),
+                  Row(
+                    children: [
+                      IconButton(
+                        icon: FaIcon(
+                          FontAwesomeIcons.instagram,
+                          color: Colors.white,
+                        ),
+                        onPressed: () {
+                          _launchInstagram(context);
+                        },
+                      ),
+                      IconButton(
+                        icon: FaIcon(FontAwesomeIcons.whatsapp,
+                            color: Colors.white),
+                        onPressed: () {
+                          _launchWhatsapp(context);
+                        },
+                      ),
+                      IconButton(
+                        icon: FaIcon(FontAwesomeIcons.envelope,
+                            color: Colors.white),
+                        onPressed: () {
+                          _launchMailClient(context);
+                        },
+                      )
+                    ],
+                  ),
+                ],
+              ),
+            )),
+        Align(
+          alignment: Alignment.bottomCenter,
+          child: Container(
+            height: 150,
+            color: Colors.grey[850],
+            child: Padding(
+              padding: EdgeInsets.all(30),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      infoText('Dorvan Favre'),
+                      infoText('079 571 92 69'),
+                      infoText('dorvan.favre@gmail.com'),
+                    ],
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      infoText('Au petit-chêne 19'),
+                      infoText('2502 Bienne'),
+                      infoText('Suisse'),
+                      infoText(kVersion),
+                    ],
                   )
                 ],
               ),
-              Spacer(
-                flex: 1,
-              ),
-              Divider(
-                color: Colors.grey,
-              ),
-              Spacer(
-                flex: 1,
-              ),
-              // Tarifs
-              /*AwareText(
-                'tarif_title',
-                builder: (text) => Text(
-                  text,
-                  style: TextStyle(color: Colors.white, fontSize: 30),
-                ),
-              ),
-              SizedBox(height: 20),
-              AwareText(
-                'tarif_description',
-                builder: (text) => Text(
-                  text,
-                  style: TextStyle(color: Colors.white60, fontSize: 14),
-                ),
-              ),
-              SizedBox(height: 30),
-              //WhiteButton(onTap: () {}, text: 'see more'),
-              Spacer(
-                flex: 2,
-              ),*/
-            ],
-          ),
-        )),
-        Container(
-          height: 150,
-          color: Colors.grey[850],
-          child: Padding(
-            padding: EdgeInsets.all(30),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    infoText('Dorvan Favre'),
-                    infoText('079 571 92 69'),
-                    infoText('dorvan.favre@gmail.com'),
-                  ],
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    infoText('Au petit-chêne 19'),
-                    infoText('2502 Bienne'),
-                    infoText('Suisse'),
-                    infoText(kVersion),
-                  ],
-                )
-              ],
             ),
           ),
         )
@@ -146,8 +121,8 @@ class ContactView extends StatelessWidget {
   }
 
   void _launchWhatsapp(BuildContext context) async {
-
-    final whatsappUrl = "https://api.whatsapp.com/send/?phone=$kWhatsappPhoneNumber";
+    final whatsappUrl =
+        "https://api.whatsapp.com/send/?phone=$kWhatsappPhoneNumber";
     try {
       launch(whatsappUrl);
     } catch (e) {

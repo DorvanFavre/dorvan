@@ -1,3 +1,4 @@
+import 'package:dorvan/application/constants/theme.dart';
 import 'package:dorvan/application/providers/language_state_provider.dart';
 import 'package:dorvan/application/providers/app_content_provider.dart';
 import 'package:dorvan/application/providers/page_controller_provider.dart';
@@ -31,7 +32,7 @@ class Hud extends StatelessWidget {
                   },
                   icon: Icon(
                     Icons.menu_rounded,
-                    color: Colors.white70,
+                    color: kHudLightColor,
                   ))),
 
           // Language
@@ -51,7 +52,7 @@ class Hud extends StatelessWidget {
                   Container(
                     height: 30,
                     width: 1,
-                    color: Colors.white,
+                    color: kChapterDescriptionColor,
                   ),
                   SizedBox(width: 2),
                   Column(
@@ -63,7 +64,7 @@ class Hud extends StatelessWidget {
                         final language = watch(languageStateProvider).state;
                         return Text(
                           EnumToString.convertToString(language),
-                          style: TextStyle(fontSize: 14, color: Colors.white70),
+                          style: TextStyle(fontSize: 14, color: kHudLightColor),
                         );
                       }),
                       /*SizedBox(height: 2),

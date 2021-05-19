@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:dorvan/application/constants/theme.dart';
 import 'package:dorvan/application/providers/app_content_provider.dart';
 import 'package:dorvan/application/providers/page_controller_provider.dart';
 import 'package:flutter/material.dart';
@@ -63,8 +64,8 @@ class _BottomBarState extends State<BottomBar> {
                     width: max(10, width),
                     height: 1,
                     color: widget.brightness == Brightness.light
-                        ? Colors.grey[600]
-                        : Colors.white70,
+                        ? kArticleDescriptionColor
+                        : kHudLightColor,
                   );
                 })
           ],

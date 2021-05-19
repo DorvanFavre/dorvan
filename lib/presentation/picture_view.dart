@@ -1,4 +1,5 @@
 import 'package:dorvan/domain/entity/picture.dart';
+import 'package:dorvan/presentation/responsive_image.dart';
 import 'package:flutter/material.dart';
 
 import 'aware_text.dart';
@@ -14,28 +15,26 @@ class PictureView extends StatelessWidget {
       fit: StackFit.expand,
       children: [
         Container(
-          child: Image(
-            image:
-                picture?.imageAsset ?? AssetImage('assets/images/dorvan.jpg'),
-            fit: BoxFit.cover,
-          ),
-        ),
+            child: ResponsiveImage(
+          image: picture!.image,
+        )),
         Container(
             decoration: BoxDecoration(
                 gradient: LinearGradient(
           colors: [
-            Colors.black.withOpacity(0.2),
+            //Colors.black.withOpacity(0.2),
+            Colors.black.withOpacity(0),
             Colors.black.withOpacity(0),
             Colors.black.withOpacity(0.8)
           ],
-          stops: [0.1, 0.5, 1],
+          stops: [0, 0.7, 1],
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
         ))),
         Align(
           alignment: Alignment.bottomLeft,
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 30, vertical: 60),
+            padding: EdgeInsets.symmetric(horizontal: 30, vertical: 40),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,

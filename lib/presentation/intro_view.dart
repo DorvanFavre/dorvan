@@ -1,3 +1,4 @@
+import 'package:dorvan/application/constants/theme.dart';
 import 'package:dorvan/application/providers/page_controller_provider.dart';
 import 'package:dorvan/application/use_cases/precache_next_image.dart';
 import 'package:dorvan/domain/entity/article.dart';
@@ -16,7 +17,6 @@ class IntroView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    PrecacheNextImage(context, intro!);
 
     return Padding(
       padding: const EdgeInsets.all(30.0),
@@ -40,7 +40,7 @@ class IntroView extends StatelessWidget {
                   intro!.description,
                   builder: (text) => Text(
                     text,
-                    style: TextStyle(color: Colors.white70, fontSize: 14),
+                    style: TextStyle(color: kChapterDescriptionColor, fontSize: 14),
                   ),
                 ),
               ],

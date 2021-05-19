@@ -1,5 +1,6 @@
 import 'package:dorvan/application/providers/app_content_provider.dart';
 import 'package:dorvan/application/providers/page_controller_provider.dart';
+import 'package:dorvan/application/use_cases/precache_next_image.dart';
 import 'package:dorvan/domain/entity/article.dart';
 import 'package:dorvan/domain/entity/chapter.dart';
 import 'package:dorvan/domain/entity/contact.dart';
@@ -26,6 +27,12 @@ class MainScrollView extends StatelessWidget {
         itemCount: context.read(appContentProvider).length,
         itemBuilder: (context, index) {
           final pageContent = context.read(appContentProvider)[index];
+
+          // Precache image
+          if (index + 1 < context.read(appContentProvider).length) {
+            PrecacheNextImage(
+                context, context.read(appContentProvider)[index + 1]);
+          }
 
           if (pageContent is Intro) {
             return IntroView(
