@@ -72,6 +72,11 @@
     }
 
     if ('serviceWorker' in navigator) {
+
+      // Prevent PWA
+      window.addEventListener('beforeinstallprompt', (event) => {
+        event.preventDefault()
+      })
       // Service workers are supported. Use them.
       window.addEventListener('load', function () {
         // Wait for registration to finish before dropping the <script> tag.

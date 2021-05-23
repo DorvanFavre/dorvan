@@ -1,2 +1,2 @@
-final kVersion = 'V 1.2.0';
+final kVersion = 'V 1.2.2';
 final kImagePath = 'assets/images/';
