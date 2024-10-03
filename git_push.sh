@@ -20,3 +20,5 @@ if [[ -n $(git status --porcelain) ]]; then
 else
     echo "Aucune modification détectée."
 fi
+
+sleep 2
