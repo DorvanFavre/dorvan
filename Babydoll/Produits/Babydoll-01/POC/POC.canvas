@@ -11,7 +11,7 @@
 		{"id":"ec007ba7bfee3779","type":"file","file":"Investigate hexapode models.md","x":440,"y":1040,"width":400,"height":400},
 		{"id":"ebd682d7a78d4912","type":"file","file":"Produits/Babydoll-01/POC/Investigate 3D printing.md","x":-133,"y":1600,"width":400,"height":400,"color":"4"},
 		{"id":"871a33ed68270003","type":"file","file":"Produits/Babydoll-01/POC/Get a printer.md","x":440,"y":1600,"width":400,"height":400,"color":"4"},
-		{"id":"0583473c66a7b664","type":"file","file":"Experiment printing.md","x":960,"y":1600,"width":400,"height":400,"color":"3"},
+		{"id":"0583473c66a7b664","type":"file","file":"Experiment printing.md","x":960,"y":1600,"width":400,"height":400,"color":"4"},
 		{"id":"e6c943d7fef11d6d","type":"file","file":"Design Hexapod.md","x":440,"y":2560,"width":400,"height":400},
 		{"id":"b3b6f00a7db5a6ae","type":"file","file":"Investigate projects.md","x":-133,"y":2560,"width":400,"height":400,"color":"4"},
 		{"id":"db178c325b99ced5","type":"file","file":"Get motors.md","x":960,"y":3840,"width":400,"height":400,"color":"4"},
@@ -20,11 +20,11 @@
 		{"id":"949106029cc520da","type":"file","file":"Buy servo controller.md","x":960,"y":4360,"width":400,"height":400,"color":"4"},
 		{"id":"7d7d51b9d3b8a097","type":"file","file":"buy battery.md","x":960,"y":4880,"width":400,"height":400,"color":"4"},
 		{"id":"5b4d46f4d92bf898","type":"file","file":"Investigate cable.md","x":-133,"y":5920,"width":400,"height":400,"color":"4"},
-		{"id":"a87d7f0471f1f009","type":"file","file":"Investigate Battery Sensor.md","x":-133,"y":6400,"width":400,"height":400,"color":"3"},
+		{"id":"a87d7f0471f1f009","type":"file","file":"Investigate Battery Sensor.md","x":-133,"y":6400,"width":400,"height":400},
 		{"id":"49986a3166930cd9","type":"file","file":"investigate screw and roulement.md","x":-133,"y":6880,"width":400,"height":400,"color":"4"},
 		{"id":"0a8fd4983dc16970","type":"file","file":"Buy step down regulator.md","x":960,"y":5400,"width":400,"height":400,"color":"4"},
 		{"id":"69757c989d9393b7","type":"file","file":"Investigate simulator.md","x":-133,"y":-1840,"width":400,"height":400,"color":"4"},
-		{"id":"4cd050c326bfab5f","type":"file","file":"Produits/Babydoll-01/POC/Learn inverse kinematic.md","x":440,"y":-1200,"width":400,"height":400,"color":"3"},
+		{"id":"4cd050c326bfab5f","type":"file","file":"Produits/Babydoll-01/POC/Learn inverse kinematic.md","x":440,"y":-1200,"width":400,"height":400,"color":"4"},
 		{"id":"e967b412871af9df","type":"file","file":"Produits/Babydoll-01/POC/Explore methods for walking.md","x":-133,"y":-653,"width":400,"height":400},
 		{"id":"2ea794189e6ba605","type":"file","file":"Produits/Babydoll-01/POC/Read RL book.md","x":440,"y":-653,"width":400,"height":400},
 		{"id":"661aab297db7531d","type":"file","file":"Investigate ROS.md","x":-133,"y":-2400,"width":400,"height":400},
@@ -50,7 +50,7 @@
 		{"id":"2b61537c687bd5b6","type":"file","file":"Print robot.md","x":2440,"y":2560,"width":400,"height":400},
 		{"id":"f1185916d954d02d","type":"file","file":"Build first prototype.md","x":2960,"y":2560,"width":400,"height":400},
 		{"id":"09e96b31adaffd56","type":"file","file":"Make it walk.md","x":3480,"y":2568,"width":400,"height":400},
-		{"id":"b676ed55998512d7","type":"file","file":"Produits/Babydoll-01/POC/Robot arm/Robot Arm.md","x":2440,"y":1440,"width":520,"height":560,"color":"3"}
+		{"id":"b676ed55998512d7","type":"file","file":"Produits/Babydoll-01/POC/Robot arm/Robot Arm.md","x":2440,"y":1440,"width":520,"height":560,"color":"4"}
 	],
 	"edges":[]
 }
