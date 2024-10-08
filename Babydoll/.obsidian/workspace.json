@@ -11,14 +11,9 @@
             "id": "5bf2f2e29de152fa",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "pdf",
               "state": {
-                "file": "Produits/Babydoll-01/POC/POC.canvas",
-                "viewState": {
-                  "x": 3066.740250512055,
-                  "y": 2044.7327349717857,
-                  "zoom": -2.091524993333345
-                }
+                "file": "Produits/Babydoll-01/POC/Robot arm/Servos/SM-S2309S.pdf"
               }
             }
           },
@@ -112,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Produits/Babydoll-01/POC/POC.canvas",
+                "file": "Produits/Babydoll-01/POC/Robot arm/Servos/SM-S2309S.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Produits/Babydoll-01/POC/POC.canvas",
+                "file": "Produits/Babydoll-01/POC/Robot arm/Servos/SM-S2309S.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Produits/Babydoll-01/POC/POC.canvas"
+                "file": "Produits/Babydoll-01/POC/Robot arm/Servos/SM-S2309S.pdf"
               }
             }
           }
@@ -175,19 +170,20 @@
   },
   "active": "5bf2f2e29de152fa",
   "lastOpenFiles": [
-    "Investigate projects.md",
+    "Produits/Babydoll-01/POC/Robot arm/plasticity/piece_03_hour1.plasticity",
+    "Produits/Babydoll-01/POC/Robot arm/piece_03.plasticity.tmp",
+    "Produits/Babydoll-01/POC/Robot arm/plasticity/piece_03_hour2.plasticity",
+    "Produits/Babydoll-01/POC/Robot arm/Servos/HS-325HB.pdf",
+    "Produits/Babydoll-01/POC/Robot arm/Servos/SM-S2309S.pdf",
     "Produits/Babydoll-01/POC/POC.canvas",
+    "Produits/Babydoll-01/POC/Microcontroller/Arduino_due.pdf",
+    "Produits/Babydoll-01/POC/Microcontroller",
+    "Produits/Babydoll-01/POC/Robot arm/piece_02/piece_02_CD.gcode",
+    "Produits/Babydoll-01/POC/Robot arm/piece_02/piece_02_CD.gcode.tmp",
+    "Produits/Babydoll-01/POC/Robot arm/piece_01_v2/piece_01.plasticity.tmp",
+    "Produits/Babydoll-01/POC/Robot arm/piece_01_v2/piece_01_5.gcode",
+    "Investigate projects.md",
     "Produits/Babydoll-01/POC/Robot arm/Servos/Servo.md",
-    "Produits/Babydoll-01/POC/Robot arm/Servos/spline24T/spline.gcode.tmp",
-    "Produits/Babydoll-01/POC/Robot arm/Servos/spline24T/spline.gcode",
-    "Produits/Babydoll-01/POC/Robot arm/Servos/spline24T/spline.stl",
-    "Produits/Babydoll-01/POC/Robot arm/Servos/spline24T/plasticity/Untitled_hour1.plasticity",
-    "Produits/Babydoll-01/POC/Robot arm/Servos/spline24T/Untitled.plasticity.tmp",
-    "Produits/Babydoll-01/POC/Robot arm/Servos/spline24T/plasticity/Untitled_hour2.plasticity",
-    "Produits/Babydoll-01/POC/Robot arm/Servos/spline24T/horn_gear_spline_01.gcode",
-    "Produits/Babydoll-01/POC/Robot arm/Servos/spline24T/horn_gear_spline_01.gcode.tmp",
-    "Produits/Babydoll-01/POC/Robot arm/Servos/Servo_standard_Hitec_HS-325HB_datasheet.pdf",
-    "Produits/Babydoll-01/POC/Robot arm/Servos/spline24T/plasticity/Untitled_day1.plasticity",
     "Pasted image 20241005112104.png",
     "Produits/Babydoll-01/POC/Robot arm/Robot Arm.md",
     "Printing post processing.md",
