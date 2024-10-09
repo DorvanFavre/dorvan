@@ -9,5 +9,7 @@ Important feature:
 - Sketching
 
 Top:
-- ==Fusion 360==
+- ==Fusion 360== (Windows only)
+- Rhino (liscence)
+- FreeCAD
 - Plasticity 

@@ -30,9 +30,9 @@
               "state": {
                 "file": "Produits/Babydoll-01/POC/POC.canvas",
                 "viewState": {
-                  "x": 3592.3508690882927,
-                  "y": 2272.4174760250407,
-                  "zoom": -1.8505168938295502
+                  "x": 969.4312640958939,
+                  "y": 1569.5266848446329,
+                  "zoom": -0.5999999999999999
                 }
               }
             }
@@ -191,19 +191,21 @@
   },
   "active": "8f4260a751846fb9",
   "lastOpenFiles": [
+    "Make hexapod leg.md",
+    "Learn FreeCAD.md",
+    "Investigate projects.md",
+    "Produits/Babydoll-01/POC/Design/moodboard.pur",
+    "Produits/Babydoll-01/POC/Design/moodboard.9309.pur",
+    "Produits/Babydoll-01/POC/Design",
+    "Produits/Babydoll-01/POC/New Folder",
+    "Produits/Babydoll-01/POC/POC.canvas",
     "Produits/Babydoll-01/POC/Learn inverse kinematic.md",
     "Produits/Babydoll-01/POC/Robot arm/Arduino/servo_test/servo_test.ino",
     "Produits/Babydoll-01/POC/Robot arm/Arduino/servo_test",
     "Produits/Babydoll-01/POC/Robot arm/Arduino",
     "Produits/Babydoll-01/POC/Robot arm/plasticity/piece_03_hour2.plasticity",
     "Produits/Babydoll-01/POC/Robot arm/piece_03.plasticity.tmp",
-    "Produits/Babydoll-01/POC/POC.canvas",
     "Produits/Babydoll-01/POC/Robot arm/Servos/SM-S2309S.pdf",
-    "Produits/Babydoll-01/POC/Robot arm/piece_04/piece_04_ABC.gcode",
-    "Produits/Babydoll-01/POC/Robot arm/piece_04/piece_04_ABC.gcode.tmp",
-    "Produits/Babydoll-01/POC/Robot arm/piece_04/piece_04_ABC.stl",
-    "Produits/Babydoll-01/POC/Robot arm/piece_04/piece_04.plasticity.tmp",
-    "Investigate projects.md",
     "Produits/Babydoll-01/POC/Robot arm/Servos/Servo.md",
     "Pasted image 20241005112104.png",
     "Produits/Babydoll-01/POC/Robot arm/Robot Arm.md",
