@@ -15,10 +15,22 @@
               "state": {
                 "file": "Produits/Babydoll-01/POC/POC.canvas",
                 "viewState": {
-                  "x": 893.4370555526413,
-                  "y": -693.9352013503379,
-                  "zoom": 0.1494831061704497
+                  "x": 1295.6478763314947,
+                  "y": 2623.8379231799913,
+                  "zoom": -0.8000000000000006
                 }
+              }
+            }
+          },
+          {
+            "id": "094c329af0e17e49",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Produits/Babydoll-01/POC/Design hexapod/MG996R (Amazon).md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -31,9 +43,21 @@
                 "file": "Produits/Babydoll-01/POC/POC.canvas",
                 "viewState": {
                   "x": 969.4312640958939,
-                  "y": 1569.5266848446329,
+                  "y": 2753.6044666025555,
                   "zoom": -0.5999999999999999
                 }
+              }
+            }
+          },
+          {
+            "id": "7815df8ec42a5c83",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Investigate projects.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -128,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Produits/Babydoll-01/POC/POC.canvas",
+                "file": "Produits/Babydoll-01/POC/Design hexapod/MG996R (Amazon).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Produits/Babydoll-01/POC/POC.canvas",
+                "file": "Produits/Babydoll-01/POC/Design hexapod/MG996R (Amazon).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +192,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Produits/Babydoll-01/POC/POC.canvas"
+                "file": "Produits/Babydoll-01/POC/Design hexapod/MG996R (Amazon).md"
               }
             }
           }
@@ -189,23 +213,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8f4260a751846fb9",
+  "active": "094c329af0e17e49",
   "lastOpenFiles": [
+    "Produits/Babydoll-01/POC/Design/moodboard.28676.pur",
+    "Produits/Babydoll-01/POC/Design hexapod/Design hexapod.md",
+    "Produits/Babydoll-01/POC/Design hexapod/MG996R (Amazon).md",
+    "Produits/Babydoll-01/POC/Design hexapod",
+    "Produits/Babydoll-01/POC/POC.canvas",
+    "Explore motors.md",
+    "Investigate projects.md",
     "Make hexapod leg.md",
     "Learn FreeCAD.md",
-    "Investigate projects.md",
     "Produits/Babydoll-01/POC/Design/moodboard.pur",
     "Produits/Babydoll-01/POC/Design/moodboard.9309.pur",
     "Produits/Babydoll-01/POC/Design",
     "Produits/Babydoll-01/POC/New Folder",
-    "Produits/Babydoll-01/POC/POC.canvas",
     "Produits/Babydoll-01/POC/Learn inverse kinematic.md",
     "Produits/Babydoll-01/POC/Robot arm/Arduino/servo_test/servo_test.ino",
     "Produits/Babydoll-01/POC/Robot arm/Arduino/servo_test",
     "Produits/Babydoll-01/POC/Robot arm/Arduino",
     "Produits/Babydoll-01/POC/Robot arm/plasticity/piece_03_hour2.plasticity",
-    "Produits/Babydoll-01/POC/Robot arm/piece_03.plasticity.tmp",
-    "Produits/Babydoll-01/POC/Robot arm/Servos/SM-S2309S.pdf",
     "Produits/Babydoll-01/POC/Robot arm/Servos/Servo.md",
     "Pasted image 20241005112104.png",
     "Produits/Babydoll-01/POC/Robot arm/Robot Arm.md",

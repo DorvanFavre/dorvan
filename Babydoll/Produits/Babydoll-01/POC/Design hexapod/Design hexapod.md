@@ -13,7 +13,7 @@ Battery:
 - [ ] 18 servo 
 - [ ] Câbles 
 - [ ] Connecteurs
-- [ ] roulement à bille 
+- [ ] roulement à bille : 5x5x11
 - [ ] Régulateur x2 YPG 
 - [ ] Chargeur de batterie
 - [ ] Level converter 

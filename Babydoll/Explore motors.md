@@ -1,0 +1,1 @@
+https://mab-robotics.medium.com/walking-robots-contact-detection-df09f6ad0b42

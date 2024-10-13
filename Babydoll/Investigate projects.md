@@ -44,3 +44,4 @@ Level converter
 Hexapod from Leptan: https://project-leptan-docs.readthedocs.io/en/latest/index.html
 
 
+Make your pet : https://github.com/MakeYourPet/hexapod/tree/main
