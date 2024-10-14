@@ -2,7 +2,7 @@
 	"nodes":[
 		{"id":"384f7a4d344c2fc4","type":"file","file":"Produits/Babydoll-01/POC/Explore CAD software.md","x":-133,"y":560,"width":400,"height":400,"color":"4"},
 		{"id":"e6c943d7fef11d6d","type":"file","file":"Produits/Babydoll-01/POC/Design hexapod/Design hexapod.md","x":440,"y":2560,"width":400,"height":400,"color":"3"},
-		{"id":"b3b6f00a7db5a6ae","type":"file","file":"Investigate projects.md","x":-133,"y":2560,"width":400,"height":400,"color":"4"},
+		{"id":"b3b6f00a7db5a6ae","type":"file","file":"Investigate projects.md","x":-133,"y":2560,"width":393,"height":400,"color":"4"},
 		{"id":"2bdc44727450ec2c","type":"file","file":"Investiguer behavior.md","x":4560,"y":-560,"width":400,"height":400},
 		{"id":"2459ec415aa0b925","type":"file","file":"Investigate solar autonomie.md","x":5200,"y":-560,"width":400,"height":400},
 		{"id":"e3b16336d21ea8d2","type":"file","file":"Investigate learn to walk.md","x":5200,"y":-40,"width":400,"height":400},
@@ -51,7 +51,7 @@
 		{"id":"78a70bf59201935c","type":"file","file":"Investigate microcontrollers.md","x":-133,"y":3720,"width":400,"height":400,"color":"3"},
 		{"id":"180a7a2675203e07","type":"file","file":"Investigate motors.md","x":-133,"y":4280,"width":400,"height":400,"color":"4"},
 		{"id":"b97adfa6255f2692","type":"file","file":"Create Part list.md","x":440,"y":3080,"width":400,"height":400},
-		{"id":"93dace7cde8e80a0","x":1560,"y":4800,"width":400,"height":400,"type":"file","file":"Explore motors.md"}
+		{"id":"93dace7cde8e80a0","type":"file","file":"Explore motors.md","x":1560,"y":4800,"width":400,"height":400}
 	],
 	"edges":[]
 }

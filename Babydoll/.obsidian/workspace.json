@@ -15,9 +15,9 @@
               "state": {
                 "file": "Produits/Babydoll-01/POC/POC.canvas",
                 "viewState": {
-                  "x": 1295.6478763314947,
-                  "y": 2623.8379231799913,
-                  "zoom": -0.8000000000000006
+                  "x": 162.9983251260066,
+                  "y": 2803.3696133288363,
+                  "zoom": 0.7999999999999995
                 }
               }
             }
@@ -26,11 +26,14 @@
             "id": "094c329af0e17e49",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Produits/Babydoll-01/POC/Design hexapod/MG996R (Amazon).md",
-                "mode": "source",
-                "source": false
+                "file": "Produits/Babydoll-01/POC/POC.canvas",
+                "viewState": {
+                  "x": 2694.5,
+                  "y": 2360,
+                  "zoom": -3.5977428470127277
+                }
               }
             }
           },
@@ -85,8 +88,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -152,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Produits/Babydoll-01/POC/Design hexapod/MG996R (Amazon).md",
+                "file": "Investigate projects.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Produits/Babydoll-01/POC/Design hexapod/MG996R (Amazon).md",
+                "file": "Investigate projects.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Produits/Babydoll-01/POC/Design hexapod/MG996R (Amazon).md"
+                "file": "Investigate projects.md"
               }
             }
           }
@@ -213,11 +215,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "094c329af0e17e49",
+  "active": "5bf2f2e29de152fa",
   "lastOpenFiles": [
+    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/D.gcode",
+    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/D.gcode.tmp",
+    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/D.stl",
+    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.20241014-112119.FCBak",
+    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.FCStd.aee40911-b79f-4a61-845f-87f2ec004bf2",
+    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.20241014-102156.FCBak",
+    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.FCStd.54c1fb6a-d812-4c0d-88c5-0456e1cea585",
+    "Produits/Babydoll-01/POC/Design hexapod/MG996R (Amazon).md",
     "Produits/Babydoll-01/POC/Design/moodboard.28676.pur",
     "Produits/Babydoll-01/POC/Design hexapod/Design hexapod.md",
-    "Produits/Babydoll-01/POC/Design hexapod/MG996R (Amazon).md",
     "Produits/Babydoll-01/POC/Design hexapod",
     "Produits/Babydoll-01/POC/POC.canvas",
     "Explore motors.md",
@@ -226,13 +235,7 @@
     "Learn FreeCAD.md",
     "Produits/Babydoll-01/POC/Design/moodboard.pur",
     "Produits/Babydoll-01/POC/Design/moodboard.9309.pur",
-    "Produits/Babydoll-01/POC/Design",
-    "Produits/Babydoll-01/POC/New Folder",
     "Produits/Babydoll-01/POC/Learn inverse kinematic.md",
-    "Produits/Babydoll-01/POC/Robot arm/Arduino/servo_test/servo_test.ino",
-    "Produits/Babydoll-01/POC/Robot arm/Arduino/servo_test",
-    "Produits/Babydoll-01/POC/Robot arm/Arduino",
-    "Produits/Babydoll-01/POC/Robot arm/plasticity/piece_03_hour2.plasticity",
     "Produits/Babydoll-01/POC/Robot arm/Servos/Servo.md",
     "Pasted image 20241005112104.png",
     "Produits/Babydoll-01/POC/Robot arm/Robot Arm.md",
