@@ -15,11 +15,25 @@
               "state": {
                 "file": "Produits/Babydoll-01/POC/POC.canvas",
                 "viewState": {
-                  "x": 162.9983251260066,
-                  "y": 2803.369613328836,
-                  "zoom": 0.7999999999999995
+                  "x": 949.1706137702053,
+                  "y": -832.6050277334595,
+                  "zoom": -0.3977428470127282
                 }
-              }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "POC"
+            }
+          },
+          {
+            "id": "89c3c3fe4622364d",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Produits/Babydoll-01/POC/RL an introduction.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "RL an introduction"
             }
           },
           {
@@ -30,11 +44,55 @@
               "state": {
                 "file": "Produits/Babydoll-01/POC/POC.canvas",
                 "viewState": {
-                  "x": 2694.5,
-                  "y": 2360,
-                  "zoom": -3.5977428470127277
+                  "x": 833.7290482729691,
+                  "y": -1098.1581142419043,
+                  "zoom": 0.20000000000000018
                 }
-              }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "POC"
+            }
+          },
+          {
+            "id": "51451cfe1602eeac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Learn RL.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Learn RL"
+            }
+          },
+          {
+            "id": "b01c1995b415c47b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Produits/Babydoll-01/POC/Read RL book.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Read RL book"
+            }
+          },
+          {
+            "id": "1b4191b917009d3f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Learn spinning RL.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Learn spinning RL"
             }
           },
           {
@@ -49,7 +107,9 @@
                   "y": 2753.6044666025555,
                   "zoom": -0.5999999999999999
                 }
-              }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "POC"
             }
           },
           {
@@ -61,7 +121,9 @@
                 "file": "Investigate projects.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Investigate projects"
             }
           },
           {
@@ -73,7 +135,9 @@
                 "file": "Investigate projects.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Investigate projects"
             }
           },
           {
@@ -85,10 +149,13 @@
                 "file": "Investigate simulator.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Investigate simulator"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -108,7 +175,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -123,7 +192,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -131,7 +202,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -154,7 +227,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Investigate projects.md",
+                "file": "Learn RL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +235,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Learn RL"
             }
           },
           {
@@ -171,10 +246,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Investigate projects.md",
+                "file": "Learn RL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Learn RL"
             }
           },
           {
@@ -185,7 +262,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -194,8 +273,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Investigate projects.md"
-              }
+                "file": "Learn RL.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Learn RL"
             }
           }
         ]
@@ -215,22 +296,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5bf2f2e29de152fa",
+  "active": "51451cfe1602eeac",
   "lastOpenFiles": [
-    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.20241015-181247.FCBak",
-    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.FCStd.0fa7c966-7936-4074-bbd2-e44cf7ee3e62",
-    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.20241015-181245.FCBak",
-    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.FCStd.4ee06ba7-c69b-4f67-bdf4-e339bd40456c",
-    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.20241015-180448.FCBak",
-    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.FCStd.af609927-8df4-4cdb-9eb7-42f4bb4eae72",
-    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.20241015-175409.FCBak",
-    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.FCStd.62722d69-9e72-4d9f-bf56-aef24458ea7f",
-    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.20241015-142001.FCBak",
-    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.FCStd.e732a91c-d971-410f-889b-f29963c22204",
-    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.20241015-102153.FCBak",
+    "Produits/Babydoll-01/POC/POC.canvas",
+    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.20241018-132143.FCBak",
+    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.FCStd.426bdac1-624c-4cbc-b66b-2a26823a4449",
+    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Y_v1.gcode",
+    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Y_v1.gcode.tmp",
+    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Y_v1.stl",
+    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.20241018-115021.FCBak",
+    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.FCStd.a75679e5-500c-49ac-8d75-b7f362efa564",
+    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/D_v4.gcode",
+    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/D_v4.gcode.tmp",
+    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/D_v4.stl",
+    "Learn RL.md",
+    "Produits/Babydoll-01/POC/Read RL book.md",
+    "Learn spinning RL.md",
+    "Improve FreeCAD knowledge.md",
     "Produits/Babydoll-01/POC/Design hexapod/MG996R (Amazon).md",
     "Produits/Babydoll-01/POC/Design hexapod/Design hexapod.md",
-    "Produits/Babydoll-01/POC/POC.canvas",
     "Explore motors.md",
     "Investigate projects.md",
     "Make hexapod leg.md",

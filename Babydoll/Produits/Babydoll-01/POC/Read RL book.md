@@ -1,19 +1,9 @@
 
-### Objective
 
-Explorer des méthodes de reinforcement learning pour le déplacement du robot. 
+Livre: [[RL an introduction.pdf]] : 50%
 
-### Strategie
+Vidéo : https://www.youtube.com/watch?v=NFo9v_yKQXA&list=PLzvYlJMoZ02Dxtwe-MmH4nOB5jYlMGBjr&ab_channel=MutualInformation 50%
 
-- Apprendre les bases du RL. 
-- Trouver des algorithmes pour le déplacement et les tester en simulation. 
-
-### Outputs
-
-#### Learn RL
- - [ ] Book : Reinforcement learning, an Introduction
- - [ ] OpenAI Spin in
- 
 
 
 
