@@ -44,9 +44,9 @@
               "state": {
                 "file": "Produits/Babydoll-01/POC/POC.canvas",
                 "viewState": {
-                  "x": 833.7290482729691,
-                  "y": -1098.1581142419043,
-                  "zoom": 0.20000000000000018
+                  "x": 1200.1335649915145,
+                  "y": 1526.4636670443178,
+                  "zoom": -1.7999999999999998
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -155,7 +155,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -296,20 +296,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "51451cfe1602eeac",
+  "active": "094c329af0e17e49",
   "lastOpenFiles": [
+    "Produits/Babydoll-01/POC/Design hexapod/Hexapode_v2/Hexapod_v2.20241018-144653.FCBak",
+    "Produits/Babydoll-01/POC/Design hexapod/Hexapode_v2/Hexapod_v2.FCStd.bf17d424-7b77-4a11-83e8-9feb67ab7e5c",
+    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.20241018-134513.FCBak",
+    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.FCStd.72461243-8fe1-4f15-b4d6-aff8da0b9ca6",
+    "Produits/Babydoll-01/POC/Design hexapod/Hexapode_v2/Hexapod_v2.FCStd",
+    "Produits/Babydoll-01/POC/Design hexapod/Hexapode_v2/Hexapod_v2.FCStd.e7b4d0f4-284b-4071-92e7-26b780db4f2b",
+    "Produits/Babydoll-01/POC/Design hexapod/Hexapode_v2",
+    "Produits/Babydoll-01/POC/Design hexapod/New Folder",
+    "Learn RL.md",
     "Produits/Babydoll-01/POC/POC.canvas",
     "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.20241018-132143.FCBak",
     "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.FCStd.426bdac1-624c-4cbc-b66b-2a26823a4449",
     "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Y_v1.gcode",
-    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Y_v1.gcode.tmp",
-    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Y_v1.stl",
-    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.20241018-115021.FCBak",
-    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.FCStd.a75679e5-500c-49ac-8d75-b7f362efa564",
-    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/D_v4.gcode",
-    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/D_v4.gcode.tmp",
-    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/D_v4.stl",
-    "Learn RL.md",
     "Produits/Babydoll-01/POC/Read RL book.md",
     "Learn spinning RL.md",
     "Improve FreeCAD knowledge.md",
