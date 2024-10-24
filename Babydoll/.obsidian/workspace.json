@@ -44,9 +44,9 @@
               "state": {
                 "file": "Produits/Babydoll-01/POC/POC.canvas",
                 "viewState": {
-                  "x": 246.7177922881781,
-                  "y": 3498.2636241304463,
-                  "zoom": -1.7999999999999998
+                  "x": 669.9301611561439,
+                  "y": 2983.9830300383564,
+                  "zoom": -2.4000000000000004
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -298,6 +298,12 @@
   },
   "active": "094c329af0e17e49",
   "lastOpenFiles": [
+    "Produits/Babydoll-01/Babydoll-01.canvas",
+    "Produits/Produits.canvas",
+    "Produits/Babydoll-01/POC/POC.canvas",
+    "Produits/Babydoll-01/POC/Design hexapod/Hexapode_v3/I_v1.gcode",
+    "Produits/Babydoll-01/POC/Design hexapod/Hexapode_v3/I_v1.gcode.tmp",
+    "Produits/Babydoll-01/POC/Design hexapod/Hexapode_v3/I_v1.stl",
     "Produits/Babydoll-01/POC/Design hexapod/Hexapode_v2/Hexapod_v2.20241018-144653.FCBak",
     "Produits/Babydoll-01/POC/Design hexapod/Hexapode_v2/Hexapod_v2.FCStd.bf17d424-7b77-4a11-83e8-9feb67ab7e5c",
     "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.20241018-134513.FCBak",
@@ -305,12 +311,7 @@
     "Produits/Babydoll-01/POC/Design hexapod/Hexapode_v2/Hexapod_v2.FCStd",
     "Produits/Babydoll-01/POC/Design hexapod/Hexapode_v2/Hexapod_v2.FCStd.e7b4d0f4-284b-4071-92e7-26b780db4f2b",
     "Produits/Babydoll-01/POC/Design hexapod/Hexapode_v2",
-    "Produits/Babydoll-01/POC/Design hexapod/New Folder",
     "Learn RL.md",
-    "Produits/Babydoll-01/POC/POC.canvas",
-    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.20241018-132143.FCBak",
-    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Hexapod.FCStd.426bdac1-624c-4cbc-b66b-2a26823a4449",
-    "Produits/Babydoll-01/POC/Design hexapod/FreeCAD/Y_v1.gcode",
     "Produits/Babydoll-01/POC/Read RL book.md",
     "Learn spinning RL.md",
     "Improve FreeCAD knowledge.md",
@@ -328,7 +329,6 @@
     "Learn PyBullet.md",
     "Make 3D model robot walk with IK.md",
     "Investigate simulator.md",
-    "Produits/Produits.canvas",
     "Produits/Babydoll-01/Babydoll-01.md",
     "Battery.md"
   ]
