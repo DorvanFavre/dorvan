@@ -1,2 +1,10 @@
 
 sudo apt-get install python3.10-dev
+apt-get install swig cmake ffmpeg
+
+pip install gymnasium
+pip install gymnasium[box2d]
+pip install gymnasium[atari]
+pip install gymnasium[accept-rom-license]
+
+pip install rl_zoo3

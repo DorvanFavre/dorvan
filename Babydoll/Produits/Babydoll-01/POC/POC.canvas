@@ -1,5 +1,6 @@
 {
 	"nodes":[
+		{"id":"7791d8320c8011de","x":1023,"y":-1164,"width":250,"height":60,"type":"text","text":""},
 		{"id":"384f7a4d344c2fc4","type":"file","file":"Produits/Babydoll-01/POC/Explore CAD software.md","x":-133,"y":560,"width":400,"height":400,"color":"4"},
 		{"id":"e6c943d7fef11d6d","type":"file","file":"Produits/Babydoll-01/POC/Design hexapod/Design hexapod.md","x":440,"y":2560,"width":400,"height":400,"color":"4"},
 		{"id":"b3b6f00a7db5a6ae","type":"file","file":"Investigate projects.md","x":-133,"y":2560,"width":393,"height":400,"color":"4"},
@@ -26,14 +27,11 @@
 		{"id":"5b4d46f4d92bf898","type":"file","file":"Investigate cable.md","x":-133,"y":6360,"width":400,"height":400,"color":"4"},
 		{"id":"a87d7f0471f1f009","type":"file","file":"Investigate Battery Sensor.md","x":-133,"y":6840,"width":400,"height":400},
 		{"id":"49986a3166930cd9","type":"file","file":"investigate screw and roulement.md","x":-133,"y":7320,"width":400,"height":400,"color":"4"},
-		{"id":"63beb48bcd0047d0","type":"file","file":"Get microcontroller.md","x":960,"y":3720,"width":400,"height":400},
 		{"id":"db178c325b99ced5","type":"file","file":"Get motors.md","x":960,"y":4280,"width":400,"height":400,"color":"4"},
 		{"id":"949106029cc520da","type":"file","file":"Buy servo controller.md","x":960,"y":4800,"width":400,"height":400,"color":"4"},
 		{"id":"7d7d51b9d3b8a097","type":"file","file":"buy battery.md","x":960,"y":5320,"width":400,"height":400,"color":"4"},
 		{"id":"0a8fd4983dc16970","type":"file","file":"Buy step down regulator.md","x":960,"y":5840,"width":400,"height":400,"color":"4"},
-		{"id":"78a70bf59201935c","type":"file","file":"Investigate microcontrollers.md","x":-133,"y":3720,"width":400,"height":400,"color":"3"},
 		{"id":"180a7a2675203e07","type":"file","file":"Investigate motors.md","x":-133,"y":4280,"width":400,"height":400,"color":"4"},
-		{"id":"b97adfa6255f2692","type":"file","file":"Create Part list.md","x":440,"y":3080,"width":400,"height":400},
 		{"id":"93dace7cde8e80a0","type":"file","file":"Explore motors.md","x":1560,"y":4800,"width":400,"height":400},
 		{"id":"2b61537c687bd5b6","type":"file","file":"Print robot.md","x":960,"y":2560,"width":400,"height":400,"color":"3"},
 		{"id":"f1185916d954d02d","type":"file","file":"Build first prototype.md","x":1480,"y":2560,"width":400,"height":400},
@@ -51,7 +49,10 @@
 		{"id":"92f7742473280ba6","type":"file","file":"Train walking RL.md","x":1480,"y":-1853,"width":400,"height":400},
 		{"id":"1f73941f447707bc","type":"file","file":"Move with IK.md","x":2400,"y":-2400,"width":400,"height":400},
 		{"id":"c65c7b23529b281e","type":"file","file":"Move with RL.md","x":2400,"y":-1853,"width":400,"height":400},
-		{"id":"17510b94055b40eb","type":"file","file":"Learn RL.md","x":440,"y":-1340,"width":400,"height":400,"color":"3"}
+		{"id":"17510b94055b40eb","type":"file","file":"Learn RL.md","x":440,"y":-1340,"width":400,"height":400,"color":"3"},
+		{"id":"78a70bf59201935c","type":"file","file":"Investigate microcontrollers.md","x":-140,"y":3400,"width":400,"height":400},
+		{"id":"63beb48bcd0047d0","type":"file","file":"Get microcontroller.md","x":360,"y":3400,"width":400,"height":400},
+		{"id":"8912cff169586557","type":"file","file":"Use RaspberryPi3.md","x":940,"y":3400,"width":400,"height":400,"color":"3"}
 	],
 	"edges":[]
 }
