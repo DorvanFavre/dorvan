@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+
+<robot name="mill">
+
+  <link name="body">
+    <visual>
+      <geometry>
+        <box size="0.1 0.1 1"/>
+      </geometry>
+      <origin xyz="0 0 0.5"/>
+      <material name="green">
+        <color rgba="0 0.8 0.8 1"/>
+      </material>
+    </visual> <!-- Closing visual tag -->
+
+    <collision>
+      <geometry>
+        <box size="0.1 0.1 1"/> <!-- Match the visual geometry -->
+      </geometry>
+      <origin xyz="0 0 0.5"/> <!-- Match the visual origin -->
+    </collision>
+
+    <inertial>
+      <mass value="10"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link> <!-- Closing link tag -->
+
+  <link name="pole">
+    <visual>
+      <geometry>
+        <box size="0.05 0.05 0.3"/>
+      </geometry>
+      <origin xyz="0 0.025 0.15"/>
+      <material name="red">
+        <color rgba="1 0 0 1"/>
+      </material>
+    </visual> <!-- Closing visual tag -->
+    <collision>
+      <geometry>
+        <box size="0.05 0.05 0.3"/> <!-- Match the visual geometry -->
+      </geometry>
+      <origin xyz="0 0.025 0.15"/> <!-- Match the visual origin -->
+    </collision>
+    <inertial>
+      <mass value="1"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link> <!-- Closing link tag -->
+
+  <joint name="body_to_pole" type="revolute">
+    <axis xyz="0 1 0"/>
+    <origin rpy="0 0 0" xyz="0 0.05 0.9"/>
+    <parent link="body"/>
+    <child link="pole"/>
+    <limit effort="10" lower="-1.57" upper="1.57" velocity="1"/>
+  </joint>
+
+
+</robot>

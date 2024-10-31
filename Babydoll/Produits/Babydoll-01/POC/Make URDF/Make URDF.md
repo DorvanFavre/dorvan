@@ -1,10 +1,17 @@
 
 Option 1: With FreeCad (A2Plus) 
 
+Not working
+
 
 Option 2: With ROS 
 
 http://wiki.ros.org/urdf/Tutorials
+
+Installing ROS Humble
+https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html
+
+
 
 - [x] Building a Visual Robot Model with URDF from Scratch
 http://wiki.ros.org/urdf/Tutorials/Building%20a%20Visual%20Robot%20Model%20with%20URDF%20from%20Scratch
@@ -28,3 +35,7 @@ Option 3:
 
 Visualize URDF online:
 https://mymodelrobot.appspot.com/5629499534213120
+
+Use chatGPT to write URDF robots
+
+

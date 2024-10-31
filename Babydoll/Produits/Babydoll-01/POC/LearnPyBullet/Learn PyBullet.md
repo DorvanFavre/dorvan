@@ -12,11 +12,8 @@ PyBullet: https://pybullet.org/wordpress/
 
 pip install pybullet 
 pip install numpy\==1.23
+pip install --upgrade pip setuptools wheel
 
-
-TODO
-- [ ] check how to create my robot URDF : http://wiki.ros.org/urdf/Tutorials
-- [ ] 
 
 
 
@@ -74,3 +71,6 @@ cameraYaw=camera_yaw,
 cameraPitch=camera_pitch,
 cameraTargetPosition=camera_target_position)
 ```
+
+
+
