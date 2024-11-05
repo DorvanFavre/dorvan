@@ -1,7 +1,7 @@
 
 Website to explore from:
 - https://www.thingiverse.com/
-- 
+- https://hackaday.io/project/171456-diy-hobby-servos-quadruped-robot
 
 
 Exapode from Aecert Robotics: https://youtu.be/u-U2VmCW-e8?si=5wC6ucCFXUlxmgS2

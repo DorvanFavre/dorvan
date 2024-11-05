@@ -18,8 +18,8 @@
       <origin xyz="0 0 0"/>
     </collision>
     <inertial>
-      <mass value="0.5"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      <mass value="0.01"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
     </inertial>
   </link>
 
@@ -42,7 +42,7 @@
     </collision>
     <inertial>
       <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
     </inertial>
   </link>
 
@@ -72,17 +72,17 @@
     </collision>
     <inertial>
       <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
     </inertial>
 
   </link>
 
-  <joint name="u1" type="revolute">
+  <joint name="u1" type="continuous">
     <origin rpy="0 0 0" xyz="0 0.05 0"/>
     <parent link="a1"/>
     <child link="b1"/>
     <axis xyz="0 0 1"/>
-    <limit effort="100" lower="-1.57" upper="1.57" velocity="1"/>
+    <limit effort="1000" lower="-1.57" upper="1.57" velocity="1000"/>
   </joint>
 
   <link name="c1">
@@ -103,17 +103,17 @@
     </collision>
     <inertial>
       <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
     </inertial>
 
   </link>
 
-  <joint name="v1" type="revolute">
+  <joint name="v1" type="continuous">
     <origin rpy="0 0 0" xyz="0 0.05 0"/>
     <parent link="b1"/>
     <child link="c1"/>
     <axis xyz="1 0 0"/>
-    <limit effort="100" lower="-1.57" upper="1.57" velocity="1"/>
+    <limit effort="1000" lower="-1.57" upper="1.57" velocity="1000"/>
   </joint>
 
   <link name="d1">
@@ -134,17 +134,46 @@
     </collision>
     <inertial>
       <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
     </inertial>
 
   </link>
 
-  <joint name="w1" type="revolute">
+  <joint name="w1" type="continuous">
     <origin rpy="0 0 0" xyz="0 0.08 0"/>
     <parent link="c1"/>
     <child link="d1"/>
     <axis xyz="1 0 0"/>
-    <limit effort="100" lower="-1.57" upper="1.57" velocity="1"/>
+    <limit effort="1000" lower="-3.14159" upper="1.57" velocity="1000"/>
+  </joint>
+
+  <link name="e1">
+    <visual>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <material name="noir">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
+    </inertial>
+
+  </link>
+
+  <joint name="x1" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0.14 0"/>
+    <parent link="d1"/>
+    <child link="e1"/>
   </joint>
 
 
@@ -166,7 +195,7 @@
     </collision>
     <inertial>
       <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
     </inertial>
   </link>
 
@@ -196,17 +225,17 @@
     </collision>
     <inertial>
       <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
     </inertial>
 
   </link>
 
-  <joint name="u2" type="revolute">
+  <joint name="u2" type="continuous">
     <origin rpy="0 0 0" xyz="0 0.05 0"/>
     <parent link="a2"/>
     <child link="b2"/>
     <axis xyz="0 0 1"/>
-    <limit effort="100" lower="-1.57" upper="1.57" velocity="1"/>
+    <limit effort="1000" lower="-1.57" upper="1.57" velocity="1000"/>
   </joint>
 
   <link name="c2">
@@ -227,17 +256,17 @@
     </collision>
     <inertial>
       <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
     </inertial>
 
   </link>
 
-  <joint name="v2" type="revolute">
+  <joint name="v2" type="continuous">
     <origin rpy="0 0 0" xyz="0 0.05 0"/>
     <parent link="b2"/>
     <child link="c2"/>
     <axis xyz="1 0 0"/>
-    <limit effort="100" lower="-1.57" upper="1.57" velocity="1"/>
+    <limit effort="1000" lower="-1.57" upper="1.57" velocity="1000"/>
   </joint>
 
   <link name="d2">
@@ -258,17 +287,46 @@
     </collision>
     <inertial>
       <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
     </inertial>
 
   </link>
 
-  <joint name="w2" type="revolute">
+  <joint name="w2" type="continuous">
     <origin rpy="0 0 0" xyz="0 0.08 0"/>
     <parent link="c2"/>
     <child link="d2"/>
     <axis xyz="1 0 0"/>
-    <limit effort="100" lower="-1.57" upper="1.57" velocity="1"/>
+    <limit effort="1000" lower="-3.14159" upper="1.57" velocity="1000"/>
+  </joint>
+
+  <link name="e2">
+    <visual>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <material name="noir">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
+    </inertial>
+
+  </link>
+
+  <joint name="x2" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0.14 0"/>
+    <parent link="d2"/>
+    <child link="e2"/>
   </joint>
 
 
@@ -290,7 +348,7 @@
     </collision>
     <inertial>
       <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
     </inertial>
   </link>
 
@@ -320,17 +378,17 @@
     </collision>
     <inertial>
       <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
     </inertial>
 
   </link>
 
-  <joint name="u3" type="revolute">
+  <joint name="u3" type="continuous">
     <origin rpy="0 0 0" xyz="0 0.05 0"/>
     <parent link="a3"/>
     <child link="b3"/>
     <axis xyz="0 0 1"/>
-    <limit effort="100" lower="-1.57" upper="1.57" velocity="1"/>
+    <limit effort="1000" lower="-1.57" upper="1.57" velocity="1000"/>
   </joint>
 
   <link name="c3">
@@ -351,17 +409,17 @@
     </collision>
     <inertial>
       <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
     </inertial>
 
   </link>
 
-  <joint name="v3" type="revolute">
+  <joint name="v3" type="continuous">
     <origin rpy="0 0 0" xyz="0 0.05 0"/>
     <parent link="b3"/>
     <child link="c3"/>
     <axis xyz="1 0 0"/>
-    <limit effort="100" lower="-1.57" upper="1.57" velocity="1"/>
+    <limit effort="1000" lower="-1.57" upper="1.57" velocity="1000"/>
   </joint>
 
   <link name="d3">
@@ -382,17 +440,46 @@
     </collision>
     <inertial>
       <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
     </inertial>
 
   </link>
 
-  <joint name="w3" type="revolute">
+  <joint name="w3" type="continuous">
     <origin rpy="0 0 0" xyz="0 0.08 0"/>
     <parent link="c3"/>
     <child link="d3"/>
     <axis xyz="1 0 0"/>
-    <limit effort="100" lower="-1.57" upper="1.57" velocity="1"/>
+    <limit effort="1000" lower="-3.14159" upper="1.57" velocity="1000"/>
+  </joint>
+
+  <link name="e3">
+    <visual>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <material name="noir">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
+    </inertial>
+
+  </link>
+
+  <joint name="x3" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0.14 0"/>
+    <parent link="d3"/>
+    <child link="e3"/>
   </joint>
 
 
@@ -414,7 +501,7 @@
     </collision>
     <inertial>
       <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
     </inertial>
   </link>
 
@@ -444,17 +531,17 @@
     </collision>
     <inertial>
       <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
     </inertial>
 
   </link>
 
-  <joint name="u4" type="revolute">
+  <joint name="u4" type="continuous">
     <origin rpy="0 0 0" xyz="0 0.05 0"/>
     <parent link="a4"/>
     <child link="b4"/>
     <axis xyz="0 0 1"/>
-    <limit effort="100" lower="-1.57" upper="1.57" velocity="1"/>
+    <limit effort="1000" lower="-1.57" upper="1.57" velocity="1000"/>
   </joint>
 
   <link name="c4">
@@ -475,17 +562,17 @@
     </collision>
     <inertial>
       <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
     </inertial>
 
   </link>
 
-  <joint name="v4" type="revolute">
+  <joint name="v4" type="continuous">
     <origin rpy="0 0 0" xyz="0 0.05 0"/>
     <parent link="b4"/>
     <child link="c4"/>
     <axis xyz="1 0 0"/>
-    <limit effort="100" lower="-1.57" upper="1.57" velocity="1"/>
+    <limit effort="1000" lower="-1.57" upper="1.57" velocity="1000"/>
   </joint>
 
   <link name="d4">
@@ -506,17 +593,46 @@
     </collision>
     <inertial>
       <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
     </inertial>
 
   </link>
 
-  <joint name="w4" type="revolute">
+  <joint name="w4" type="continuous">
     <origin rpy="0 0 0" xyz="0 0.08 0"/>
     <parent link="c4"/>
     <child link="d4"/>
     <axis xyz="1 0 0"/>
-    <limit effort="100" lower="-1.57" upper="1.57" velocity="1"/>
+    <limit effort="1000" lower="-3.14159" upper="1.57" velocity="1000"/>
+  </joint>
+
+  <link name="e4">
+    <visual>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <material name="noir">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
+    </inertial>
+
+  </link>
+
+  <joint name="x4" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0.14 0"/>
+    <parent link="d4"/>
+    <child link="e4"/>
   </joint>
 
 
@@ -538,7 +654,7 @@
     </collision>
     <inertial>
       <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
     </inertial>
   </link>
 
@@ -568,17 +684,17 @@
     </collision>
     <inertial>
       <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
     </inertial>
 
   </link>
 
-  <joint name="u5" type="revolute">
+  <joint name="u5" type="continuous">
     <origin rpy="0 0 0" xyz="0 0.05 0"/>
     <parent link="a5"/>
     <child link="b5"/>
     <axis xyz="0 0 1"/>
-    <limit effort="100" lower="-1.57" upper="1.57" velocity="1"/>
+    <limit effort="1000" lower="-1.57" upper="1.57" velocity="1000"/>
   </joint>
 
   <link name="c5">
@@ -599,17 +715,17 @@
     </collision>
     <inertial>
       <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
     </inertial>
 
   </link>
 
-  <joint name="v5" type="revolute">
+  <joint name="v5" type="continuous">
     <origin rpy="0 0 0" xyz="0 0.05 0"/>
     <parent link="b5"/>
     <child link="c5"/>
     <axis xyz="1 0 0"/>
-    <limit effort="100" lower="-1.57" upper="1.57" velocity="1"/>
+    <limit effort="1000" lower="-1.57" upper="1.57" velocity="1000"/>
   </joint>
 
   <link name="d5">
@@ -630,17 +746,46 @@
     </collision>
     <inertial>
       <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
     </inertial>
 
   </link>
 
-  <joint name="w5" type="revolute">
+  <joint name="w5" type="continuous">
     <origin rpy="0 0 0" xyz="0 0.08 0"/>
     <parent link="c5"/>
     <child link="d5"/>
     <axis xyz="1 0 0"/>
-    <limit effort="100" lower="-1.57" upper="1.57" velocity="1"/>
+    <limit effort="1000" lower="-3.14159" upper="1.57" velocity="1000"/>
+  </joint>
+
+  <link name="e5">
+    <visual>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <material name="noir">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
+    </inertial>
+
+  </link>
+
+  <joint name="x5" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0.14 0"/>
+    <parent link="d5"/>
+    <child link="e5"/>
   </joint>
 
 
@@ -662,7 +807,7 @@
     </collision>
     <inertial>
       <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
     </inertial>
   </link>
 
@@ -692,17 +837,17 @@
     </collision>
     <inertial>
       <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
     </inertial>
 
   </link>
 
-  <joint name="u6" type="revolute">
+  <joint name="u6" type="continuous">
     <origin rpy="0 0 0" xyz="0 0.05 0"/>
     <parent link="a6"/>
     <child link="b6"/>
     <axis xyz="0 0 1"/>
-    <limit effort="100" lower="-1.57" upper="1.57" velocity="1"/>
+    <limit effort="1000" lower="-1.57" upper="1.57" velocity="1000"/>
   </joint>
 
   <link name="c6">
@@ -723,17 +868,17 @@
     </collision>
     <inertial>
       <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
     </inertial>
 
   </link>
 
-  <joint name="v6" type="revolute">
+  <joint name="v6" type="continuous">
     <origin rpy="0 0 0" xyz="0 0.05 0"/>
     <parent link="b6"/>
     <child link="c6"/>
     <axis xyz="1 0 0"/>
-    <limit effort="100" lower="-1.57" upper="1.57" velocity="1"/>
+    <limit effort="1000" lower="-1.57" upper="1.57" velocity="1000"/>
   </joint>
 
   <link name="d6">
@@ -754,17 +899,46 @@
     </collision>
     <inertial>
       <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
     </inertial>
 
   </link>
 
-  <joint name="w6" type="revolute">
+  <joint name="w6" type="continuous">
     <origin rpy="0 0 0" xyz="0 0.08 0"/>
     <parent link="c6"/>
     <child link="d6"/>
     <axis xyz="1 0 0"/>
-    <limit effort="100" lower="-1.57" upper="1.57" velocity="1"/>
+    <limit effort="1000" lower="-3.14159" upper="1.57" velocity="1000"/>
+  </joint>
+
+  <link name="e6">
+    <visual>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <material name="noir">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <inertia ixx="0" ixy="0.0" ixz="0.0" iyy="0" iyz="0.0" izz="0"/>
+    </inertial>
+
+  </link>
+
+  <joint name="x6" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0.14 0"/>
+    <parent link="d6"/>
+    <child link="e6"/>
   </joint>
 
 </robot>
