@@ -1,3 +1,13 @@
+
+
+// min : 74
+// half = 316
+// max : 559
+
+// - pi/2: 110
+// 0 : 316
+// pi/2 = 525
+
 https://www.amazon.de/dp/B0D3DHBNP8?ref=ppx_yo2ov_dt_b_fed_asin_title
 
 Specifications:  
@@ -23,7 +33,7 @@ What is the PWM range for these motors?
 1.0ms------45 degree; 5.0% (1.0ms high level + 19.0 low level)  
 1.5ms------90 degree; 7.5% (1.5ms high level + 18.5 low level)  
 2.0ms------135 degree; 10% (2.0ms high level + 18.0 low level)  
-2.5ms------180 degree; 12.5% (2.5ms high level + 17.5 low level)  
+5ms------180 degree; 12.5% (2.5ms high level + 17.5 low level)  
 0.5ms------90 degrees;  
 1.0ms------45 degrees;  
 1.5ms------0 degrees;  

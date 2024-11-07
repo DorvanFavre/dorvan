@@ -38,18 +38,24 @@ float servo_min[18];
 float servo_max[18];
 
 // config
-const float f = 30;
-const float T = 1 / f;
+
+const float servoPeriod = 1.0 / 30.0; //s
 const float velocity = 1.0; // rad/s
-const float servoStep = velocity * T;
+const float servoStep = velocity * servoPeriod; // rad
+
+const float stepLength = 80; // mm
+const float stepHeight = 50; // mm
+const float stepPeriod = 1.0; // s
 
 // private
 float targetServoAngle[N];
 float actualServoAngle[N];
 int mode = 0;
-
+unsigned long startTime;
+unsigned long servoTime;
 
 void setup() {
+
   Serial.begin(9600);
   pwm1.begin();
   pwm1.setPWMFreq(50);
@@ -70,6 +76,8 @@ void setup() {
     servo_min[i * 3 + 2] = -PI / 2;
     servo_max[i * 3 + 2] = 0.65;
   }
+
+
 }
 
 
@@ -183,17 +191,20 @@ void loop() {
 
 
   // run servo
-  for (int i = 0; i < N; i++) {
-    float error = targetServoAngle[i] - actualServoAngle[i];
-    if (abs(error) > 0.001 ) {
-      actualServoAngle[i] += getSign(error) * min(servoStep, abs(error));
-      writeServo(i, actualServoAngle[i]);
+  if (millis() - servoTime > servoPeriod*1000) {
+    servoTime = millis();
+    for (int i = 0; i < N; i++) {
+      float error = targetServoAngle[i] - actualServoAngle[i];
+      if (abs(error) > 0.001 ) {
+        actualServoAngle[i] += getSign(error) * min(servoStep, abs(error));
+        writeServo(i, actualServoAngle[i]);
+      }
     }
   }
 
 
 
-  delay(T * 1000);
+
 }
 
 // Function to set servo angle on a specified servo
@@ -290,9 +301,9 @@ int ik(float x, float y, float z, float & theta_1_, float & theta_2_, float & th
 
   float phi_3 = acos((r * r - a4 * a4 - L3 * L3) / (-2 * a4 * L3));
   float phi_4 = abs(atan(H4 / L4));
-    Serial.print("Phi_3: ");
+  Serial.print("Phi_3: ");
   Serial.println(phi_3);
-    Serial.print("Phi_4: ");
+  Serial.print("Phi_4: ");
   Serial.println(phi_4);
 
   float theta_3 = PI - phi_4 - phi_3;
