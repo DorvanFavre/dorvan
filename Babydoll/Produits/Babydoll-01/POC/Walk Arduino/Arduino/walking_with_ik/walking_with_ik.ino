@@ -31,28 +31,46 @@ const float L4 = 126.46;
 const float H4 = -64.24;
 float a4;
 
-const int SERVO_CHANNEL[N] = {13, 14, 15, 5, 6, 7, 0, 1, 2, 0, 0, 0, 0, 0, 0, 2, 1, 0};
-const int SERVO_OFFSET[N] = {0, 0, 15, 9, -16, 15, 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, -26}; // impulse width
+const int SERVO_CHANNEL[N] = {13, 14, 15, 5, 6, 7, 0, 1, 2, 13, 14, 15, 5, 6, 7, 2, 1, 0};
+const int SERVO_OFFSET[N] = { -20, 0, 15, 9, -16, 15, 0, 15, 0, 0, -6, -44, 0, 19, -67, 0, 0, -26}; // impulse width
 const int SERVO_SIGN[N] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, -1, -1, 1, -1, -1, 1, -1, -1};
 float servo_min[18];
 float servo_max[18];
 
+//////////////////////////////////////
 // config
 
-const float servoPeriod = 1.0 / 30.0; //s
-const float velocity = 1.0; // rad/s
+// Servo
+const float servoPeriod = 1.0 / 50.0; //s
+const float velocity = 2.0; // rad/s
 const float servoStep = velocity * servoPeriod; // rad
 
-const float stepLength = 80; // mm
-const float stepHeight = 50; // mm
-const float stepPeriod = 1.0; // s
+// Walk
+const float stepLength = 100; // mm
+const float stepHeight = 30; // mm
+const float stepPeriod = 0.5; // s
+const float stepFraction = 1.0 / 50.0;
 
+const float X1 = 180;
+const float Y1 = 180;
+const float X2 = 280;
+const float Z1 = -130;
+
+const float basePos[6][3] = {{X1, Y1, Z1}, {X2, 0, Z1}, {X1, -Y1, Z1}, { -X1, -Y1, Z1}, { -X2, 0, Z1}, { -X1, Y1, Z1},};
+
+///////////////////////////////////////
 // private
 float targetServoAngle[N];
 float actualServoAngle[N];
 int mode = 0;
 unsigned long startTime;
 unsigned long servoTime;
+unsigned long stepTime;
+
+// walk
+int phase = 0;
+float stepStage = 0;
+float walkPos[2][3] = {{0,0,0},{0,0,0}};
 
 void setup() {
 
@@ -69,8 +87,8 @@ void setup() {
   a4 = sqrt(L4 * L4 + H4 * H4);
 
   for ( int i = 0; i < 6; i++) {
-    servo_min[i * 3] = -0.75;
-    servo_max[i * 3] = 0.75;
+    servo_min[i * 3] = -1.2;
+    servo_max[i * 3] = 1.2;
     servo_min[i * 3 + 1] = -0.5;
     servo_max[i * 3 + 1] = PI / 2;
     servo_min[i * 3 + 2] = -PI / 2;
@@ -110,29 +128,43 @@ void loop() {
 
       }
 
+    } else if (input.equalsIgnoreCase("stop")) {
+      mode = 0;
+      Serial.println("Stop ");
+
     } else if (input.equalsIgnoreCase("calibrate")) {
       mode = 1;
       Serial.println("Calibration mode, pwm1 channel 11. ");
-    } else if (input.equalsIgnoreCase("ik")) {
+    } else if (input.equalsIgnoreCase("ik_absolute")) {
       mode = 3;
-      Serial.println("IK mode. ");
+      Serial.println("IK absolute. ");
+    } else if (input.equalsIgnoreCase("ik_relative")) {
+      mode = 5;
+      Serial.println("IK relative. ");
     }
-    else if (input.equalsIgnoreCase("sit")) {
-      Serial.println("Small");
-      for (int i = 0; i < 6; i++) {
-        setServoAngle(i * 3 + 1, 1.57);
-        setServoAngle(i * 3 + 2, 0.65);
-      }
 
-    }
     else if (input.equalsIgnoreCase("single")) {
       mode = 2;
       Serial.println("Single mode");
     }
+    else if (input.equalsIgnoreCase("walk")) {
+      mode = 4;
+      Serial.println("Walk mode");
+    }
+    else if (input.equalsIgnoreCase("base")) {
+      Serial.println("Base");
+      for (int i = 0; i < 6; i++) {
+        servo_ik(i, basePos[i][0], basePos[i][1], basePos[i][2]);
+
+      }
+
+    }
+
     else if (mode == 3) {
       // Parse servo number and angle from the input
       float x, y, z;
-      if (sscanf(input.c_str(), "%f %f %f", &x, &y, &z) == 3) {
+      int l;
+      if (sscanf(input.c_str(), "%d %f %f %f", &l, &x, &y, &z) == 4) {
 
         Serial.print("Ik x: ");
         Serial.print(x);
@@ -140,10 +172,43 @@ void loop() {
         Serial.print(y);
         Serial.print(", z: ");
         Serial.println(z);
-        servo_ik(0, x, y, z);
+        servo_ik(l, x, y, z);
 
       } else {
-        Serial.println("Invalid command. Format: <x> <y> <z>");
+        Serial.println("Invalid command. Format: <leg> <x> <y> <z>");
+      }
+    }
+    else if (mode == 5) {
+      // Parse servo number and angle from the input
+      float x, y, z;
+      int l;
+      if (sscanf(input.c_str(), "%d %f %f %f", &l, &x, &y, &z) == 4) {
+
+        Serial.print("Ik x: ");
+        Serial.print(x);
+        Serial.print(", y: ");
+        Serial.print(y);
+        Serial.print(", z: ");
+        Serial.println(z);
+        float theta_1, theta_2, theta_3;
+
+        if (ik(x, y, z, theta_1, theta_2, theta_3)) {
+
+          //    Serial.print("Theta 1: ");
+          //    Serial.println(theta_1);
+          //    Serial.print("Theta 2: ");
+          //    Serial.println(theta_2);
+          //    Serial.print("Theta 3: ");
+          //    Serial.println(theta_3);
+
+
+          setServoAngle(l * 3, theta_1);
+          setServoAngle(l * 3 + 1, theta_2);
+          setServoAngle(l * 3 + 2, theta_3);
+        }
+
+      } else {
+        Serial.println("Invalid command. Format: <leg> <x> <y> <z>");
       }
     }
     else if (mode == 1) {
@@ -161,9 +226,6 @@ void loop() {
         Serial.println("Invalid command. Format: <pulse width> ");
       }
     }
-
-
-
 
     else if (mode == 2) {
       // Play with individual servo
@@ -185,13 +247,51 @@ void loop() {
         Serial.println("Invalid command. Format: <servo number> <angle>");
       }
     }
+  }
 
+  ///////////////////////////////////////////////
+  // Walk
+  if (mode == 4) {
+    if (millis() - stepTime > (stepPeriod * stepFraction * 1000)) {
+      stepTime = millis();
 
+      // Calculate phase pos
+      if (stepStage == 0) { // Init
+        walkPos[0][1] = stepLength / 2.0;
+        walkPos[1][1] = -stepLength / 2.0;
+        walkPos[1][2] = 0.0;
+      }
+      else {
+        walkPos[0][1] -= stepLength * stepFraction;
+        walkPos[1][1] += stepLength * stepFraction;
+        walkPos[1][2] = sin(stepStage)*stepHeight;
+      }
+
+      // Calculate and write leg pos with IK
+      for (int i = 0; i < 6; i++) {
+        int legPhase = i % 2;
+        int phase_ = (legPhase + phase) % 2;
+        servo_ik(i, basePos[i][0], basePos[i][1] + walkPos[phase_][1], basePos[i][2]+walkPos[phase_][2]);
+
+      }
+      //      int legPhase = i % 2;
+      //      int phase_ = (legPhase + phase) % 2;
+      //      servo_ik(1, basePos[0][0], basePos[0][1] + walkPos[phase_][1], basePos[0][2]);
+
+      // Update
+      if (stepStage >= PI) { // Reset
+        stepStage = 0;
+        phase = (phase + 1) % 2;
+      } else {
+        stepStage += stepFraction * PI;
+      }
+    }
   }
 
 
-  // run servo
-  if (millis() - servoTime > servoPeriod*1000) {
+  ///////////////////////////////////////////////
+  // SERVO
+  if (millis() - servoTime > servoPeriod * 1000) {
     servoTime = millis();
     for (int i = 0; i < N; i++) {
       float error = targetServoAngle[i] - actualServoAngle[i];
@@ -215,7 +315,7 @@ void writeServo(int n, float angle) {
   }
   else {
     int pulseLength = (int)mapFloat(angle, (-PI / 2) * SERVO_SIGN[n], (PI / 2) * SERVO_SIGN[n], PWM_MIN, PWM_MAX) + SERVO_OFFSET[n];
-    Serial.println(pulseLength); // DEBUG
+    //Serial.println(pulseLength); // DEBUG
     if (n >= 0 && n <= 8) {
       pwm1.setPWM(SERVO_CHANNEL[n], 0, pulseLength);
     }
@@ -249,21 +349,41 @@ float mapFloat(float x, float in_min, float in_max, float out_min, float out_max
   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
+void rotateZ(float& x, float& y, float angle) {
+  float cosA = cos(angle);
+  float sinA = sin(angle);
+  float x_new = x * cosA - y * sinA;
+  float y_new = x * sinA + y * cosA;
+  x = x_new;
+  y = y_new;
+}
+
 
 
 void servo_ik(int l, float x, float y, float z) {
   float theta_1, theta_2, theta_3;
+  float angle;
+  angle = -PI / 3 + (PI / 3) * l;
+  rotateZ(x, y, angle);
+
+  //  Serial.println("Transpose: x,y,z:");
+  //  Serial.println(x);
+  //  Serial.println(y);
+  //  Serial.println(z);
+  //
+  //  Serial.print("Leg : ");
+  //  Serial.println(l);
+  //  Serial.print("x: "); Serial.print(x);Serial.print("y: "); Serial.print(y);Serial.print("z: "); Serial.println(z);
   if (ik(x, y, z, theta_1, theta_2, theta_3)) {
-    theta_3 = theta_3 - PI / 2;
-    Serial.print("Theta 1: ");
-    Serial.println(theta_1);
-    Serial.print("Theta 2: ");
-    Serial.println(theta_2);
-    Serial.print("Theta 3: ");
-    Serial.println(theta_3);
-    setServoAngle(6 * l, theta_1);
-    setServoAngle(6 * l + 1, theta_2);
-    setServoAngle(6 * l + 2, theta_3);
+    //    Serial.print("Theta 1: ");
+    //    Serial.println(theta_1);
+    //    Serial.print("Theta 2: ");
+    //    Serial.println(theta_2);
+    //    Serial.print("Theta 3: ");
+    //    Serial.println(theta_3);
+    setServoAngle(l * 3, theta_1);
+    setServoAngle(l * 3 + 1, theta_2);
+    setServoAngle(l * 3 + 2, theta_3);
   }
 
 }
@@ -271,45 +391,53 @@ void servo_ik(int l, float x, float y, float z) {
 int ik(float x, float y, float z, float & theta_1_, float & theta_2_, float & theta_3_) {
   float o = x - L1;
   float theta_1 = atan(y / o);
-  Serial.print("theta_1: ");
-  Serial.println(theta_1);
+  //  Serial.print("theta_1: ");
+  //  Serial.println(theta_1);
 
   float p = sqrt(o * o + y * y);
-  Serial.print("p: ");
-  Serial.println(p);
+  //  Serial.print("p: ");
+  //  Serial.println(p);
 
   float q = p - L2;
   float z2 = z - H2;
   float r = sqrt(q * q + z2 * z2);
-  Serial.print("r: ");
-  Serial.println(r);
+  //  Serial.print("r: ");
+  //  Serial.println(r);
 
   float phi_1 = atan(z2 / q);
-  Serial.print("phi_1: ");
-  Serial.println(phi_1);
-
-  Serial.print("a4: ");
-  Serial.println(a4);
-  Serial.print("L3: ");
-  Serial.println(L3);
+  //  Serial.print("phi_1: ");
+  //  Serial.println(phi_1);
+  //
+  //  Serial.print("a4: ");
+  //  Serial.println(a4);
+  //  Serial.print("L3: ");
+  //  Serial.println(L3);
   float phi_2 = acos((a4 * a4 - L3 * L3 - r * r) / (-2 * r * L3));
-  Serial.print("Phi_2: ");
-  Serial.println(phi_2);
+  //  Serial.print("Phi_2: ");
+  //  Serial.println(phi_2);
   float theta_2 = phi_1 + phi_2;
-  Serial.print("theta_2: ");
-  Serial.println(theta_2);
+  //  Serial.print("theta_2: ");
+  //  Serial.println(theta_2);
 
   float phi_3 = acos((r * r - a4 * a4 - L3 * L3) / (-2 * a4 * L3));
   float phi_4 = abs(atan(H4 / L4));
-  Serial.print("Phi_3: ");
-  Serial.println(phi_3);
-  Serial.print("Phi_4: ");
-  Serial.println(phi_4);
+  //  Serial.print("Phi_3: ");
+  //  Serial.println(phi_3);
+  //  Serial.print("Phi_4: ");
+  //  Serial.println(phi_4);
 
   float theta_3 = PI - phi_4 - phi_3;
-  Serial.print("theta_3: ");
-  Serial.println(theta_3);
+  theta_3 = theta_3 - PI / 2;
+  //  Serial.print("theta_3: ");
+  //  Serial.println(theta_3);
 
+  //  Serial.print("theta_1: ");
+  //  Serial.println(theta_1);
+  //  Serial.print("theta_2: ");
+  //  Serial.println(theta_2);
+  //  Serial.print("theta_3: ");
+  //  Serial.println(theta_3);
+  //
   if (isnan(theta_1) || isnan(theta_2) || isnan(theta_3)) {
     Serial.print("Angle is NAN");
     return 0;
