@@ -4,123 +4,124 @@
     "type": "split",
     "children": [
       {
-        "id": "8ca8b95e37c038b6",
+        "id": "bda5ac20df493ddf",
         "type": "tabs",
         "children": [
           {
-            "id": "094c329af0e17e49",
+            "id": "56a1c323625e5477",
             "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Produits/Babydoll-01/POC/Walk Arduino/MG996R (Amazon).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "MG996R (Amazon)"
-            }
-          },
-          {
-            "id": "3f3a71236b8d9c10",
-            "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Produits/Babydoll-01/POC/POC.canvas",
+                "file": "Produits/Babybot-01/Informatic-01/Informatic-01.canvas",
                 "viewState": {
-                  "x": 2076.0000000000005,
-                  "y": 4768.453125000002,
-                  "zoom": -1.1102230246251565e-16
+                  "x": 293.1132883901109,
+                  "y": 122.90395013590656,
+                  "zoom": -0.40000000000000013
                 }
               },
+              "pinned": true,
               "icon": "lucide-layout-dashboard",
-              "title": "POC"
+              "title": "Informatic-01"
             }
           },
           {
-            "id": "bc093032c4428d57",
+            "id": "0d019fd92e03c39b",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Produits/Babybot-01/Informatic-01/Informatic-01.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Informatic-01"
+            }
+          },
+          {
+            "id": "0ba062428ee01d6e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Servo friction.md",
+                "file": "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/Simulate robot and walk with IK.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Servo friction"
+              "title": "Simulate robot and walk with IK"
             }
           },
           {
-            "id": "75dda5d3c4c0d702",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Investigate microcontrollers.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Investigate microcontrollers"
-            }
-          },
-          {
-            "id": "2a13d3eb28530d39",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Produits/Babydoll-01/POC/Walk Arduino/Walk Arduino.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Walk Arduino"
-            }
-          },
-          {
-            "id": "ed5a2fde8da33aec",
+            "id": "19b0f84792ecb1cf",
             "type": "leaf",
             "state": {
               "type": "release-notes",
               "state": {
-                "currentVersion": "1.7.5"
+                "currentVersion": "1.7.6"
               },
               "icon": "lucide-file",
-              "title": "Release Notes 1.7.5"
+              "title": "Release Notes 1.7.6"
             }
           },
           {
-            "id": "7d759ce2d70e53f6",
+            "id": "a94b63b8627370f7",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "51a8557afd89cef8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Produits/Babydoll-01/POC/Walk Arduino/Walk Arduino.md",
+                "file": "Produits/Babybot-01/Informatic-01/Read RL book.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Walk Arduino"
+              "title": "Read RL book"
             }
           },
           {
-            "id": "f12f5651bc0e4ebc",
+            "id": "fd73f102bed3d545",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Produits/Babydoll-01/POC/Walk with IK in simulation/Walk with IK in simulation.md",
+                "file": "Produits/Babybot-01/Informatic-01/Deploy in reality.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Walk with IK in simulation"
+              "title": "Deploy in reality"
+            }
+          },
+          {
+            "id": "d9dc41b508cc3a2b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Produits/Babybot-01/Informatic-01/Create environment.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Create environment"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -176,7 +177,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "d4195dacf0a4d9c3",
@@ -261,56 +263,60 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "094c329af0e17e49",
+  "active": "0d019fd92e03c39b",
   "lastOpenFiles": [
-    "Produits/Babydoll-01/POC/Walk Arduino/Arduino/walking_with_ik/walking_with_ik.ino1641441590459244373.tmp",
-    "Produits/Babydoll-01/POC/Walk Arduino/Arduino/walking_with_ik/walking_with_ik.ino449340276425911961.tmp",
-    "Produits/Babydoll-01/POC/Walk Arduino/Arduino/walking_with_ik/walking_with_ik.ino11120740971622483896.tmp",
-    "Produits/Babydoll-01/POC/Walk Arduino/Arduino/walking_with_ik/walking_with_ik.ino18440811281979905644.tmp",
-    "Produits/Babydoll-01/POC/Walk Arduino/Arduino/walking_with_ik/walking_with_ik.ino3833461967302455494.tmp",
-    "Produits/Babydoll-01/POC/Walk Arduino/Arduino/walking_with_ik/walking_with_ik.ino7076329364079091297.tmp",
-    "Produits/Babydoll-01/POC/Walk Arduino/Arduino/walking_with_ik/walking_with_ik.ino5309948681737875735.tmp",
-    "Produits/Babydoll-01/POC/Walk Arduino/Arduino/walking_with_ik/walking_with_ik.ino5709889291004372165.tmp",
-    "Produits/Babydoll-01/POC/Walk Arduino/Arduino/walking_with_ik/walking_with_ik.ino10615441784519150156.tmp",
-    "Produits/Babydoll-01/POC/Walk Arduino/Arduino/walking_with_ik/walking_with_ik.ino17460626318939252597.tmp",
-    "Produits/Babydoll-01/POC/Walk Arduino/Arduino/walking_with_ik/walking_with_ik.ino18110490704233108283.tmp",
-    "Servo friction.md",
+    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/hexapod_2.urdf",
+    "Produits/Babybot-01/Informatic-01/Informatic-01.canvas",
+    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/Simulate robot and walk with IK.md",
+    "Produits/Babybot-01/Informatic-01/Informatic-01.md",
+    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/textured_sphere_smooth.obj",
+    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/sphere.urdf",
+    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/hexapod_2 copy.urdf",
+    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/04_rename.ipynb",
+    "Produits/Babybot-01/Informatic-01/Read RL book.md",
+    "Produits/Babybot-01/Informatic-01/Train robot to walk with RL.md",
+    "Produits/Babybot-01/Informatic-01/Deploy in reality.md",
+    "Produits/Babybot-01/Informatic-01/Create robot URDF/hexapod_2.urdf",
+    "Produits/Babybot-01/Informatic-01/Create robot URDF/hexapod copy.urdf",
+    "Produits/Babybot-01/Informatic-01/Create robot URDF/pybulletEnv/lib/python3.10/site-packages/numpy/core/__pycache__/umath.cpython-310.pyc.126202330851696",
+    "Produits/Babybot-01/Informatic-01/Create environment.md",
+    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/03_hold.ipynb",
+    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/03_toto.ipynb",
+    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/pybulletEnv/share/jupyter/kernels/python3/logo-svg.svg",
+    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/pybulletEnv/share/jupyter/kernels/python3/logo-64x64.png",
+    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/pybulletEnv/share/jupyter/kernels/python3/logo-32x32.png",
+    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/pybulletEnv/lib/python3.10/site-packages/pybullet_data/roboschool/models_outdoor/stadium/stadium_grass.jpg",
+    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/pybulletEnv/lib/python3.10/site-packages/pybullet_data/franka_panda/meshes/visual/colors.png",
+    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/pybulletEnv/lib/python3.10/site-packages/pybullet_data/racecar/meshes/wheel.jpg",
+    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/pybulletEnv/lib/python3.10/site-packages/pybullet_data/racecar/meshes/checker_blue.png",
+    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/pybulletEnv/lib/python3.10/site-packages/pybullet_data/aliengo/meshes/aliengo.png",
+    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/pybulletEnv/lib/python3.10/site-packages/pybullet_data/a1/meshes/trunk_A1.png",
+    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/pybulletEnv/lib/python3.10/site-packages/pybullet_data/tray/tray.jpg",
+    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/pybulletEnv/lib/python3.10/site-packages/debugpy/_vendored/pydevd/pydevd_plugins/extensions/README.md",
+    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/pybulletEnv/lib/python3.10/site-packages/zmq/backend/cffi/README.md",
+    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/pybulletEnv/lib/python3.10/site-packages/pyzmq-26.2.0.dist-info/licenses/LICENSE.md",
+    "Produits/Babybot-01/Informatic-01/Create robot URDF/pybulletEnv/lib/python3.10/site-packages/zmq/backend/cffi/README.md",
+    "Produits/Babybot-01/Informatic-01/Create robot URDF/pybulletEnv/lib/python3.10/site-packages/pyzmq-26.2.0.dist-info/licenses/LICENSE.md",
+    "Produits/Babybot-01/Informatic-01/Create robot URDF/pybulletEnv/lib/python3.10/site-packages/debugpy/_vendored/pydevd/pydevd_plugins/extensions/README.md",
+    "Produits/Babybot-01/Informatic-01/LearnPyBullet/Learn PyBullet.md",
+    "Produits/Babybot-01/Informatic-01/Create robot URDF/Create robot URDF.md",
+    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with IK.md",
+    "Produits/Babybot-01/Informatic-01/Create robot URDF.md",
+    "Walk RL sim.md",
+    "Learn spinning RL.md",
+    "Produits/Babybot-01/Informatic-01/Learn URDF/Learn URDF.md",
+    "Produits/Babybot-01/Electronic-01/Electronic-01.canvas",
+    "Produits/Babybot-01/Informatic-01/Jetson Nano.md",
+    "Produits/Babybot-01/Electronic-01/Tests an validate.md",
+    "Produits/Babybot-01/Electronic-01/Assembly.md",
+    "Produits/Babybot-01/Electronic-01/Build circuit.md",
+    "Produits/Babybot-01/Electronic-01/Order components.md",
+    "Produits/Babybot-01/Electronic-01/Print circuit.md",
+    "Produits/Babybot-01/Mechanical-01/Mechanical-01.canvas",
+    "Produits/Babybot-01/Babybot-01.canvas",
+    "Produits/Produits.canvas",
+    "Produits/Babybot-01/POC/POC.canvas",
     "Produits/Babydoll-01/POC/POC.canvas",
-    "Investigate microcontrollers.md",
-    "Walk RL IRL.md",
-    "Produits/Babydoll-01/POC/Walk Arduino/Walk Arduino IK.md",
-    "Produits/Babydoll-01/POC/LearnPyBullet/Learn PyBullet.md",
-    "Produits/Babydoll-01/POC/Walk with IK in simulation/Walk with IK in simulation.md",
-    "Make it walk.md",
-    "Produits/Babydoll-01/POC/Walk Arduino/MG996R (Amazon).md",
-    "Make it walk using IK.md",
-    "Produits/Produits.md",
-    "Produits/Babydoll-01/POC/Make URDF/Make URDF.md",
-    "Produits/Babydoll-01/POC/LearnPyBullet/macros.md",
-    "Produits/Babydoll-01/POC/LearnPyBullet/pybulletEnv/lib/python3.10/site-packages/debugpy/_vendored/pydevd/pydevd_plugins/extensions/README.md",
-    "Produits/Babydoll-01/POC/LearnPyBullet/pybulletEnv/lib/python3.10/site-packages/pybullet_data/roboschool/models_outdoor/stadium/stadium_grass.jpg",
-    "Produits/Babydoll-01/POC/LearnPyBullet/pybulletEnv/lib/python3.10/site-packages/pybullet_data/franka_panda/meshes/visual/colors.png",
-    "Produits/Babydoll-01/POC/LearnPyBullet/pybulletEnv/lib/python3.10/site-packages/zmq/backend/cffi/README.md",
-    "Produits/Babydoll-01/POC/LearnPyBullet/pybulletEnv/lib/python3.10/site-packages/pybullet_data/racecar/meshes/wheel.jpg",
-    "Produits/Babydoll-01/POC/LearnPyBullet/pybulletEnv/lib/python3.10/site-packages/pybullet_data/racecar/meshes/checker_blue.png",
-    "Produits/Babydoll-01/POC/LearnPyBullet/pybulletEnv/lib/python3.10/site-packages/pybullet_data/aliengo/meshes/aliengo.png",
-    "Produits/Babydoll-01/POC/LearnPyBullet/pybulletEnv/lib/python3.10/site-packages/pybullet_data/a1/meshes/trunk_A1.png",
-    "Produits/Babydoll-01/POC/LearnPyBullet/pybulletEnv/lib/python3.10/site-packages/IPython/core/tests/2x2.png",
-    "Produits/Babydoll-01/POC/LearnPyBullet/pybulletEnv/lib/python3.10/site-packages/IPython/core/tests/2x2.jpg",
-    "Produits/Babydoll-01/POC/LearnPyBullet/pybulletEnv/lib/python3.10/site-packages/pyzmq-26.2.0.dist-info/licenses/LICENSE.md",
-    "Produits/Babydoll-01/POC/LearnPyBullet/pybulletEnv/lib/python3.10/site-packages/pybullet_data/tray/tray.jpg",
-    "Produits/Babydoll-01/POC/LearnPyBullet/pybulletEnv/lib/python3.10/site-packages/pybullet_data/table/table.png",
-    "Produits/Babydoll-01/POC/Learn PyBullet/pybulletEnv/lib/python3.10/site-packages/debugpy/_vendored/pydevd/pydevd_plugins/extensions/README.md",
-    "Produits/Babydoll-01/POC/Learn PyBullet/pybulletEnv/lib/python3.10/site-packages/zmq/backend/cffi/README.md",
-    "Produits/Babydoll-01/POC/Learn PyBullet/pybulletEnv/lib/python3.10/site-packages/pyzmq-26.2.0.dist-info/licenses/LICENSE.md",
-    "Produits/Babydoll-01/POC/Design hexapod (FreeCAD)/Design hexapod.md",
-    "Produits/Babydoll-01/POC/Design hexapod/Design hexapod.md",
-    "Produits/Babydoll-01/POC/Walk Arduino/PCA9685/PCA9685.md",
-    "Produits/Babydoll-01/POC/Learn PyBullet/Learn PyBullet.md",
-    "Produits/Babydoll-01/POC/LearnFreeCAD/Learn FreeCAD.md",
-    "Bus servo controller.md",
-    "Step down voltage regulator.md",
-    "Produits/Babydoll-01/Babydoll-01.canvas",
-    "Produits/Produits.canvas"
+    "Produits/Babydoll-01/Babydoll-01.canvas"
   ]
 }

@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"9fde8e3cb96c1ddc","x":720,"y":760,"width":1480,"height":440,"type":"group","label":"Build Circuit"},
+		{"id":"fda3c1c97c888b89","x":-498,"y":-1220,"width":1438,"height":440,"type":"group","label":"Investigate modules"},
+		{"id":"65c7d4ba5345c4b2","type":"file","file":"Produits/Babybot-01/Electronic-01/Investigate Alimentation.md","x":-478,"y":-1200,"width":400,"height":400},
+		{"id":"3789dddca43cc927","type":"file","file":"Produits/Babybot-01/Electronic-01/Investigate Multiplexer.md","x":20,"y":-1200,"width":400,"height":400},
+		{"id":"d932401b3e049c56","x":520,"y":-1200,"width":400,"height":400,"type":"file","file":"Investigate Battery Sensor.md"},
+		{"id":"95e73e28aca44082","type":"file","file":"Produits/Babybot-01/Electronic-01/Design Schematic.md","x":20,"y":-202,"width":400,"height":400},
+		{"id":"f675cba4f75157ce","type":"file","file":"Produits/Babybot-01/Electronic-01/Learn PCB design.md","x":-600,"y":-202,"width":400,"height":400},
+		{"id":"6ac48948d349e60e","x":640,"y":-202,"width":400,"height":400,"type":"file","file":"Produits/Babybot-01/Electronic-01/Design PCB.md"},
+		{"id":"39c14edcb730cf5a","x":1260,"y":-202,"width":400,"height":400,"type":"file","file":"Produits/Babybot-01/Electronic-01/Build circuit.md"},
+		{"id":"0c2bcbac45b4b35d","x":1780,"y":780,"width":400,"height":400,"type":"file","file":"Produits/Babybot-01/Electronic-01/Assembly.md"},
+		{"id":"dd6b6895aa0e60ed","x":740,"y":780,"width":400,"height":400,"type":"file","file":"Produits/Babybot-01/Electronic-01/Print circuit.md"},
+		{"id":"5c7436de130854e6","x":1260,"y":780,"width":400,"height":400,"type":"file","file":"Produits/Babybot-01/Electronic-01/Order components.md"},
+		{"id":"cf32e89ba91707f7","x":1880,"y":-202,"width":400,"height":400,"type":"file","file":"Produits/Babybot-01/Electronic-01/Tests an validate.md"}
+	],
+	"edges":[
+		{"id":"78ed8daed86db4e7","fromNode":"fda3c1c97c888b89","fromSide":"bottom","toNode":"95e73e28aca44082","toSide":"top"},
+		{"id":"0f687f9ee2ea58da","fromNode":"f675cba4f75157ce","fromSide":"right","toNode":"95e73e28aca44082","toSide":"left"},
+		{"id":"a7ee013810bcd61e","fromNode":"95e73e28aca44082","fromSide":"right","toNode":"6ac48948d349e60e","toSide":"left"},
+		{"id":"75f45c7ad02b71e8","fromNode":"9fde8e3cb96c1ddc","fromSide":"top","toNode":"39c14edcb730cf5a","toSide":"bottom"},
+		{"id":"da1b07950eb5bc9d","fromNode":"6ac48948d349e60e","fromSide":"right","toNode":"39c14edcb730cf5a","toSide":"left"},
+		{"id":"36576b4db563fd51","fromNode":"39c14edcb730cf5a","fromSide":"right","toNode":"cf32e89ba91707f7","toSide":"left"}
+	]
+}
