@@ -1,0 +1,1 @@
+The objective is to develop a mechanical robot more efficient than the first one.

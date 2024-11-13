@@ -4,7 +4,7 @@
 		{"id":"fda3c1c97c888b89","x":-498,"y":-1220,"width":1438,"height":440,"type":"group","label":"Investigate modules"},
 		{"id":"65c7d4ba5345c4b2","type":"file","file":"Produits/Babybot-01/Electronic-01/Investigate Alimentation.md","x":-478,"y":-1200,"width":400,"height":400},
 		{"id":"3789dddca43cc927","type":"file","file":"Produits/Babybot-01/Electronic-01/Investigate Multiplexer.md","x":20,"y":-1200,"width":400,"height":400},
-		{"id":"d932401b3e049c56","x":520,"y":-1200,"width":400,"height":400,"type":"file","file":"Investigate Battery Sensor.md"},
+		{"id":"d932401b3e049c56","x":520,"y":-1200,"width":400,"height":400,"type":"file","file":"Produits/Babybot-01/Mechanical-01/Investigate Battery Sensor.md"},
 		{"id":"95e73e28aca44082","type":"file","file":"Produits/Babybot-01/Electronic-01/Design Schematic.md","x":20,"y":-202,"width":400,"height":400},
 		{"id":"f675cba4f75157ce","type":"file","file":"Produits/Babybot-01/Electronic-01/Learn PCB design.md","x":-600,"y":-202,"width":400,"height":400},
 		{"id":"6ac48948d349e60e","x":640,"y":-202,"width":400,"height":400,"type":"file","file":"Produits/Babybot-01/Electronic-01/Design PCB.md"},

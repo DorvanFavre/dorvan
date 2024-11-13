@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"c55566b3066df8d1","x":-280,"y":-160,"width":2080,"height":1080,"type":"group","label":"Untitled group"},
+		{"id":"64de5853a9133f80","type":"file","file":"Produits/Babybot-01/Mechanical-02/Investigate 3D printing méthode.md","x":-231,"y":-73,"width":400,"height":400},
+		{"id":"e9f44c0334e27c6e","type":"file","file":"Produits/Babybot-01/Mechanical-02/Investigate motors.md","x":280,"y":-73,"width":400,"height":400},
+		{"id":"8d38b98a2076796f","type":"file","file":"Produits/Babybot-01/Mechanical-02/Investigate Spline.md","x":280,"y":440,"width":400,"height":400},
+		{"id":"3353ed4de5df6cdc","type":"file","file":"Produits/Babybot-01/Mechanical-02/Investigate hexapode théorie.md","x":-231,"y":440,"width":400,"height":400},
+		{"id":"13c42968a5b2cb29","x":800,"y":440,"width":400,"height":400,"type":"file","file":"Produits/Babybot-01/Mechanical-02/Investigate Cables management.md"},
+		{"id":"cce70eba5c6d2197","x":800,"y":-73,"width":400,"height":400,"type":"file","file":"Produits/Babybot-01/Mechanical-02/Investigate Foot sensor.md"},
+		{"id":"6a407a8c68f872ea","x":1320,"y":-73,"width":400,"height":400,"type":"file","file":"Produits/Babybot-01/Mechanical-02/Investigate Joint friction.md"},
+		{"id":"75dca7ae4debbbfd","x":1320,"y":440,"width":400,"height":400,"type":"file","file":"Produits/Babybot-01/Mechanical-02/Investigate Foot friction.md"},
+		{"id":"a28b0e94b75137c0","type":"file","file":"Produits/Babybot-01/Mechanical-02/Design leg.md","x":80,"y":1120,"width":400,"height":400},
+		{"id":"a18f23dcd15220db","type":"file","file":"Produits/Babybot-01/Mechanical-02/Build leg.md","x":880,"y":1120,"width":400,"height":400},
+		{"id":"4a40d2db8101da78","x":2440,"y":1120,"width":400,"height":400,"type":"file","file":"Produits/Babybot-01/Mechanical-02/Build robot.md"},
+		{"id":"3a484f2cb831afa8","x":1640,"y":1120,"width":400,"height":400,"type":"file","file":"Produits/Babybot-01/Mechanical-02/Evaluate and validate.md"},
+		{"id":"bec431123f1606ca","x":1640,"y":1800,"width":400,"height":400,"type":"file","file":"Produits/Babybot-01/Mechanical-02/Investigate KPIs.md"},
+		{"id":"579fa520879be232","type":"file","file":"Produits/Babybot-01/Mechanical-02/Investigate 3D modeling tool.md","x":880,"y":1800,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"d491b7c2b735a529","fromNode":"c55566b3066df8d1","fromSide":"bottom","toNode":"a28b0e94b75137c0","toSide":"top"},
+		{"id":"b55b8c19564f1f93","fromNode":"a28b0e94b75137c0","fromSide":"right","toNode":"a18f23dcd15220db","toSide":"left"},
+		{"id":"b83fdb3a85b334d5","fromNode":"579fa520879be232","fromSide":"top","toNode":"a18f23dcd15220db","toSide":"bottom"},
+		{"id":"7ca729f2c7bfaf1b","fromNode":"bec431123f1606ca","fromSide":"top","toNode":"3a484f2cb831afa8","toSide":"bottom"},
+		{"id":"bda9a5b289f34516","fromNode":"a18f23dcd15220db","fromSide":"right","toNode":"3a484f2cb831afa8","toSide":"left"},
+		{"id":"640a5cd3815f4d9e","fromNode":"3a484f2cb831afa8","fromSide":"right","toNode":"4a40d2db8101da78","toSide":"left"}
+	]
+}
