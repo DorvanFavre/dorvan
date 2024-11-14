@@ -8,38 +8,36 @@
         "type": "tabs",
         "children": [
           {
-            "id": "56a1c323625e5477",
+            "id": "53ef49db26c00681",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Produits/Babybot-01/Informatic-01/Informatic-01.canvas",
+                "file": "Produits/Babybot-01/Mechanical-02/Mechanical-02.canvas",
                 "viewState": {
-                  "x": 293.1132883901109,
-                  "y": 122.90395013590656,
-                  "zoom": -0.40000000000000013
+                  "x": 227.69847788815179,
+                  "y": 146.70840945940677,
+                  "zoom": -0.2142967059167964
                 }
               },
               "pinned": true,
               "icon": "lucide-layout-dashboard",
-              "title": "Informatic-01"
+              "title": "Mechanical-02"
             }
           },
           {
-            "id": "0d019fd92e03c39b",
+            "id": "17010084403e7af1",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Produits/Babybot-01/Informatic-01/Informatic-01.md",
+                "file": "Produits/Babybot-01/Mechanical-02/Investigate motors.md",
                 "mode": "source",
                 "source": false
               },
-              "pinned": true,
               "icon": "lucide-file",
-              "title": "Informatic-01"
+              "title": "Investigate motors"
             }
           }
         ],
@@ -184,25 +182,40 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0d019fd92e03c39b",
+  "active": "17010084403e7af1",
   "lastOpenFiles": [
-    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/05_rename.ipynb",
-    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/04_stand copy.ipynb",
-    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/04_stand.ipynb",
-    "Produits/Babybot-01/Informatic-01/Create robot URDF/Generate_robot_urdf.ipynb",
-    "Produits/Babybot-01/Informatic-01/Create robot URDF/09_generate_robot_urdf.ipynb",
+    "Produits/Babybot-01/Mechanical-02/Mechanical-02.canvas",
+    "Produits/Babybot-01/Mechanical-02/Investigate hexapode théorie.md",
+    "Produits/Babybot-01/Mechanical-02/Investigate hexapod theory/Design_Analysis_and_Experiments_of_Hexapod_Robot_w.pdf",
+    "Produits/Babybot-01/Mechanical-02/Investigate hexapod theory",
+    "Produits/Babybot-01/Mechanical-02/Investigate charging and battery.md",
+    "Produits/Babybot-01/Mechanical-01/Battery.md",
+    "Produits/Babybot-01/Babybot-01.md",
+    "Produits/Babybot-01/Concept.md",
+    "Produits/Babybot-01/Informatic-01/Informatic-01.md",
+    "Produits/Babybot-01/Informatic-01/Create_environment/Create environment.md",
+    "Produits/Babybot-01/Informatic-01/Create_environment/environment/babybot01_env/data/hexapod.urdf",
+    "Produits/Babybot-01/Informatic-01/Create_environment/environment/babybot01_env/data",
+    "Produits/Babybot-01/Informatic-01/Create_environment/environment/babybot01_env/envs/hexapod.urdf",
+    "Produits/Babybot-01/Informatic-01/Create_environment/environment/babybot01_env/envs/hexapod_2.urdf",
+    "Produits/Babybot-01/Informatic-01/Create_environment/backup/spidy_01.py",
+    "Produits/Babybot-01/Informatic-01/Create_environment/backup/spidy.py",
+    "Produits/Babybot-01/Informatic-01/Create_environment/backup",
+    "Produits/Babybot-01/Informatic-01/LearnPyBullet/pybulletEnv/bin/tqdm",
+    "Produits/Babybot-01/Informatic-01/Informatic-01.canvas",
+    "Produits/Babybot-01/Informatic-01/Create environment/environment/README.md",
+    "Produits/Babybot-01/Informatic-01/Create_environment/environment/README.md",
+    "Produits/Babybot-01/Informatic-01/Create environment/Environment/README.md",
+    "Produits/Babybot-01/Informatic-01/Create environment.md",
+    "Produits/Babybot-01/Informatic-01/Create environment/Create environment.md",
     "Produits/Produits.canvas",
     "Produits/Produits.md",
-    "Produits/Babybot-01/Concept.md",
     "Produits/Babybot-01/Babybot-01.canvas",
-    "Produits/Babybot-01/Babybot-01.md",
     "Produits/Babybot-01/Marketing.md",
     "Produits/Babybot-01/Sales.md",
     "Produits/Babybot-01/RH.md",
     "Produits/Babybot-01/MVP.md",
     "Produits/Babybot-01/Production.md",
-    "Produits/Babybot-01/Informatic-01/Informatic-01.md",
-    "Produits/Babybot-01/Mechanical-02/Mechanical-02.canvas",
     "Produits/Babybot-01/Mechanical-01/Investiguer behavior.md",
     "Produits/Babybot-01/Mechanical-01/Investigate simulator.md",
     "Produits/Babybot-01/Mechanical-01/Mechanical-01.canvas",
@@ -212,25 +225,9 @@
     "Produits/Babybot-01/Mechanical-01/Investigate vision.md",
     "Entreprise.md",
     "Entreprise.canvas",
-    "Produits/Babybot-01/Mechanical-01/Battery.md",
-    "Produits/Babybot-01/Mechanical-01/Walk RL sim.md",
-    "Untitled.md",
-    "Untitled 1.md",
-    "Produits/Babybot-01/Mechanical-01/Walk RL IRL.md",
-    "Produits/Babybot-01/Mechanical-01/Use RaspberryPi3.md",
     "Produits/Babybot-01/Mechanical-01/Pasted image 20241005112104.png",
     "Pasted image 20241027174945.png",
     "Pasted image 20241027180524.png",
-    "Produits/Babybot-01/Mechanical-01/Draw exapod prototype.md",
-    "Produits/Babybot-01/Mechanical-01/buy battery.md",
-    "Produits/Babybot-01/Mechanical-01/Bus servo controller.md",
-    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/hexapod_2.urdf",
-    "Produits/Babybot-01/Informatic-01/Informatic-01.canvas",
-    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/textured_sphere_smooth.obj",
-    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/sphere.urdf",
-    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/hexapod_2 copy.urdf",
-    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/04_rename.ipynb",
-    "Produits/Babybot-01/Informatic-01/Create robot URDF/hexapod_2.urdf",
     "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/pybulletEnv/share/jupyter/kernels/python3/logo-svg.svg",
     "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/pybulletEnv/share/jupyter/kernels/python3/logo-64x64.png",
     "Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/pybulletEnv/share/jupyter/kernels/python3/logo-32x32.png",
