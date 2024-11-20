@@ -14,7 +14,7 @@ Reproduce and understand all the examples of pybullet.
 ****
 
 pip install pybullet 
-pip install numpy\==1.23
+pip install numpy\==1.23.5
 pip install --upgrade pip setuptools wheel
 
 

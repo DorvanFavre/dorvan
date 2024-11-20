@@ -4,11 +4,13 @@
 		{"id":"d0c44f365cfa2d25","type":"file","file":"Produits/Babybot-01/Informatic-01/LearnPyBullet/Learn PyBullet.md","x":80,"y":-960,"width":400,"height":400,"color":"4"},
 		{"id":"c42fd28f52789c1c","type":"file","file":"Produits/Babybot-01/Informatic-01/Create robot URDF/Create robot URDF.md","x":-480,"y":-160,"width":400,"height":400,"color":"4"},
 		{"id":"15ea7db6c3ca8e7c","type":"file","file":"Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/Simulate robot and walk with IK.md","x":80,"y":-160,"width":400,"height":400,"color":"4"},
-		{"id":"75e10d2d1d751fef","type":"file","file":"Produits/Babybot-01/Informatic-01/Learn RL/Tuto RL.md","x":1320,"y":-960,"width":400,"height":400},
+		{"id":"75e10d2d1d751fef","type":"file","file":"Produits/Babybot-01/Informatic-01/Learn RL/Learn RL.md","x":1320,"y":-960,"width":400,"height":400,"color":"3"},
 		{"id":"2f7f3510cec614e2","type":"file","file":"Produits/Babybot-01/Informatic-01/Read RL book.md","x":1800,"y":-960,"width":400,"height":400,"color":"4"},
 		{"id":"81544e4aad8f2bce","type":"file","file":"Produits/Babybot-01/Informatic-01/Train robot to walk with RL.md","x":1600,"y":-160,"width":400,"height":400},
 		{"id":"282ea8dfaf57864b","type":"file","file":"Produits/Babybot-01/Informatic-01/Deploy in reality.md","x":2320,"y":-160,"width":400,"height":400},
-		{"id":"22cd5a76af23116a","type":"file","file":"Produits/Babybot-01/Informatic-01/Create_environment/Create environment.md","x":760,"y":-160,"width":400,"height":400,"color":"3"}
+		{"id":"22cd5a76af23116a","type":"file","file":"Produits/Babybot-01/Informatic-01/Create_environment/Create environment.md","x":760,"y":-160,"width":400,"height":400,"color":"4"},
+		{"id":"3df32ff467acbbf3","type":"file","file":"Produits/Babybot-01/Informatic-01/Setup Jetson Orin Nano.md","x":-480,"y":600,"width":400,"height":400,"color":"3"},
+		{"id":"370f012b0a755175","x":1320,"y":-1440,"width":400,"height":400,"color":"3","type":"file","file":"Produits/Babybot-01/Informatic-01/Use colab/Use Colab.md"}
 	],
 	"edges":[
 		{"id":"f1751ae60dbf965a","fromNode":"d0c44f365cfa2d25","fromSide":"bottom","toNode":"15ea7db6c3ca8e7c","toSide":"top"},
