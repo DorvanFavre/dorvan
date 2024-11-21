@@ -12,18 +12,37 @@ https://developer.nvidia.com/embedded/learn/jetson-orin-nano-devkit-user-guide/i
 Developer, getting started
 https://developer.nvidia.com/embedded/learn/getting-started-jetson#tutorials
 
-**Github**
-Dusty-nv:
-https://github.com/dusty-nv/jetson-inference#deploying-deep-learning
-
 Tensor RT
 https://developer.nvidia.com/tensorrt
 
 
+## Tasks
+
+Guide on Dusty-nv repo:
+https://github.com/dusty-nv/jetson-inference#deploying-deep-learning
+
+- [x] Setting up Jetson with Jetpack
+- [ ] Running the Docker container
+- [x] Building the project from source
+- [ ] Image classification
+- [ ] 
+
+
+
+
 ## Memo
+
+### Versions
 
 **Check Jetpack version**
 `dpkg-query --show nvidia-l4t-core
+
+Tensorrt : 10.3.0
+`pip list`
+
+**Models**
+Onnx model zoo
+https://onnx.ai/models/
 `
 
 
