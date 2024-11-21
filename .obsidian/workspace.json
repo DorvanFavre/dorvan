@@ -1,0 +1,209 @@
+{
+  "main": {
+    "id": "0a5461e5bee93e3f",
+    "type": "split",
+    "children": [
+      {
+        "id": "7db81abb8ce7a25c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d7e52a87b9a29cbb",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Babybot/Produits/Babybot-01/Informatic-01/Informatic-01.canvas",
+                "viewState": {
+                  "x": 95,
+                  "y": 856.8699999999998,
+                  "zoom": 0
+                }
+              },
+              "pinned": true,
+              "icon": "lucide-layout-dashboard",
+              "title": "Informatic-01"
+            }
+          },
+          {
+            "id": "010d9ed8719a95ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Babybot/Produits/Babybot-01/Informatic-01/Setup Jetson Orin Nano.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Setup Jetson Orin Nano"
+            }
+          },
+          {
+            "id": "b65b180332b33953",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Babybot/Produits/Babybot-01/Mechanical-01/Mechanical-01.canvas",
+                "viewState": {
+                  "x": 3970.5,
+                  "y": 4445,
+                  "zoom": -1.9303973484931483
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Mechanical-01"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "69af35d96435a938",
+    "type": "split",
+    "children": [
+      {
+        "id": "7bf8d36d8be0cdee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0935cbaa288c253e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "5bc83577dfe01786",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "be0740fd7313b32b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8af7f1c34e5a17db",
+    "type": "split",
+    "children": [
+      {
+        "id": "4bd471451c357d4a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "35d0a9b74698ff2d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Babydoll/Produits/Babybot-01/Informatic-01/Setup Jetson Orin Nano.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Setup Jetson Orin Nano"
+            }
+          },
+          {
+            "id": "ac54911fbef3218f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Babydoll/Produits/Babybot-01/Informatic-01/Setup Jetson Orin Nano.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Setup Jetson Orin Nano"
+            }
+          },
+          {
+            "id": "315a3067fbea1f26",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "cce6024e541dc87c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Babydoll/Produits/Babybot-01/Informatic-01/Setup Jetson Orin Nano.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Setup Jetson Orin Nano"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "b65b180332b33953",
+  "lastOpenFiles": [
+    "Babybot/Produits/Babybot-01/Informatic-01/Informatic-01.canvas",
+    "Babybot/Produits/Babybot-01/Informatic-01/Setup Jetson Orin Nano.md",
+    "Babydoll/Produits/Babybot-01/Informatic-01/Setup Jetson Nano.md",
+    "Babybot/Produits/Babybot-01/Informatic-01/Informatic-01.md"
+  ]
+}
