@@ -7,7 +7,7 @@ if [[ -n $(git status --porcelain) ]]; then
     echo "Des modifications ont été détectées. Ajout de tous les fichiers..."
     
     # Ajoute tous les fichiers modifiés ou nouveaux
-    git add *
+    git add -A
     
     # Commit avec un message par défaut
     commit_message="Auto-commit on $(date)"
