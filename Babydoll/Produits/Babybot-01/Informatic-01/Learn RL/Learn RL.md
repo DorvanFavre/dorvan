@@ -48,7 +48,16 @@ Find a tuto to learn a robot to walk and adapt it to my hexapod.
 
 dqn_cartpole_v1
 local, cpu, 1 env: 600 it/s
+
 ![[Pasted image 20241118151543.png]]
+
+host, cpu, 4 env: 1800 it/s
+Normalization is useless
+
+![[Pasted image 20241122143210.png]]
+
+explorate_fraction = 0.5
+![[Pasted image 20241122150932.png]]
 
 #### A2C
 a2c_cartpole_v1
