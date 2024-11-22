@@ -16,8 +16,8 @@
               "state": {
                 "file": "Produits/Babybot-01/Informatic-01/Informatic-01.canvas",
                 "viewState": {
-                  "x": 356.2511089884424,
-                  "y": 742.2464880803448,
+                  "x": 566.2207666940691,
+                  "y": 1419.0188032087485,
                   "zoom": -1.2000000000000002
                 }
               },
@@ -39,9 +39,50 @@
               "icon": "lucide-file",
               "title": "Learn Jetson Orin Nano"
             }
+          },
+          {
+            "id": "91ee2055a4134444",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Produits/Babybot-01/Informatic-01/Dustnv tuto.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Dustnv tuto"
+            }
+          },
+          {
+            "id": "b1c14753a98119c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Produits/Babybot-01/Informatic-01/STB3 on jetson.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "STB3 on jetson"
+            }
+          },
+          {
+            "id": "dba39c0b5f0cbba7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Produits/Babybot-01/Informatic-01/Pytorch on Jetson.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Pytorch on Jetson"
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -182,8 +223,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "74bb8b1b75d11639",
+  "active": "17010084403e7af1",
   "lastOpenFiles": [
+    "Produits/Babybot-01/Informatic-01/Dustnv tuto.md",
+    "Produits/Babybot-01/Informatic-01/Pytorch on Jetson.md",
+    "Produits/Babybot-01/Informatic-01/STB3 on jetson.md",
     "Produits/Babybot-01/Informatic-01/Informatic-01.canvas",
     "Produits/Babybot-01/Informatic-01/Learn Jetson Orin Nano.md",
     "Produits/Babybot-01/Informatic-01/Learn RL/Bipedal walker.md",
@@ -227,9 +271,6 @@
     "Produits/Produits.md",
     "Produits/Babybot-01/Babybot-01.canvas",
     "Produits/Babybot-01/Marketing.md",
-    "Produits/Babybot-01/Sales.md",
-    "Produits/Babybot-01/RH.md",
-    "Produits/Babybot-01/MVP.md",
     "Produits/Babybot-01/Mechanical-01/Mechanical-01.canvas",
     "Entreprise.canvas",
     "Produits/Babybot-01/Mechanical-01/Pasted image 20241005112104.png",

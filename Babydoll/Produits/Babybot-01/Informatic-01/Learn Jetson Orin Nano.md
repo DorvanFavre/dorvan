@@ -16,23 +16,15 @@ Tensor RT
 https://developer.nvidia.com/tensorrt
 
 
-## Tasks
-
-Guide on Dusty-nv repo:
-https://github.com/dusty-nv/jetson-inference#deploying-deep-learning
-
-- [x] Setting up Jetson with Jetpack
-- [ ] Running the Docker container
-- [x] Building the project from source
-- [ ] Image classification
-- [ ] 
-
-
-
 
 ## Memo
 
-### Versions
+**PIP**
+```
+which pip
+pip list
+show pip torch
+```
 
 **Check Jetpack version**
 `dpkg-query --show nvidia-l4t-core
@@ -43,8 +35,24 @@ Tensorrt : 10.3.0
 **Models**
 Onnx model zoo
 https://onnx.ai/models/
-`
 
+**Mount Swap memory**
+`sudo systemctl disable nvzramconfig`
+`sudo fallocate -l 4G /mnt/4GB.swap`
+`sudo mkswap /mnt/4GB.swap`
+`sudo swapon /mnt/4GB.swap`
+
+Then add the following line to the end of `/etc/fstab` to make the change persistent:
+
+```shell
+/mnt/4GB.swap  none  swap  sw 0  0
+```
+
+**Disable GUI**
+sudo init 3
+dorvan
+6956
+sudo init 5
 
 
 
