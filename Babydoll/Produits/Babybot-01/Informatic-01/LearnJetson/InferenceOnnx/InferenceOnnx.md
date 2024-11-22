@@ -1,14 +1,16 @@
 Try to do inferences with a trained onnx model.
 
+### Export stb3 trained model to onnx
 
-## Strategie 1
+**Ressources**
+STB3 export: https://stable-baselines3.readthedocs.io/en/master/guide/export.html
+Onnx runtime: https://onnxruntime.ai/
 
-Inference using python and PyTorch.
+**Project**
+LearnRL/toys_12.ipynb
 
-### Find a trained onnx model
-
-TODO
-
+**Results**
+YES
 ### Inference with this model
 
 TODO
