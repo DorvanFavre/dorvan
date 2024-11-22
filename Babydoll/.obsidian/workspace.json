@@ -16,7 +16,7 @@
               "state": {
                 "file": "Produits/Babybot-01/Informatic-01/Informatic-01.canvas",
                 "viewState": {
-                  "x": 566.2207666940691,
+                  "x": 827.6818744171114,
                   "y": 1087.8490674631032,
                   "zoom": -1.2000000000000002
                 }
@@ -27,17 +27,36 @@
             }
           },
           {
+            "id": "6e525d6fddd8060d",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Produits/Babybot-01/Informatic-01/LearnJetson/LearnJetson.canvas",
+                "viewState": {
+                  "x": -160,
+                  "y": 31.59999999999998,
+                  "zoom": -1.6
+                }
+              },
+              "pinned": true,
+              "icon": "lucide-layout-dashboard",
+              "title": "LearnJetson"
+            }
+          },
+          {
             "id": "7ed4d4358e5fd7e8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Produits/Babybot-01/Informatic-01/Learn_Jetson/Learn Jetson Orin Nano.md",
+                "file": "Produits/Babybot-01/Informatic-01/LearnJetson/LearnJetson.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Learn Jetson Orin Nano"
+              "title": "LearnJetson"
             }
           },
           {
@@ -46,16 +65,61 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Produits/Babybot-01/Informatic-01/JetsonPytorch/JetsonPytorch.md",
+                "file": "Produits/Babybot-01/Informatic-01/LearnJetson/UseSTB3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JetsonPytorch"
+              "title": "UseSTB3"
+            }
+          },
+          {
+            "id": "a2454738b84a7471",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Produits/Babybot-01/Informatic-01/LearnJetson/InferenceOnnx/InferenceOnnx.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "InferenceOnnx"
+            }
+          },
+          {
+            "id": "5b92c7dd56f6a74d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Produits/Babybot-01/Informatic-01/LearnJetson/InferenceOnnx/InferenceOnnx.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "InferenceOnnx"
+            }
+          },
+          {
+            "id": "e0d3730338fe1697",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Produits/Babybot-01/Informatic-01/LearnJetson/LearnJetson.canvas",
+                "viewState": {
+                  "x": 100,
+                  "y": -80,
+                  "zoom": -0.8
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "LearnJetson"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -196,18 +260,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0cca01abbac281b7",
+  "active": "e0d3730338fe1697",
   "lastOpenFiles": [
+    "Produits/Babybot-01/Informatic-01/Informatic-01.canvas",
+    "Produits/Babybot-01/Informatic-01/LearnJetson/InferenceOnnx",
+    "Produits/Babybot-01/Informatic-01/LearnJetson/LearnJetson.canvas",
+    "Produits/Babybot-01/Informatic-01/LearnJetson/LearnJetson.md",
+    "Produits/Babybot-01/Informatic-01/LearnJetson/InferenceOnnx/InferenceOnnx.md",
+    "Produits/Babybot-01/Informatic-01/LearnJetson/UseSTB3.md",
+    "Produits/Babybot-01/Informatic-01/LearnJetson/JetsonPytorch/JetsonPytorch.md",
     "Produits/Babybot-01/Informatic-01/Informatic-01.md",
     "Produits/Babybot-01/Informatic-01/Read RL book.md",
     "Produits/Babybot-01/Informatic-01/Train robot to walk with RL.md",
     "Produits/Babybot-01/Informatic-01/STB3 on jetson.md",
-    "Produits/Babybot-01/Informatic-01/JetsonPytorch/JetsonPytorch.md",
     "Produits/Babybot-01/Informatic-01/Pytorch on Jetson.md",
-    "Produits/Babybot-01/Informatic-01/Informatic-01.canvas",
     "Produits/Babybot-01/Informatic-01/Dustnv tuto.md",
-    "Produits/Babybot-01/Informatic-01/Learn_Jetson/Learn Jetson Orin Nano.md",
-    "Produits/Babybot-01/Informatic-01/JetsonPytorch",
+    "Produits/Babybot-01/Informatic-01/LearnJetson/JetsonPytorch",
     "Produits/Babybot-01/Informatic-01/Learn Jetson Orin Nano.md",
     "Produits/Babybot-01/Informatic-01/Learn RL/Bipedal walker.md",
     "Pasted image 20241120125008.png",
@@ -220,7 +288,6 @@
     "Produits/Babybot-01/Informatic-01/Learn RL/ppo_walker_v1/model.zip",
     "Produits/Babybot-01/Informatic-01/Learn RL/ppo_walker_v1",
     "Produits/Babybot-01/Informatic-01/Learn RL/ppo_v1/t_logs/PPO_1/events.out.tfevents.1732100238.dorvan-HP-ENVY-x360-Convertible-15-cn0xxx.9188.0",
-    "Produits/Babybot-01/Informatic-01/Learn RL/ppo_v1/t_logs/PPO_1",
     "Pasted image 20241120112606.png",
     "Produits/Babybot-01/Informatic-01/LearnPyBullet/Learn PyBullet.md",
     "Produits/Babybot-01/Informatic-01/LearnPyBullet/pybulletEnv/lib/python3.10/site-packages/~umpy/random/LICENSE.md",
@@ -240,9 +307,6 @@
     "Produits/Babybot-01/Concept.md",
     "Produits/Babybot-01/Informatic-01/Create_environment/Create environment.md",
     "Produits/Babybot-01/Informatic-01/Create environment/environment/README.md",
-    "Produits/Babybot-01/Informatic-01/Create_environment/environment/README.md",
-    "Produits/Babybot-01/Informatic-01/Create environment/Environment/README.md",
-    "Produits/Babybot-01/Informatic-01/Create environment.md",
     "Produits/Produits.canvas",
     "Produits/Babybot-01/Babybot-01.canvas",
     "Produits/Babybot-01/Mechanical-01/Mechanical-01.canvas",
@@ -252,7 +316,6 @@
     "Pasted image 20241027180524.png",
     "Produits/Babybot-01/Electronic-01/Electronic-01.canvas",
     "Produits/Babybot-01/POC/POC.canvas",
-    "Produits/Babydoll-01/POC/POC.canvas",
-    "Produits/Babydoll-01/Babydoll-01.canvas"
+    "Produits/Babydoll-01/POC/POC.canvas"
   ]
 }
