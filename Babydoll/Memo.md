@@ -1,4 +1,18 @@
 
+## Linux
+
+### No GUI
+sudo init 3
+dorvan
+6956
+sudo init 5
+ctrl + alt + f* : change tty console
+
+### Memory usage
+nvidia-smi
+
+watch -n 1 free -h
+
 
 ## Git
 
@@ -15,9 +29,10 @@ source myEnv/bin/activate
 which pip
 deactivate
 
+source /home/dorvan/Documents/dorvan/Babydoll/Produits/Babybot-01/Informatic-01/venv/jetsonEnv/bin/activate
 
-## Nvidia
 
-```
-nvidia-smi
-```
+
+
+
+
