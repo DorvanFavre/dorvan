@@ -13,8 +13,10 @@ LearnRL/toys_12.ipynb
 YES
 ### Inference with this model
 
-TODO
+Yes
 
 **Evaluate performences**
 
 TODO
+
+

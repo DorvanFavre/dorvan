@@ -4,13 +4,14 @@
 		{"id":"d0c44f365cfa2d25","type":"file","file":"Produits/Babybot-01/Informatic-01/LearnPyBullet/Learn PyBullet.md","x":80,"y":-960,"width":400,"height":400,"color":"4"},
 		{"id":"c42fd28f52789c1c","type":"file","file":"Produits/Babybot-01/Informatic-01/Create robot URDF/Create robot URDF.md","x":-480,"y":-160,"width":400,"height":400,"color":"4"},
 		{"id":"15ea7db6c3ca8e7c","type":"file","file":"Produits/Babybot-01/Informatic-01/Simulate robot and walk with RL/Simulate robot and walk with IK.md","x":80,"y":-160,"width":400,"height":400,"color":"4"},
-		{"id":"75e10d2d1d751fef","type":"file","file":"Produits/Babybot-01/Informatic-01/Learn RL/Learn RL.md","x":1320,"y":-960,"width":400,"height":400,"color":"3"},
+		{"id":"75e10d2d1d751fef","type":"file","file":"Produits/Babybot-01/Informatic-01/LearnRL/Learn RL.md","x":1320,"y":-960,"width":400,"height":400,"color":"3"},
 		{"id":"2f7f3510cec614e2","type":"file","file":"Produits/Babybot-01/Informatic-01/Read RL book.md","x":1800,"y":-960,"width":400,"height":400,"color":"4"},
 		{"id":"81544e4aad8f2bce","type":"file","file":"Produits/Babybot-01/Informatic-01/Train robot to walk with RL.md","x":1600,"y":-160,"width":400,"height":400},
-		{"id":"282ea8dfaf57864b","type":"file","file":"Produits/Babybot-01/Informatic-01/Deploy in reality.md","x":2320,"y":-160,"width":400,"height":400},
 		{"id":"22cd5a76af23116a","type":"file","file":"Produits/Babybot-01/Informatic-01/Create_environment/Create environment.md","x":760,"y":-160,"width":400,"height":400,"color":"4"},
-		{"id":"3df32ff467acbbf3","type":"file","file":"Produits/Babybot-01/Informatic-01/LearnJetson/LearnJetson.md","x":-480,"y":600,"width":400,"height":400,"color":"3"},
-		{"id":"370f012b0a755175","type":"file","file":"Produits/Babybot-01/Informatic-01/Use colab/Use Colab.md","x":1320,"y":-1440,"width":400,"height":400,"color":"3"}
+		{"id":"370f012b0a755175","type":"file","file":"Produits/Babybot-01/Informatic-01/Use colab/Use Colab.md","x":1320,"y":-1440,"width":400,"height":400,"color":"3"},
+		{"id":"3df32ff467acbbf3","type":"file","file":"Produits/Babybot-01/Informatic-01/LearnJetson/LearnJetson.md","x":2400,"y":-960,"width":400,"height":400,"color":"3"},
+		{"id":"282ea8dfaf57864b","type":"file","file":"Produits/Babybot-01/Informatic-01/Deploy in reality.md","x":2400,"y":-160,"width":400,"height":400},
+		{"id":"617a1caaa5002d86","x":1320,"y":560,"width":400,"height":400,"type":"file","file":"Produits/Babybot-01/Informatic-01/Investigate Optuna.md"}
 	],
 	"edges":[
 		{"id":"f1751ae60dbf965a","fromNode":"d0c44f365cfa2d25","fromSide":"bottom","toNode":"15ea7db6c3ca8e7c","toSide":"top"},
@@ -20,6 +21,7 @@
 		{"id":"c67c1e794364e637","fromNode":"75e10d2d1d751fef","fromSide":"bottom","toNode":"81544e4aad8f2bce","toSide":"top"},
 		{"id":"71002405287a1341","fromNode":"2f7f3510cec614e2","fromSide":"bottom","toNode":"81544e4aad8f2bce","toSide":"top"},
 		{"id":"4ddada9f898e30aa","fromNode":"15ea7db6c3ca8e7c","fromSide":"right","toNode":"22cd5a76af23116a","toSide":"left"},
-		{"id":"70cba745fa7928d8","fromNode":"22cd5a76af23116a","fromSide":"right","toNode":"81544e4aad8f2bce","toSide":"left"}
+		{"id":"70cba745fa7928d8","fromNode":"22cd5a76af23116a","fromSide":"right","toNode":"81544e4aad8f2bce","toSide":"left"},
+		{"id":"20510f25ac97d6ab","fromNode":"3df32ff467acbbf3","fromSide":"bottom","toNode":"282ea8dfaf57864b","toSide":"top"}
 	]
 }

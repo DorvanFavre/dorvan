@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"id":"61d1ffa0ffc9d5ee","type":"file","file":"Produits/Babybot-01/Informatic-01/LearnJetson/InferenceOnnx/InferenceOnnx.md","x":-360,"y":-280,"width":400,"height":400},
+		{"id":"61d1ffa0ffc9d5ee","type":"file","file":"Produits/Babybot-01/Informatic-01/LearnJetson/InferenceOnnx/InferenceOnnx.md","x":-360,"y":-280,"width":400,"height":400,"color":"4"},
 		{"id":"90dc9d6b0e400601","type":"file","file":"Produits/Babybot-01/Informatic-01/LearnJetson/UseSTB3.md","x":160,"y":-280,"width":400,"height":400}
 	],
 	"edges":[]

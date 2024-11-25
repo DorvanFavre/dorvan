@@ -14,3 +14,10 @@ git remote set-url origin git@github.com:user/repository.git
 source myEnv/bin/activate
 which pip
 deactivate
+
+
+## Nvidia
+
+```
+nvidia-smi
+```
