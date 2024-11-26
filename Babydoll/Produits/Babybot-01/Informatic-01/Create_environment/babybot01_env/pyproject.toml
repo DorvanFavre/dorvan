@@ -7,7 +7,7 @@ packages = ["babybot01_env"]
 
 [project]
 name = "babybot01_env"
-version = "0.0.2"
+version = "0.1.0"
 dependencies = [
   "gymnasium",
   "pygame>=2.1.3",

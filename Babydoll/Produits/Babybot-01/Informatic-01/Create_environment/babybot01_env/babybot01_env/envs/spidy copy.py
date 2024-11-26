@@ -10,31 +10,40 @@ import math
 import importlib.resources
 
 
-SIM_F = 60.0
-TIME_STEP = 1.0/SIM_F
+SIM_F = 60
+TIME_STEP = 1/SIM_F
+POSITION_MIN = -np.pi/2
+POSITION_MAX = np.pi/2
 OBSERVATION_TYPE=np.float32
-ACTION_TYPE = np.float32
+ACTION_TYPE = np.int64
+POSITION_INCREMENT = np.pi / 180 # 1 degre per action
 
-
-
+class Actions(Enum):
+    INCREASE = 0
+    HOLD = 1
+    DECREASE = 2
 
 class SpidyEnv(gym.Env):
-    metadata = {"render_modes": ["human", "rgb_array", None]}
+    metadata = {"render_modes": ["human", "rgb_array"]}
 
-    def __init__(self, render_mode=None):
-        super().__init__()
-        
+    def __init__(self,render_mode=None):
+
         # self.observation_space = spaces.Dict(
         #     {
         #     "joints_position": spaces.Box(low=POSITION_MIN,high= POSITION_MAX, shape=(18,), dtype=OBSERVATION_TYPE)
         #     }
         # )
-        self.observation_space = spaces.Box(low=-1.0,high= 1.0, shape=(18,), dtype=OBSERVATION_TYPE)
-        #self._joints_position = np.zeros(18, dtype=OBSERVATION_TYPE)
+        self.observation_space = spaces.Box(low=POSITION_MIN,high= POSITION_MAX, shape=(18,), dtype=OBSERVATION_TYPE)
+        self._joints_position = np.zeros(18, dtype=OBSERVATION_TYPE)
 
-        self.action_space = spaces.Box(low=-1.0, high=1.0, shape=(18,), dtype=ACTION_TYPE)
+        self.action_space = spaces.MultiDiscrete(np.full(18, 3), dtype=ACTION_TYPE)
 
-        self._last_observation = np.zeros(18)
+        self._action_to_position_increment = {
+            Actions.INCREASE.value: POSITION_INCREMENT,
+            Actions.HOLD.value: 0.0,
+            Actions.DECREASE.value: -POSITION_INCREMENT
+        }
+
         assert render_mode is None or render_mode in self.metadata["render_modes"]
         self.render_mode = render_mode
 
@@ -69,9 +78,6 @@ class SpidyEnv(gym.Env):
         urdf_path = importlib.resources.files('babybot01_env.data') / 'hexapod.urdf'
         self._robot_id = p.loadURDF(str(urdf_path), useFixedBase=0, basePosition=[0, 0, 0.2], baseOrientation=[0, 0, 0, 1],)
 
-        # debug
-        #self._button_id = p.addUserDebugParameter("value",-1.0,1.0,0.0)
-
         # Joints info
         joint_index = {}
         self._revolute_joint_index = {}
@@ -101,17 +107,12 @@ class SpidyEnv(gym.Env):
                 lateralFriction=1,         # Lateral friction coefficient
                 contactStiffness=10.0,     # Stiffness of contact constraints
                 contactDamping=0.5,          # Damping of contact constraints
-            )
+    )
 
 
     def _get_obs(self):
-
-        joints_position = np.array([p.getJointState(self._robot_id, i)[0] for i in self._revolute_joint_index.values()])
-        mask = (np.arange(len(joints_position))+1) % 3 == 0
-        joints_position[mask] -= np.pi / 2.0
-        joints_position = joints_position / (np.pi / 2.0)
-        joints_position = np.clip(joints_position, self.observation_space.low, self.observation_space.high)
-        return joints_position.astype(OBSERVATION_TYPE)
+        #return {"joints_position": self._joints_position}
+        return self._joints_position
     
     def _get_info(self):
         return {
@@ -122,73 +123,57 @@ class SpidyEnv(gym.Env):
         super().reset(seed=seed)
 
         p.resetBasePositionAndOrientation(self._robot_id,[0,0,0.2],[0,0,0,1])
-        for i in self._revolute_joint_index.values():
-            p.resetJointState(self._robot_id, i, 0)
+        self._joints_position = np.random.uniform(POSITION_MIN,POSITION_MAX, 18).astype(OBSERVATION_TYPE)
 
         observation = self._get_obs()
-        self._last_observation = observation
         info = self._get_info()
         self._steps = 0
-
-        
-        #print(f"max episode steps: {self.spec.max_episode_steps}")
 
         return observation, info
 
     def step(self, action):
 
         # Action
-        #value = p.readUserDebugParameter(self._button_id)
-        
-        joints_position = action * (np.pi / 2.0)
-        mask = (np.arange(len(joints_position))+1) % 3 == 0
-        joints_position[mask] += np.pi / 2
-
+        increments = np.vectorize(self._action_to_position_increment.get)(action)
+        self._joints_position = np.clip(self._joints_position + increments, POSITION_MIN, POSITION_MAX).astype(OBSERVATION_TYPE)
 
         # Compute with PyBullet
         p.setJointMotorControlArray(self._robot_id,
                                     self._revolute_joint_index.values(),
                                     p.POSITION_CONTROL,
-                                    joints_position, 
+                                    self._adjust_joints_positions(), 
                                     forces=[5]*self._num_revolute_joint, 
-                                    positionGains=[0.2]*self._num_revolute_joint
+                                    positionGains=[0.5]*self._num_revolute_joint
                                     )
         
         p.stepSimulation()
         if self.render_mode == 'human':
             time.sleep(TIME_STEP)
 
-        observation = self._get_obs()
-
-        # Reward
-
-        velocities, _ = p.getBaseVelocity(self._robot_id)
-        xVelocity = velocities[0]
-        yVelocity = velocities[1]
-
+        # Return
         robot_state = p.getLinkState(self._robot_id,0)
         robot_position = list(robot_state[0])
+        self._distance = math.sqrt(robot_position[0]**2 + robot_position[1]**2)
+        healthy = 1 if robot_position[2] >= 0.04 and robot_position[2] <= 0.2 else 0
 
-        energy_penalty = np.sum(np.abs(observation - self._last_observation))
-
-        joints_velocities = np.array([p.getJointState(self._robot_id, i)[1] for i in self._revolute_joint_index.values()])
-        joint_velocity_penalty = np.sum(np.abs(joints_velocities))
-        
-        reward = 1+ xVelocity - yVelocity*0.1 - energy_penalty*0.01 - joint_velocity_penalty*0.01
-
-        terminated = False if robot_position[2] >= 0.04 and robot_position[2] <= 0.5 else True
-        truncated = (self._steps >= 6000)
-        
-        
+        terminated = self._distance >= 2
+        truncated = (self._steps >= SIM_F * 10)
+        reward = (self._distance * healthy) + (1000 if terminated else 0)
+        observation = self._get_obs()
         info = self._get_info()
 
         self._steps += 1
-        self._last_observation = observation
         return observation, reward, terminated, truncated, info
     
     def close(self):
         p.disconnect()
-        
+
+            
+    def _adjust_joints_positions(self):
+        new_joints_position = self._joints_position.copy()
+        mask = (np.arange(len(new_joints_position))+1) % 3 == 0
+        new_joints_position[mask] += np.pi / 2
+        return new_joints_position
 
 
 

@@ -25,7 +25,7 @@ def main():
 
     name = 'ppo_spidy_v1'
     env_id = "Spidy-v0"
-    n_steps = 600
+    n_steps = 6000
     n_envs = 1
 
     policy = 'MlpPolicy'
@@ -35,7 +35,7 @@ def main():
     device = 'cpu'
 
     def make_env(render_mode:str=None):
-        e = gym.make(env_id, render_mode=render_mode)
+        e = gym.make(env_id, max_episode_steps=n_steps, render_mode=render_mode)
         return e
 
     class SaveOnStep(BaseCallback):
@@ -60,7 +60,7 @@ def main():
     if args.action == "create":
         print("Creating a new model...")
         train_env = gym.make("Spidy-v0", render_mode="rgb_array")
-        model = PPO(policy,  train_env, batch_size=60, verbose=0, n_steps=n_steps)
+        model = PPO(policy,  train_env, batch_size=60, tensorboard_log=tensorboard_log, verbose=0, n_steps=n_steps)
         model.save(path)
 
     elif args.action == "train":
@@ -70,7 +70,7 @@ def main():
         eval_env = Monitor(make_env())
 
         eval_callback = EvalCallback(eval_env,
-                                    log_path=log_path, eval_freq=1000,
+                                    log_path=log_path, eval_freq=1e4,
                                     deterministic=True, render=False)
 
         class SaveOnStep(BaseCallback):
@@ -88,9 +88,12 @@ def main():
                     self.model.save(self.save_path)
                 return True
             
-        callbacks = [SaveOnStep(1000, path), eval_callback]
+        callbacks = [SaveOnStep(1e4, path), eval_callback]
         model = PPO.load(path,train_env ,device=device)
-        model.learn(total_timesteps=10000, progress_bar=True, callback=callbacks)
+        model.learn(total_timesteps=1e5,
+                    progress_bar=True, 
+                    callback=callbacks, 
+                    reset_num_timesteps=False)
         model.save(path)
         train_env.close()
 
@@ -102,18 +105,24 @@ def main():
 
         for episode in range(1):
 
+            episode_reward = 0
+            t = 0
             done = False
             obs, info = display_env.reset()
-            for t in tqdm(range(n_steps)):
+            while True:
+            #for t in tqdm(range(n_steps)):
 
                 action = model.predict(obs)[0]
                 
                 obs, reward, terminate, trunc, info = display_env.step(action)
-                
+                episode_reward += reward
                 # if t%10 ==0:
                 #     print(action)
+                t+=1
 
                 if terminate or trunc:
+                    mean_reward = episode_reward / t
+                    print(f"Episode total reward: {episode_reward}")
                     break
 
                 

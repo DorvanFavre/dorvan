@@ -10,6 +10,12 @@ ctrl + alt + f* : change tty console
 
 tmux
 
+### Add environment variable persistent
+sudo nano /etc/environment
+ABC = "/path/to/file"
+source /etc/environment
+echo $ABC
+
 ### Memory usage
 nvidia-smi
 
@@ -37,7 +43,7 @@ source /home/dorvan/Documents/dorvan/Babydoll/Produits/Babybot-01/Informatic-01/
 
 source /home/dorvan/Documents/dorvan/Babydoll/Produits/Babybot-01/Informatic-01/venv/hostEnv/bin/activate
 
+## Tensorboard
 
-
-
+tensorboard --logdir ./ppo_ant_v1/t_logs
 

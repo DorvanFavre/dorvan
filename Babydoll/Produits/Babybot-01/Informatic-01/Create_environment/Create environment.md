@@ -11,7 +11,7 @@ CartPoolEnv: https://github.com/bulletphysics/bullet3/blob/master/examples/pybul
 ==Follow the guide of Gymnasium==: https://gymnasium.farama.org/
 It explains how to create a custom environement and everything
 
-
+API : https://gymnasium.farama.org/api/env/
 
 **Install the environment**
 
