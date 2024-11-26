@@ -10,7 +10,7 @@ import math
 import importlib.resources
 
 
-SIM_F = 240
+SIM_F = 60
 TIME_STEP = 1/SIM_F
 POSITION_MIN = -np.pi/2
 POSITION_MAX = np.pi/2
@@ -127,6 +127,7 @@ class SpidyEnv(gym.Env):
 
         observation = self._get_obs()
         info = self._get_info()
+        self._steps = 0
 
         return observation, info
 
@@ -153,13 +154,16 @@ class SpidyEnv(gym.Env):
         robot_state = p.getLinkState(self._robot_id,0)
         robot_position = list(robot_state[0])
         self._distance = math.sqrt(robot_position[0]**2 + robot_position[1]**2)
+        healthy = 1 if robot_position[2] >= 0.04 and robot_position[2] <= 0.2 else 0
 
         terminated = self._distance >= 2
-        reward = self._distance
+        truncated = (self._steps >= SIM_F * 10)
+        reward = (self._distance * healthy) + (1000 if terminated else 0)
         observation = self._get_obs()
         info = self._get_info()
 
-        return observation, reward, terminated, False, info
+        self._steps += 1
+        return observation, reward, terminated, truncated, info
     
     def close(self):
         p.disconnect()

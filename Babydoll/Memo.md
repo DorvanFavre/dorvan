@@ -8,10 +8,14 @@ dorvan
 sudo init 5
 ctrl + alt + f* : change tty console
 
+tmux
+
 ### Memory usage
 nvidia-smi
 
 watch -n 1 free -h
+
+htop
 
 
 ## Git
@@ -31,6 +35,7 @@ deactivate
 
 source /home/dorvan/Documents/dorvan/Babydoll/Produits/Babybot-01/Informatic-01/venv/jetsonEnv/bin/activate
 
+source /home/dorvan/Documents/dorvan/Babydoll/Produits/Babybot-01/Informatic-01/venv/hostEnv/bin/activate
 
 
 

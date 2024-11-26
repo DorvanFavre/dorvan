@@ -24,6 +24,30 @@ Open console in the bin folder of the python virtual environment:
 
 ## Spidy-v0
 
-Observation space:
+Resources: https://gymnasium.farama.org/environments/mujoco/ant/
 
-position of the 18 joints (rad)
+**Terminated**
+Distance > 2 m
+
+**Truncated** 
+10 s = 60 fps * 10 = 600 timesteps
+
+**Action space:**
+Value of the 18 joints. From min (-1) to max (1). Angle are converted in the environment.
+Box(-1, 1, (18,), float32)
+
+
+**Observation space**:
+Position of the 18 joints. From min (-1) to max (1).
+
+**Rewards**
+Rewards = distance reward * healthy
+
+distance reward = distance (m) / step
+terminated reward = 1000
+healthy : 0.02 < z < 0.1
+
+
+#### Test host
+
+render_mode = None / 'rgb_array' : No difference
