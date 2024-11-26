@@ -8,6 +8,8 @@ dorvan
 sudo init 5
 ctrl + alt + f* : change tty console
 
+tmux
+
 ### Memory usage
 nvidia-smi
 
