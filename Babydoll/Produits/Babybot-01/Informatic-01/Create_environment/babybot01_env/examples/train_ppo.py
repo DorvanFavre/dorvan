@@ -23,9 +23,9 @@ def main():
     # SETUP
     
 
-    name = 'ppo_spidy_v2'
+    name = 'ppo_spidy_v2_5'
     env_id = "Spidy-v2"
-    n_steps = 6000
+    n_steps = 1200
     n_envs = 1
 
     policy = 'MlpPolicy'
@@ -81,14 +81,17 @@ def main():
                 info = self.locals['infos']
                 info = info[0]
 
+                # self.logger.record("rewards/x_velocity_reward", info["x_velocity_reward"])
+                # self.logger.record("rewards/y_velocity_unreward", info["y_velocity_unreward"])
+                self.logger.record("rewards/energy_reward", info["energy_reward"])
+                self.logger.record("rewards/orientation_reward", info["orientation_reward"])
                 self.logger.record("rewards/x_velocity_reward", info["x_velocity_reward"])
-                self.logger.record("rewards/y_velocity_unreward", info["y_velocity_unreward"])
 
                 return True
             
             
         callbacks = [
-            SaveOnStep(1e4, path), 
+            SaveOnStep(5e4, path), 
             #eval_callback,
             InfoCallback()
             ]
@@ -116,6 +119,7 @@ def main():
             #for t in tqdm(range(n_steps)):
 
                 action = model.predict(obs)[0]
+
                 
                 obs, reward, terminate, trunc, info = display_env.step(action)
                 episode_reward += reward
@@ -126,6 +130,7 @@ def main():
                 if terminate or trunc:
                     mean_reward = episode_reward / t
                     print(f"Episode total reward: {episode_reward}")
+                    print(f"Episode mean reward: {mean_reward}")
                     break
 
                 

@@ -160,24 +160,39 @@ class SpidyEnvV2(gym.Env):
 
         observation = self._get_obs()
 
-        # Reward
-
+        # Velocity reward
         velocities, _ = p.getBaseVelocity(self._robot_id)
         xVelocity = velocities[0]
+        x_velocity_reward = xVelocity * 1.0
+
         yVelocity = velocities[1]
 
         robot_state = p.getLinkState(self._robot_id,0)
         robot_position = list(robot_state[0])
 
-        x_velocity_reward = xVelocity
-        y_velocity_unreward = - yVelocity*0.1 
+        # Orientation reward
+        quaternion = np.array(robot_state[1])
+        quaternion /= np.linalg.norm(quaternion)
+        x, y, z, w = quaternion
+        up_z = 1 - 2 * (x**2 + y**2)  # This is the z-component of the up vector
+        orientation_reward = up_z  # P
+    
+    # Reward is 1 when z_component is close to 0 (horizontal) and 0 whe
+
         
-        reward = x_velocity_reward + y_velocity_unreward
+        y_velocity_unreward = - abs(yVelocity)*0.1 
+
+        # Energy reward
+        energy = sum(((action - observation) / 2) ** 2 ) / self._num_revolute_joint
+        energy_reward = min(1.0, 0.001/energy )
+
+    # Total reward
+        reward = energy_reward + orientation_reward + x_velocity_reward
 
         terminated = False if robot_position[2] >= 0.04 and robot_position[2] <= 0.5 else True
-        truncated = (self._steps >= 6000)
+        truncated = (self._steps >= 1200)
         
-        reward_info = {"x_velocity_reward": x_velocity_reward, "y_velocity_unreward":y_velocity_unreward}
+        reward_info = {"energy_reward":energy_reward, "orientation_reward":orientation_reward, "x_velocity_reward":x_velocity_reward}
         info = {**self._get_info(), **reward_info}
 
         self._steps += 1

@@ -1,11 +1,14 @@
 {
 	"nodes":[
-		{"id":"9ba72352dcfd65c9","type":"file","file":"Produits/Babydoll-01/POC/POC.md","x":-22,"y":122,"width":400,"height":400,"color":"3"},
-		{"id":"e2dcfd2a1300a96b","type":"file","file":"Produits/Babydoll-01/MVP.md","x":520,"y":122,"width":400,"height":400},
-		{"id":"a84c54c255575168","type":"file","file":"Produits/Babydoll-01/Marketing.md","x":1040,"y":640,"width":400,"height":400},
-		{"id":"c23fd91df46a6c1f","type":"file","file":"Produits/Babydoll-01/Production.md","x":1560,"y":122,"width":400,"height":400},
-		{"id":"f110f0aeaf4005a4","type":"file","file":"Produits/Babydoll-01/Concept.md","x":-560,"y":122,"width":400,"height":400,"color":"4"},
-		{"id":"6c2026632e7e5864","type":"file","file":"Produits/Babydoll-01/Sales.md","x":1040,"y":122,"width":400,"height":400}
+		{"id":"c9adca3bc694811a","type":"file","file":"Produits/Babybot-01/Informatic-01/Informatic-01.canvas","x":40,"y":220,"width":400,"height":400},
+		{"id":"d86b013b0935a0b4","type":"file","file":"Produits/Babybot-01/Mechanical-01/Mechanical-01.canvas","x":-460,"y":220,"width":400,"height":400},
+		{"id":"9d4dbea5afa1cd7e","x":-385,"y":100,"width":250,"height":60,"type":"text","text":"Octobre 2024"},
+		{"id":"da2a1a7cff55dfbc","x":115,"y":100,"width":250,"height":60,"type":"text","text":"Novembre 2024"},
+		{"id":"d22b899dbaf43aaf","x":615,"y":100,"width":250,"height":60,"type":"text","text":"Décembre 2024"},
+		{"id":"b4710f92e5ae6e5f","x":540,"y":220,"width":400,"height":400,"type":"file","file":"Produits/Babybot-01/Mechanical-02/Mechanical-02.canvas"}
 	],
-	"edges":[]
+	"edges":[
+		{"id":"e998b7ad99d709f3","fromNode":"d86b013b0935a0b4","fromSide":"right","toNode":"c9adca3bc694811a","toSide":"left"},
+		{"id":"17167d21015bded5","fromNode":"c9adca3bc694811a","fromSide":"right","toNode":"b4710f92e5ae6e5f","toSide":"left"}
+	]
 }
