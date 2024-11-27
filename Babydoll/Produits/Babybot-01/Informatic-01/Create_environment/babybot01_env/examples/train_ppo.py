@@ -90,7 +90,7 @@ def main():
             
         callbacks = [SaveOnStep(1e4, path), eval_callback]
         model = PPO.load(path,train_env ,device=device)
-        model.learn(total_timesteps=1e5,
+        model.learn(total_timesteps=10e6,
                     progress_bar=True, 
                     callback=callbacks, 
                     reset_num_timesteps=False)
