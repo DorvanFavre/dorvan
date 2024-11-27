@@ -23,8 +23,8 @@ def main():
     # SETUP
     
 
-    name = 'ppo_spidy_v1'
-    env_id = "Spidy-v0"
+    name = 'ppo_spidy_v2'
+    env_id = "Spidy-v2"
     n_steps = 6000
     n_envs = 1
 
@@ -37,29 +37,12 @@ def main():
     def make_env(render_mode:str=None):
         e = gym.make(env_id, max_episode_steps=n_steps, render_mode=render_mode)
         return e
-
-    class SaveOnStep(BaseCallback):
-        def __init__(self, steps: int, path: str, verbose: int = 0):
-            super().__init__(verbose)
-            self.steps = steps
-            self.save_path = path
-
-        def _on_step(self) -> bool:
-            # Check if the current step matches the saving frequency
-            if self.n_calls % self.steps == 0:
-                # Save model with the current timestep in the filename
-                if self.verbose > 0:
-                    print(f"Saving model at step {self.n_calls} to {self.save_path}")
-                self.model.save(self.save_path)
-            return True
-    
-    callbacks = [SaveOnStep(2.5e4, path)]
     
     
     # Call the appropriate function based on the action argument
     if args.action == "create":
         print("Creating a new model...")
-        train_env = gym.make("Spidy-v0", render_mode="rgb_array")
+        train_env = gym.make(env_id, render_mode="rgb_array")
         model = PPO(policy,  train_env, batch_size=60, tensorboard_log=tensorboard_log, verbose=0, n_steps=n_steps)
         model.save(path)
 
@@ -88,7 +71,27 @@ def main():
                     self.model.save(self.save_path)
                 return True
             
-        callbacks = [SaveOnStep(1e4, path), eval_callback]
+        class InfoCallback(BaseCallback):
+            def __init__(self, verbose=0):
+                super().__init__(verbose)
+
+            def _on_step(self) -> bool:
+                # Access the training environment's 'step_info' attribute
+                
+                info = self.locals['infos']
+                info = info[0]
+
+                self.logger.record("rewards/x_velocity_reward", info["x_velocity_reward"])
+                self.logger.record("rewards/y_velocity_unreward", info["y_velocity_unreward"])
+
+                return True
+            
+            
+        callbacks = [
+            SaveOnStep(1e4, path), 
+            #eval_callback,
+            InfoCallback()
+            ]
         model = PPO.load(path,train_env ,device=device)
         model.learn(total_timesteps=10e6,
                     progress_bar=True, 

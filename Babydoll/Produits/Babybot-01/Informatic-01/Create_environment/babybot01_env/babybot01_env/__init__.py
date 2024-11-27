@@ -8,3 +8,7 @@ register(
     id="Spidy-v0",
     entry_point="babybot01_env.envs:SpidyEnv",
 )
+register(
+    id="Spidy-v2",
+    entry_point="babybot01_env.envs:SpidyEnvV2",
+)
