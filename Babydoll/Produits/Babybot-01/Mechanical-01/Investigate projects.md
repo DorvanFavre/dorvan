@@ -30,11 +30,10 @@ Used controller:
 
 
 Guide : https://www.esolutions.tech/how-to-build-a-hexapod-part-1-mechanics
-- [ ] Look other guys #todo 
+- [ ] Look other guys 
 
 
 Hexapod from MarkWTech:  https://markwtech.com/robots/hexapod/ 
-- [ ] fully invest this guy #todo 
 
 Servo :
 - MG996R

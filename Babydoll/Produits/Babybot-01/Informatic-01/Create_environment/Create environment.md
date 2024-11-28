@@ -8,6 +8,8 @@ PyBullet Environement, agent, etc... : https://github.com/bulletphysics/bullet3/
 
 CartPoolEnv: https://github.com/bulletphysics/bullet3/blob/master/examples/pybullet/gym/pybullet_envs/bullet/cartpole_bullet.py
 
+https://github.com/bulletphysics/bullet3/blob/master/examples/pybullet/gym/pybullet_envs/baselines/enjoy_pybullet_cartpole.py
+
 ==Follow the guide of Gymnasium==: https://gymnasium.farama.org/
 It explains how to create a custom environement and everything
 
