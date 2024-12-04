@@ -16,14 +16,42 @@
               "state": {
                 "file": "Produits/Babybot-01/Informatic-01/Informatic-01.canvas",
                 "viewState": {
-                  "x": 2524.4942323526952,
-                  "y": 290.1675930405637,
+                  "x": 3339.6119637231436,
+                  "y": 220.33804425043868,
                   "zoom": -0.8311946216035947
                 }
               },
               "pinned": true,
               "icon": "lucide-layout-dashboard",
               "title": "Informatic-01"
+            }
+          },
+          {
+            "id": "e18b4312e387a0e9",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Produits/Babybot-01/Informatic-01/InvestigateCPG/Free_Gait_Transition_and_Stable_Motion_Generation_.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Free_Gait_Transition_and_Stable_Motion_Generation_"
+            }
+          },
+          {
+            "id": "67fca7db16965a8d",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Produits/Babybot-01/Informatic-01/NeuroMechFly/NeuroMechFly.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "NeuroMechFly"
             }
           },
           {
@@ -41,32 +69,6 @@
             }
           },
           {
-            "id": "a7d18a5ff770c148",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Produits/Babybot-01/Informatic-01/InvestigateCPG/17-ICRA2018_InertialCPG.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "17-ICRA2018_InertialCPG"
-            }
-          },
-          {
-            "id": "e5902c4e129b8d8f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Produits/Babybot-01/Informatic-01/Investigate hierarchical RL.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Investigate hierarchical RL"
-            }
-          },
-          {
             "id": "6d7b67cbad270309",
             "type": "leaf",
             "state": {
@@ -79,9 +81,49 @@
               "icon": "lucide-file",
               "title": "Organisation"
             }
+          },
+          {
+            "id": "b5b23ab1171d5ba4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Memo.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Memo"
+            }
+          },
+          {
+            "id": "c8a0897dacbf5c6a",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Produits/Babybot-01/Informatic-01/NeuroMechFly/NeuroMechFlyV2Paper.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "NeuroMechFlyV2Paper"
+            }
+          },
+          {
+            "id": "f8cde4a16039589a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/Walk With Simple CPG.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Walk With Simple CPG"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -112,7 +154,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Todo",
+                "query": "memo",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -222,59 +264,60 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6d7b67cbad270309",
+  "active": "f8cde4a16039589a",
   "lastOpenFiles": [
+    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/hexapod_2.urdf",
+    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/01_rename.ipynb",
+    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG",
     "Produits/Babybot-01/Informatic-01/Informatic-01.canvas",
-    "Produits/Babybot-01/Informatic-01/InvestigateCPG/TerrainAdaptationofHexapodRobotviaCentralPatternGeneratorandPolicyGradient.pdf",
-    "Produits/Babybot-01/Informatic-01/ExperimentCPGWalk/Experiment CPG walk.md",
-    "Produits/Babybot-01/Informatic-01/InvestigateCPG/Investigate CPG.md",
+    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/Walk With Simple CPG.md",
     "Produits/Babybot-01/Informatic-01/InvestigateCPG/Free_Gait_Transition_and_Stable_Motion_Generation_.pdf",
-    "Produits/Babybot-01/Mechanical-02/Investigate hexapod theory/Explore hexapod.md",
-    "Produits/Babybot-01/Mechanical-02/Investigate hexapod theory/Design_Analysis_and_Experiments_of_Hexapod_Robot_w.pdf",
-    "Produits/Babybot-01/Informatic-01/InvestigateCPG/The_gait_planning_of_hexapod_robot_based_on_CPG_wi.pdf",
-    "Produits/Babybot-01/Informatic-01/Investigate hierarchical RL.md",
-    "Produits/Babybot-01/Informatic-01/InvestigateCPG/17-ICRA2018_InertialCPG.pdf",
-    "Produits/Babybot-01/Mechanical-01/Learn inverse kinematic.md",
-    "Produits/Babybot-01/Mechanical-01/Investigate projects.md",
-    "Produits/Babybot-01/Informatic-01/InvestigateCPG/Programmable_central_pattern_generators_An_applica.pdf",
-    "Produits/Babybot-01/Informatic-01/InvestigateCPG",
-    "Produits/Babybot-01/Informatic-01/ExperimentCPGWalk",
-    "Produits/Babybot-01/Informatic-01/Investigate VAE.md",
-    "Produits/Babybot-01/Mechanical-02/Learn3DTool.md",
-    "Produits/Babybot-01/Mechanical-02/Investigate KPIs.md",
-    "Produits/Babybot-01/Mechanical-02/Mechanical-02.canvas",
-    "Produits/Babybot-01/Informatic-01/Explore CPG.md",
-    "Produits/Babybot-01/Informatic-01/CPG/Experiment CPG walk.md",
-    "Produits/Babybot-01/Informatic-01/CPG/TerrainAdaptationofHexapodRobotviaCentralPatternGeneratorandPolicyGradient.pdf",
-    "Produits/Babybot-01/Informatic-01/Create_environment/Create environment.md",
-    "Produits/Babybot-01/Informatic-01/LearnJetson/LearnJetson.canvas",
-    "Produits/Babybot-01/Informatic-01/Simulate robot and walk with IK/Simulate robot and walk with IK.md",
-    "Produits/Babybot-01/Mechanical-02/BuildRobot.md",
-    "Produits/Babybot-01/Informatic-01/WalkRL/Experiment Direct walk.md",
-    "Produits/Babybot-01/Informatic-01/CPG",
-    "Produits/Babybot-01/Informatic-01/Deploy in reality.md",
-    "Produits/Babybot-01/Mechanical-02/DesignRobot.md",
-    "Produits/Babybot-01/Mechanical-02/Investigate hexapode théorie.md",
-    "Produits/Babybot-01/Mechanical-02/PrototypeFootSensor.md",
-    "Produits/Babybot-01/Mechanical-01/Mechanical-01.canvas",
-    "Produits/Babybot-01/Mechanical-02/Experiment ABS.md",
-    "Produits/Babybot-01/Babybot-01.canvas",
-    "Pasted image 20241127165724.png",
+    "Produits/Babybot-01/Informatic-01/InvestigateCPG/Investigate CPG.md",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/NeuroMechFly.md",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/NeuroMechFlyV2Paper.pdf",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/outputs/rule_based_controller/rules_graph.png",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/outputs/rule_based_controller/preprogrammed_steps_call.png",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/outputs/rule_based_controller",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/networkx/__pycache__/relabel.cpython-310.pyc",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/networkx/__pycache__/lazy_imports.cpython-310.pyc",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/networkx/__pycache__/exception.cpython-310.pyc",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/networkx/__pycache__/convert_matrix.cpython-310.pyc",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/networkx/__pycache__/convert.cpython-310.pyc",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/networkx/drawing/tests/baseline/test_house_with_colors.png",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/outputs/cpg_controller/three_steps_amp_modulated.png",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/outputs/cpg_controller/three_steps_phase_only.png",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/outputs/cpg_controller/tripod_cpg_rollout.png",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/outputs/cpg_controller/simple_cpg_rollout.png",
     "Memo.md",
-    "Produits/Babybot-01/Informatic-01/LearnJetson/Power supply.md",
-    "Produits/Babybot-01/Mechanical-01/Jetson power supply.md",
-    "Produits/Babybot-01/Informatic-01/LearnJetson/UseSTB3.md",
-    "Produits/Babybot-01/Informatic-01/Create_environment/babybot01_env/README.md",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/outputs/gym_basics/kin_replay_joint_dof_time_series.png",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/flygym/data/etc/locomotion_icons/stop.png",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/flygym/data/etc/locomotion_icons/right.png",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/jupyter_server/i18n/README.md",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/nbconvert/templates/skeleton/README.md",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/nbconvert/templates/README.md",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/mujoco-3.2.3.dist-info/LICENSES_THIRD_PARTY.md",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/httpx-0.28.0.dist-info/licenses/LICENSE.md",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/httpcore-1.0.7.dist-info/licenses/LICENSE.md",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/scipy/fft/_pocketfft/LICENSE.md",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/debugpy/_vendored/pydevd/pydevd_plugins/extensions/README.md",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/idna-3.10.dist-info/LICENSE.md",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/imageio_ffmpeg/binaries/README.md",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/numpy/random/LICENSE.md",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/zmq/backend/cffi/README.md",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/pyzmq-26.2.0.dist-info/licenses/LICENSE.md",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/soupsieve-2.6.dist-info/licenses/LICENSE.md",
+    "Produits/Babybot-01/Informatic-01/Memo.md",
+    "Produits/Babybot-01/Informatic-01/Informatic-01.md",
+    "Produits/Babybot-01/Informatic-01/NeuroMechFly.md",
+    "Produits/Babybot-01/Informatic-01/Investigate hierarchical RL.md",
+    "Organisation/Organisation.md",
+    "Produits/Babybot-01/Informatic-01/ExperimentCPGWalk/Experiment CPG walk.md",
+    "Produits/Babybot-01/Mechanical-02/Investigate hexapod theory/Explore hexapod.md",
+    "Produits/Babybot-01/Mechanical-02/Mechanical-02.canvas",
+    "Produits/Babybot-01/Informatic-01/LearnJetson/LearnJetson.canvas",
+    "Produits/Babybot-01/Mechanical-01/Mechanical-01.canvas",
+    "Produits/Babybot-01/Babybot-01.canvas",
     "Produits/Babybot-01/Electronic-01/Electronic-01.canvas",
-    "assets/Pasted image 20241118151543.png",
-    "assets/Pasted image 20241125190350.png",
-    "Produits/Babybot-01/Informatic-01/LearnRL/hostEnv/lib/python3.10/site-packages/pybullet_data/tray/tray.jpg",
-    "Produits/Babybot-01/Informatic-01/LearnRL/hostEnv/lib/python3.10/site-packages/pybullet_data/table_square/checker_grid.jpg",
-    "Produits/Babybot-01/Informatic-01/LearnRL/hostEnv/lib/python3.10/site-packages/pybullet_data/table/table.png",
-    "Produits/Babybot-01/Informatic-01/LearnRL/hostEnv/lib/python3.10/site-packages/pybullet_data/quadruped/t-motor.jpg",
-    "Produits/Babybot-01/Informatic-01/LearnRL/hostEnv/lib/python3.10/site-packages/pybullet_data/laikago/laikago_tex.jpg",
-    "Produits/Babybot-01/Informatic-01/LearnRL/hostEnv/lib/python3.10/site-packages/pybullet_data/jenga/jenga.png",
-    "Produits/Babybot-01/Informatic-01/LearnRL/hostEnv/lib/python3.10/site-packages/pybullet_data/heightmaps/wm_height_out.png",
     "Produits/Produits.canvas",
     "Entreprise.canvas",
     "Produits/Babybot-01/POC/POC.canvas",

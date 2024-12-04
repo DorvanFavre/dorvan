@@ -21,7 +21,7 @@ https://www.youtube.com/watch?v=ZA0URG5jcdM
 
 - CPG walk tutorial fly
 https://neuromechfly.org/tutorials/cpg_controller.html
- #Todo 
+ #Done
 
 
 - The gait planning of hexapod robot based on CPG with feedback
