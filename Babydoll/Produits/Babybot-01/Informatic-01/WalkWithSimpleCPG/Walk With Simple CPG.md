@@ -17,5 +17,33 @@ Implement a more complexe CPG network to make Fourier signals.
 
 **Results**
 
+DONE : 01_walk_ik_cpg
+It's working good.
+
+
+### Task 2
+
+Use RL to find a gait pattern.
+
+- Addapt the spidy env to incorporate CPG and IK
+- Train PPO
+
+**Actions**
+- coupling weights
+- phase_biases
+
+**Observation**
+No observation : Constant
+Reward-Driven Training
+
+**Reward**
+Speed
+Position
+
+Remarks:
+It is good to use action value in the range of -1 to 1 or 0 to 1.
+It is not good to use high dimensional action space such ax 12x12 actions.
+
+**Results**
 
 

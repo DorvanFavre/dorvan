@@ -17,7 +17,7 @@
                 "file": "Produits/Babybot-01/Informatic-01/Informatic-01.canvas",
                 "viewState": {
                   "x": 3339.6119637231436,
-                  "y": 220.33804425043868,
+                  "y": 220.33804425043866,
                   "zoom": -0.8311946216035947
                 }
               },
@@ -175,11 +175,13 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 342.5
+    "width": 342.5,
+    "collapsed": true
   },
   "right": {
     "id": "d4195dacf0a4d9c3",
@@ -266,23 +268,24 @@
   },
   "active": "f8cde4a16039589a",
   "lastOpenFiles": [
-    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/hexapod_2.urdf",
-    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/01_rename.ipynb",
-    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG",
+    "Produits/Babybot-01/Informatic-01/Create_environment/babybot01_env/babybot01_env/envs/__pycache__/spidyv3.cpython-310.pyc",
+    "Produits/Babybot-01/Informatic-01/Create_environment/babybot01_env/babybot01_env/envs/spidyv3.py",
+    "Produits/Babybot-01/Informatic-01/Create_environment/babybot01_env/babybot01_env/envs/spidyv2 copy.py",
+    "Produits/Babybot-01/Informatic-01/Create_environment/babybot01_env/babybot01_env/envs/spidy_old.py",
+    "Produits/Babybot-01/Informatic-01/Create_environment/babybot01_env/babybot01_env/envs/spidy copy.py",
+    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/02_walk_ik_cpg_ppo.ipynb",
     "Produits/Babybot-01/Informatic-01/Informatic-01.canvas",
     "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/Walk With Simple CPG.md",
-    "Produits/Babybot-01/Informatic-01/InvestigateCPG/Free_Gait_Transition_and_Stable_Motion_Generation_.pdf",
+    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/01_walk_ik_cpg.ipynb",
+    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/outputs/cpg_controller/simple_cpg_rollout.png",
+    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/outputs/cpg_controller",
+    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/outputs",
+    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/02_rename_2.ipynb",
+    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/02_rename_2.ypinb",
     "Produits/Babybot-01/Informatic-01/InvestigateCPG/Investigate CPG.md",
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/NeuroMechFly.md",
-    "Produits/Babybot-01/Informatic-01/NeuroMechFly/NeuroMechFlyV2Paper.pdf",
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/outputs/rule_based_controller/rules_graph.png",
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/outputs/rule_based_controller/preprogrammed_steps_call.png",
-    "Produits/Babybot-01/Informatic-01/NeuroMechFly/outputs/rule_based_controller",
-    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/networkx/__pycache__/relabel.cpython-310.pyc",
-    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/networkx/__pycache__/lazy_imports.cpython-310.pyc",
-    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/networkx/__pycache__/exception.cpython-310.pyc",
-    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/networkx/__pycache__/convert_matrix.cpython-310.pyc",
-    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/networkx/__pycache__/convert.cpython-310.pyc",
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/networkx/drawing/tests/baseline/test_house_with_colors.png",
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/outputs/cpg_controller/three_steps_amp_modulated.png",
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/outputs/cpg_controller/three_steps_phase_only.png",
@@ -291,7 +294,6 @@
     "Memo.md",
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/outputs/gym_basics/kin_replay_joint_dof_time_series.png",
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/flygym/data/etc/locomotion_icons/stop.png",
-    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/flygym/data/etc/locomotion_icons/right.png",
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/jupyter_server/i18n/README.md",
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/nbconvert/templates/skeleton/README.md",
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/nbconvert/templates/README.md",
