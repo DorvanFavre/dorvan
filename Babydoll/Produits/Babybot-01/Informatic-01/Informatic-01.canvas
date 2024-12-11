@@ -9,26 +9,32 @@
 		{"id":"22cd5a76af23116a","type":"file","file":"Produits/Babybot-01/Informatic-01/Create_environment/Create environment.md","x":760,"y":-160,"width":400,"height":400,"color":"4"},
 		{"id":"370f012b0a755175","type":"file","file":"Produits/Babybot-01/Informatic-01/Use colab/Use Colab.md","x":1320,"y":-1440,"width":400,"height":400},
 		{"id":"617a1caaa5002d86","type":"file","file":"Produits/Babybot-01/Informatic-01/Investigate Optuna.md","x":760,"y":440,"width":400,"height":400},
-		{"id":"282ea8dfaf57864b","type":"file","file":"Produits/Babybot-01/Informatic-01/Deploy in reality.md","x":4560,"y":-160,"width":400,"height":400},
 		{"id":"81544e4aad8f2bce","type":"file","file":"Produits/Babybot-01/Informatic-01/WalkRL/Experiment Direct walk.md","x":1520,"y":-160,"width":400,"height":400,"color":"1"},
-		{"id":"3df32ff467acbbf3","type":"file","file":"Produits/Babybot-01/Informatic-01/LearnJetson/LearnJetson.md","x":4560,"y":-760,"width":400,"height":400,"color":"3"},
 		{"id":"17365ea509837e11","type":"file","file":"Produits/Babybot-01/Informatic-01/InvestigateCPG/Investigate CPG.md","x":2180,"y":-160,"width":400,"height":400,"color":"4"},
 		{"id":"3ce7a2f6a4a51bd0","type":"file","file":"Produits/Babybot-01/Informatic-01/NeuroMechFly/NeuroMechFly.md","x":2780,"y":-160,"width":400,"height":400,"color":"4"},
 		{"id":"a390b6d838af5093","type":"file","file":"Produits/Babybot-01/Informatic-01/Investigate hierarchical RL.md","x":1920,"y":440,"width":400,"height":400},
-		{"id":"fe4a9d8c654fc411","type":"file","file":"Produits/Babybot-01/Informatic-01/Investigate VAE.md","x":2400,"y":440,"width":400,"height":400}
+		{"id":"fe4a9d8c654fc411","type":"file","file":"Produits/Babybot-01/Informatic-01/Investigate VAE.md","x":2400,"y":440,"width":400,"height":400},
+		{"id":"a6c32cac03909082","type":"file","file":"Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/Walk With Simple CPG.md","x":3400,"y":-160,"width":400,"height":400,"color":"3"},
+		{"id":"3df32ff467acbbf3","type":"file","file":"Produits/Babybot-01/Informatic-01/LearnJetson/LearnJetson.md","x":2780,"y":-960,"width":400,"height":400,"color":"4"},
+		{"id":"282ea8dfaf57864b","type":"file","file":"Produits/Babybot-01/Informatic-01/First Walk With Jetson.md","x":3400,"y":-960,"width":400,"height":400,"color":"3"},
+		{"id":"9a92467947fdb858","x":4040,"y":-160,"width":400,"height":400,"type":"file","file":"Produits/Babybot-01/Informatic-01/Improve Spidy Env.md"},
+		{"id":"2309c90903350ad6","x":4720,"y":-160,"width":400,"height":400,"type":"file","file":"Produits/Babybot-01/Informatic-01/Spidy Reach.md"}
 	],
 	"edges":[
 		{"id":"f1751ae60dbf965a","fromNode":"d0c44f365cfa2d25","fromSide":"bottom","toNode":"15ea7db6c3ca8e7c","toSide":"top"},
 		{"id":"810aa19f74aa720e","fromNode":"9a1b387ed581cb2d","fromSide":"bottom","toNode":"c42fd28f52789c1c","toSide":"top"},
 		{"id":"4099320293f8540f","fromNode":"c42fd28f52789c1c","fromSide":"right","toNode":"15ea7db6c3ca8e7c","toSide":"left"},
 		{"id":"4ddada9f898e30aa","fromNode":"15ea7db6c3ca8e7c","fromSide":"right","toNode":"22cd5a76af23116a","toSide":"left"},
-		{"id":"20510f25ac97d6ab","fromNode":"3df32ff467acbbf3","fromSide":"bottom","toNode":"282ea8dfaf57864b","toSide":"top"},
 		{"id":"609b89af058d217a","fromNode":"75e10d2d1d751fef","fromSide":"bottom","toNode":"81544e4aad8f2bce","toSide":"top"},
 		{"id":"35e5c79751189883","fromNode":"2f7f3510cec614e2","fromSide":"bottom","toNode":"81544e4aad8f2bce","toSide":"top"},
 		{"id":"141c7ae56865ae1b","fromNode":"22cd5a76af23116a","fromSide":"right","toNode":"81544e4aad8f2bce","toSide":"left"},
 		{"id":"54711d50daec29f8","fromNode":"81544e4aad8f2bce","fromSide":"right","toNode":"17365ea509837e11","toSide":"left"},
 		{"id":"bbffc86630081410","fromNode":"17365ea509837e11","fromSide":"right","toNode":"3ce7a2f6a4a51bd0","toSide":"left"},
 		{"id":"69c2ac96ce3859c7","fromNode":"17365ea509837e11","fromSide":"bottom","toNode":"fe4a9d8c654fc411","toSide":"top"},
-		{"id":"afb3ee8a9e8910a9","fromNode":"17365ea509837e11","fromSide":"bottom","toNode":"a390b6d838af5093","toSide":"top"}
+		{"id":"afb3ee8a9e8910a9","fromNode":"17365ea509837e11","fromSide":"bottom","toNode":"a390b6d838af5093","toSide":"top"},
+		{"id":"434f6b956d867b67","fromNode":"3ce7a2f6a4a51bd0","fromSide":"right","toNode":"a6c32cac03909082","toSide":"left"},
+		{"id":"6da261679657b216","fromNode":"3df32ff467acbbf3","fromSide":"right","toNode":"282ea8dfaf57864b","toSide":"left"},
+		{"id":"951b219e77a1e467","fromNode":"a6c32cac03909082","fromSide":"right","toNode":"9a92467947fdb858","toSide":"left"},
+		{"id":"6ac864233adfe2de","fromNode":"9a92467947fdb858","fromSide":"right","toNode":"2309c90903350ad6","toSide":"left"}
 	]
 }

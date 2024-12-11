@@ -10,7 +10,7 @@ Going further:
 Implement a more complexe CPG network to make Fourier signals.
 
 
-### Task 1 
+## Task 1 
 
 - Use invert kinematic so i can use cpg for X and Z axis and leave Y to unchanged. The result is also more comprehensive.
 - use a predefined gait. No use of RL.
@@ -20,10 +20,13 @@ Implement a more complexe CPG network to make Fourier signals.
 DONE : 01_walk_ik_cpg
 It's working good.
 
+## Task 2
 
-### Task 2
+**Use RL to find a gait pattern.**
+-> Speedy v3
+-> 02_walk with_ik_cpg_ppo
 
-Use RL to find a gait pattern.
+#### Preparation 
 
 - Addapt the spidy env to incorporate CPG and IK
 - Train PPO
@@ -31,6 +34,7 @@ Use RL to find a gait pattern.
 **Actions**
 - coupling weights
 - phase_biases
+self.action_space = spaces.Box(low=0.,high= 1., shape=(2,12,12), dtype=ACTION_TYPE)
 
 **Observation**
 No observation : Constant
@@ -44,6 +48,57 @@ Remarks:
 It is good to use action value in the range of -1 to 1 or 0 to 1.
 It is not good to use high dimensional action space such ax 12x12 actions.
 
-**Results**
+#### Realization
+
+Create Spidyv3 env from spidyv2.
+Adapt the env to add CPG and IK.
+Walk with CPG configuration from "01_walk_ik_cpg"
+Display CPG configuration as a plot.
+
+#### Results
+
+**ppo_spidy_v3_1**
+Before training
+![[Pasted image 20241210105448.png]]
+After 1M training: no results:
+![[Pasted image 20241210132949.png]]
+
+It show this but actually the robot isn't moving
+
+Let's get inspired by the gymnasium Walker environment.
+Let's try to add observation space: **Dummy observation space**
+It need to add some random noise otherwasie PPO can nerver learn.
+Or use other algorithm for direct optimization problem. (CMA-ES)
+
+**ppo_spidy_v3_2**
+observation = np.random.uniform(-0.1, 0.1, size=(10,))
+Try to terminated after 990 steps
+
+try with observation = coupling_weights and phase_biases.
+Did not learn anything after 2M steps.
 
 
+**ppo_spidy_v4_1
+
+Make some adjustments:
+Action: 
+- Continuous value [-1,1] that to be added to some pertinent CPG parameters (pertinent phases_biases)
+- Add a update rate to 0.1
+
+observation: 
+- pertinent parameter of phases_biases
+
+Modification to the environment:
+- Map pertinent CPG phases_biases parameters to 12x12 phases_biases matrix.
+
+Reward:
+- distance from origin
+
+Training:
+- With pre-initiate walking gait
+- Without pre-trained walking gait
+
+Comments:
+- Watch actions evolution (pyplot)
+
+Results:

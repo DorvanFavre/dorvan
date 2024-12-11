@@ -15,6 +15,47 @@ TIME_STEP = 1.0/SIM_F
 OBSERVATION_TYPE=np.float32
 ACTION_TYPE = np.float32
 
+def reconstruct_symmetric_matrix_no_diag(relevant_part, size=12):
+    """
+    Reconstructs a symmetric matrix of given size from the relevant part, excluding the diagonal.
+    
+    Parameters:
+        relevant_part (array-like): A flattened array of the strictly upper triangular part of the symmetric matrix.
+        size (int): The size of the square matrix (default is 12).
+        
+    Returns:
+        np.ndarray: The reconstructed symmetric matrix with diagonal values set to 0.
+    """
+    # Initialize an empty matrix
+    matrix = np.zeros((size, size), dtype=float)
+    
+    # Fill the strictly upper triangular part of the matrix
+    indices = np.triu_indices(size, k=1)  # k=1 excludes the diagonal
+    matrix[indices] = relevant_part
+    
+    # Mirror the strictly upper triangular part to the lower triangular part
+    matrix = matrix + matrix.T
+    
+    return matrix
+
+def extract_relevant_part(matrix):
+    """
+    Extracts the relevant part (strictly upper triangular values, excluding the diagonal) 
+    from a symmetric matrix.
+    
+    Parameters:
+        matrix (np.ndarray): A square symmetric matrix (e.g., 12x12).
+        
+    Returns:
+        np.ndarray: A 1D array containing the strictly upper triangular values.
+    """
+    if matrix.shape[0] != matrix.shape[1]:
+        raise ValueError("Input must be a square matrix.")
+    
+    # Extract strictly upper triangular values
+    relevant_part = matrix[np.triu_indices(matrix.shape[0], k=1)]
+    return relevant_part
+
 
 def calculate_ddt(theta, r, w, phi, nu, R, alpha):
     """Given the current state variables theta, r and network parameters
@@ -91,6 +132,10 @@ class CPGNetwork:
     def set_phase_biases(self, phase_biases):
         self.phase_biases = phase_biases * 2 * np.pi
 
+    def update_phase_biases(self, phase_biases_update):
+        
+        self.phase_biases = np.clip(self.phase_biases + phase_biases_update*2.*np.pi, 0, 2.*np.pi)
+
     def step(self):
         """Integrate the ODEs using Euler's method."""
         dtheta_dt, dr_dt = calculate_ddt(
@@ -122,16 +167,16 @@ class CPGNetwork:
         else:
             self.curr_magnitudes = init_magnitudes
 
-class SpidyEnvV3(gym.Env):
+class SpidyEnvV4(gym.Env):
     metadata = {"render_modes": ["human", "rgb_array", None]}
 
     def __init__(self, render_mode=None):
         super().__init__()
         
 
-        self.observation_space = spaces.Box(low=0.,high= 1., shape=(2,12,12), dtype=OBSERVATION_TYPE)
+        self.observation_space = spaces.Box(low=0.,high= 1., shape=(66,), dtype=OBSERVATION_TYPE)
         
-        self.action_space = spaces.Box(low=0.,high= 1., shape=(2,12,12), dtype=ACTION_TYPE)
+        self.action_space = spaces.Box(low=-1.,high= 1., shape=(66,), dtype=ACTION_TYPE)
         
 
         assert render_mode is None or render_mode in self.metadata["render_modes"]
@@ -261,7 +306,7 @@ class SpidyEnvV3(gym.Env):
     
     def _get_obs(self):
 
-        return [self.cpg_network.coupling_weights / 40, self.cpg_network.phase_biases / (2*np.pi)]
+        return extract_relevant_part(self.cpg_network.phase_biases) / (2.*np.pi)
     
     def _get_info(self):
         return {
@@ -291,10 +336,9 @@ class SpidyEnvV3(gym.Env):
     def step(self, action):
 
         # Action: modify CPG network parameters
-        coupling_weights = action[0]
-        phase_biases = action[1]
-        self.cpg_network.set_coupling_weights(coupling_weights)
-        self.cpg_network.set_phase_biases(phase_biases)
+        phase_biases_update = reconstruct_symmetric_matrix_no_diag(action) * 0.1
+        self.cpg_network.update_phase_biases(phase_biases_update)
+        
         
         # Compute CPG values
         phases, magnitudes = self.cpg_network.step()
