@@ -53,3 +53,19 @@ healthy : 0.02 < z < 0.1
 #### Test host
 
 render_mode = None / 'rgb_array' : No difference
+
+### V2
+Control the joints position with continuous action space
+
+### v3
+Introduce CPG and IK
+
+### v4
+Introduce triangle matrix
+
+**v4_1**
+use only relevant biases_phase of triangle matrix
+debug mode with cursor to change relevant phase_biases
+
+v4_2
+Action space = phase_bias 0 and phase_bias 5

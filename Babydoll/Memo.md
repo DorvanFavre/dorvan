@@ -10,6 +10,11 @@ ctrl + alt + f* : change tty console
 
 tmux
 
+ctrl + b , shift + 2 : split horizotal
+ctrl + b, shift + 5 : split verticaly
+ctrl + b + arrow : rezize
+ctrl + b, arrow change terminal
+
 ### Add environment variable persistent
 sudo nano /etc/environment
 ABC = "/path/to/file"

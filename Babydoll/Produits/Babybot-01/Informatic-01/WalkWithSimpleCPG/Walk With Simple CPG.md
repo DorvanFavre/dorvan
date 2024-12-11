@@ -102,3 +102,20 @@ Comments:
 - Watch actions evolution (pyplot)
 
 Results:
+Not working :'(
+1M step: learn nothing
+
+**Spidyv4_1**
+Try to simplify again by only exposing currently used phases biases.
+Add a debug mode to the env which gives acces to cursor to change these phases biases manually and see how it respond.
+
+Result.
+I can easily control the phase_biases.
+
+**Spidyv4_2**
+**ppo_1_spidy_4_2**
+
+See if he can recover from learning only two phase biases (0 and 5)
+observation: 2 phases biases, try to add some random noise too in a third value.
+
+Action space: 2 continuous value. increment phase biases.
