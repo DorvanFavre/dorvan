@@ -68,4 +68,5 @@ use only relevant biases_phase of triangle matrix
 debug mode with cursor to change relevant phase_biases
 
 v4_2
+make action sapce easily changable
 Action space = phase_bias 0 and phase_bias 5

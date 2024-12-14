@@ -113,9 +113,35 @@
               "icon": "lucide-file",
               "title": "Create environment"
             }
+          },
+          {
+            "id": "b1a4f60d589ceddc",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Produits/Babybot-01/Informatic-01/LearnPyBullet/PyBullet Quickstart Guide.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "PyBullet Quickstart Guide"
+            }
+          },
+          {
+            "id": "09849767ecf9ac05",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/GPT.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "GPT"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -171,7 +197,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 342.5
+    "width": 342.5,
+    "collapsed": true
   },
   "right": {
     "id": "d4195dacf0a4d9c3",
@@ -257,32 +284,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ebca562810004ae",
+  "active": "09849767ecf9ac05",
   "lastOpenFiles": [
-    "Produits/Babybot-01/Informatic-01/PCA9685.pdf",
-    "Produits/Babybot-01/Informatic-01/PCA9685.pdf.crdownload",
-    "Produits/Babybot-01/Informatic-01/Informatic-01.canvas",
+    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_1_spidy_v4_4/t_logs/PPO_0/events.out.tfevents.1734199017.dorvan-HP-ENVY-x360-Convertible-15-cn0xxx.25088.0",
+    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_1_spidy_v4_4/t_logs/PPO_0",
+    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_1_spidy_v4_4/t_logs",
+    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_1_spidy_v4_4/model/ppo_1_spidy_v4_4.zip",
+    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_1_spidy_v4_4/model",
+    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_1_spidy_v4_4",
+    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_1_spidy_v4_4/t_logs/PPO_0/events.out.tfevents.1734198874.dorvan-HP-ENVY-x360-Convertible-15-cn0xxx.25017.1",
+    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_1_spidy_v4_4/t_logs/PPO_0/events.out.tfevents.1734198874.dorvan-HP-ENVY-x360-Convertible-15-cn0xxx.25017.0",
     "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/Walk With Simple CPG.md",
+    "Pasted image 20241214183353.png",
+    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/GPT.md",
+    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_1_spidy_v4_4/t_logs/PPO_0/events.out.tfevents.1734197279.dorvan-HP-ENVY-x360-Convertible-15-cn0xxx.22839.1",
+    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_1_spidy_v4_4/t_logs/PPO_0/events.out.tfevents.1734197279.dorvan-HP-ENVY-x360-Convertible-15-cn0xxx.22839.0",
+    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_1_spidy_v4_4/t_logs/PPO_0/events.out.tfevents.1734197094.dorvan-HP-ENVY-x360-Convertible-15-cn0xxx.21709.2",
+    "Pasted image 20241214175822.png",
+    "Pasted image 20241214154630.png",
+    "Produits/Babybot-01/Informatic-01/First Walk With Jetson.md",
+    "Pasted image 20241214112048.png",
+    "Produits/Babybot-01/Informatic-01/Informatic-01.canvas",
     "Memo.md",
     "Produits/Babybot-01/Mechanical-01/Battery.md",
     "Produits/Babybot-01/Informatic-01/Create_environment/Create environment.md",
-    "Produits/Babybot-01/Informatic-01/Create_environment/babybot01_env/babybot01_env/envs/__pycache__/spidyv4_1.cpython-310.pyc",
-    "Produits/Babybot-01/Informatic-01/Create_environment/babybot01_env/babybot01_env/envs/spidyv4_1.py",
-    "Produits/Babybot-01/Informatic-01/Create_environment/babybot01_env/babybot01_env/envs/spidyv4 copy.py",
-    "Produits/Babybot-01/Informatic-01/First Walk With Jetson.md",
     "Hours.md",
-    "Produits/Babybot-01/Informatic-01/Jetson-Orin-Nano-DevKit-Carrier-Board-Specification_SP-11324-001_v1.2.pdf",
     "Produits/Babybot-01/Informatic-01/Deploy in reality.md",
     "Pasted image 20241211143713.png",
     "Produits/Babybot-01/Informatic-01/Improve Spidy Env.md",
     "Produits/Babybot-01/Informatic-01/Spidy Reach.md",
     "Organisation/Organisation.md",
     "Organisation/idées.md",
-    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_spidy_v4_1/t_logs/PPO_0/events.out.tfevents.1733910093.dorvan-HP-ENVY-x360-Convertible-15-cn0xxx.6582.2",
-    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_spidy_v4_1/logs/evaluations.npz",
-    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_spidy_v4_1/t_logs/PPO_0/events.out.tfevents.1733909169.dorvan-HP-ENVY-x360-Convertible-15-cn0xxx.6582.1",
-    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_spidy_v4_1/logs",
-    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_spidy_v4_1/t_logs/PPO_0/events.out.tfevents.1733909019.dorvan-HP-ENVY-x360-Convertible-15-cn0xxx.6582.0",
     "Produits/Babybot-01/Informatic-01/InvestigateCPG/Investigate CPG.md",
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/NeuroMechFly.md",
     "Pasted image 20241210132949.png",
@@ -294,10 +326,6 @@
     "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/outputs/cpg_controller/simple_cpg_rollout.png",
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/outputs/rule_based_controller/rules_graph.png",
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/outputs/rule_based_controller/preprogrammed_steps_call.png",
-    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/networkx/drawing/tests/baseline/test_house_with_colors.png",
-    "Produits/Babybot-01/Informatic-01/NeuroMechFly/outputs/cpg_controller/three_steps_amp_modulated.png",
-    "Produits/Babybot-01/Informatic-01/NeuroMechFly/outputs/cpg_controller/three_steps_phase_only.png",
-    "Produits/Babybot-01/Informatic-01/NeuroMechFly/outputs/cpg_controller/tripod_cpg_rollout.png",
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/jupyter_server/i18n/README.md",
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/nbconvert/templates/skeleton/README.md",
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/nbconvert/templates/README.md",
@@ -305,7 +333,6 @@
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/httpx-0.28.0.dist-info/licenses/LICENSE.md",
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/httpcore-1.0.7.dist-info/licenses/LICENSE.md",
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/scipy/fft/_pocketfft/LICENSE.md",
-    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/debugpy/_vendored/pydevd/pydevd_plugins/extensions/README.md",
     "Produits/Babybot-01/Mechanical-02/Mechanical-02.canvas",
     "Produits/Babybot-01/Informatic-01/LearnJetson/LearnJetson.canvas",
     "Produits/Babybot-01/Mechanical-01/Mechanical-01.canvas",

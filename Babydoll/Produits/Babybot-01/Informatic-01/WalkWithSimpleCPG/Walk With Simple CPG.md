@@ -111,11 +111,44 @@ Add a debug mode to the env which gives acces to cursor to change these phases b
 
 Result.
 I can easily control the phase_biases.
+Keep this project as a demo.
 
 **Spidyv4_2**
-**ppo_1_spidy_4_2**
+04_walk.ipynb
+spidy-v4_2
 
 See if he can recover from learning only two phase biases (0 and 5)
 observation: 2 phases biases, try to add some random noise too in a third value.
 
 Action space: 2 continuous value. increment phase biases.
+
+Result isn't good.
+![[Pasted image 20241214112048.png]]
+
+Try to reset phases_biases on reset.
+Monitor action:
+ppo_2_env_4_2:
+Not so much difference.
+
+**Spidy-v4_3**
+
+Try reach target by making turns 
+
+spidy-4_3
+05_reach.ipynb
+
+Not convincing
+
+![[Pasted image 20241214154630.png]]
+
+
+
+**Spidy-v4_4**
+try with discrete action space
+Better than continuous.
+But still bad
+
+Mais il trouve un minimum local: c'est mieux de rester sur place que de d'éloigner de la cible.
+![[Pasted image 20241214183353.png]]
+
+Try to change the reward function again
