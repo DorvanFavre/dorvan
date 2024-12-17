@@ -10,7 +10,6 @@
           {
             "id": "a71ad56c3337f258",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "canvas",
               "state": {
@@ -21,25 +20,8 @@
                   "zoom": -1.5614913375524306
                 }
               },
-              "pinned": true,
               "icon": "lucide-layout-dashboard",
               "title": "Informatic-01"
-            }
-          },
-          {
-            "id": "5ebca562810004ae",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Produits/Babybot-01/Informatic-01/First Walk With Jetson.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "First Walk With Jetson"
             }
           },
           {
@@ -59,21 +41,47 @@
             }
           },
           {
-            "id": "74084f83e4ff8691",
+            "id": "a675b79f8ec4bbed",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Memo.md",
+                "file": "Produits/Babybot-01/Informatic-01/Walk Jetson/First Walk With Jetson.md",
                 "mode": "source",
                 "source": false
               },
+              "pinned": true,
               "icon": "lucide-file",
-              "title": "Memo"
+              "title": "First Walk With Jetson"
             }
           },
           {
-            "id": "7cb2078965f83db8",
+            "id": "db4bb97c638ee673",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Produits/Babybot-01/Informatic-01/PCA9685.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "PCA9685"
+            }
+          },
+          {
+            "id": "f18af1ddda70f611",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Produits/Babybot-01/Informatic-01/Jetson-Orin-Nano-DevKit-Carrier-Board-Specification_SP-11324-001_v1.2.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Jetson-Orin-Nano-DevKit-Carrier-Board-Specification_SP-11324-001_v1.2"
+            }
+          },
+          {
+            "id": "ea6b9d05d7967587",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -85,63 +93,9 @@
               "icon": "lucide-file",
               "title": "Hours"
             }
-          },
-          {
-            "id": "e9c9720145c29e0e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Produits/Babybot-01/Mechanical-01/Battery.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Battery"
-            }
-          },
-          {
-            "id": "ae549e4ce8e6165b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Produits/Babybot-01/Informatic-01/Create_environment/Create environment.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Create environment"
-            }
-          },
-          {
-            "id": "b1a4f60d589ceddc",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Produits/Babybot-01/Informatic-01/LearnPyBullet/PyBullet Quickstart Guide.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "PyBullet Quickstart Guide"
-            }
-          },
-          {
-            "id": "09849767ecf9ac05",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/GPT.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "GPT"
-            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -197,8 +151,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 342.5,
-    "collapsed": true
+    "width": 342.5
   },
   "right": {
     "id": "d4195dacf0a4d9c3",
@@ -284,55 +237,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "09849767ecf9ac05",
+  "active": "a675b79f8ec4bbed",
   "lastOpenFiles": [
-    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_1_spidy_v4_4/t_logs/PPO_0/events.out.tfevents.1734199017.dorvan-HP-ENVY-x360-Convertible-15-cn0xxx.25088.0",
-    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_1_spidy_v4_4/t_logs/PPO_0",
-    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_1_spidy_v4_4/t_logs",
-    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_1_spidy_v4_4/model/ppo_1_spidy_v4_4.zip",
-    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_1_spidy_v4_4/model",
-    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_1_spidy_v4_4",
-    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_1_spidy_v4_4/t_logs/PPO_0/events.out.tfevents.1734198874.dorvan-HP-ENVY-x360-Convertible-15-cn0xxx.25017.1",
-    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_1_spidy_v4_4/t_logs/PPO_0/events.out.tfevents.1734198874.dorvan-HP-ENVY-x360-Convertible-15-cn0xxx.25017.0",
     "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/Walk With Simple CPG.md",
-    "Pasted image 20241214183353.png",
-    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/GPT.md",
-    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_1_spidy_v4_4/t_logs/PPO_0/events.out.tfevents.1734197279.dorvan-HP-ENVY-x360-Convertible-15-cn0xxx.22839.1",
-    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_1_spidy_v4_4/t_logs/PPO_0/events.out.tfevents.1734197279.dorvan-HP-ENVY-x360-Convertible-15-cn0xxx.22839.0",
-    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/ppo_1_spidy_v4_4/t_logs/PPO_0/events.out.tfevents.1734197094.dorvan-HP-ENVY-x360-Convertible-15-cn0xxx.21709.2",
-    "Pasted image 20241214175822.png",
-    "Pasted image 20241214154630.png",
-    "Produits/Babybot-01/Informatic-01/First Walk With Jetson.md",
-    "Pasted image 20241214112048.png",
+    "Produits/Babybot-01/Informatic-01/Jetson-Orin-Nano-DevKit-Carrier-Board-Specification_SP-11324-001_v1.2.pdf",
+    "Produits/Babybot-01/Informatic-01/Walk Jetson/First Walk With Jetson.md",
+    "Produits/Babybot-01/Informatic-01/PCA9685.pdf",
+    "Produits/Babybot-01/Informatic-01/Walk Jetson/02_test_gpio.py",
     "Produits/Babybot-01/Informatic-01/Informatic-01.canvas",
+    "Hours.md",
+    "Produits/Babybot-01/Informatic-01/Credentials.md",
+    "Produits/Babybot-01/Informatic-01/Walk Jetson/01_test_servo.py",
+    "Produits/Babybot-01/Informatic-01/Walk Jetson/send.sh",
+    "Produits/Babybot-01/Informatic-01/Walk Jetson/01_test_sevo.py",
+    "Produits/Babybot-01/Informatic-01/First Walk With Jetson.md",
+    "Produits/Babybot-01/Informatic-01/Walk Jetson",
+    "Produits/Babybot-01/Informatic-01/code.py",
+    "Produits/Babybot-01/Informatic-01/no.py",
+    "Pasted image 20241217120740.png",
+    "Pasted image 20241217120719.png",
+    "Produits/Babybot-01/Informatic-01/Create_environment/babybot01_env/examples/no.py",
+    "Pasted image 20241217112158.png",
+    "Pasted image 20241217100214.png",
+    "Pasted image 20241217095554.png",
+    "Pasted image 20241217095439.png",
+    "Pasted image 20241217094901.png",
+    "Pasted image 20241217094617.png",
+    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/GPT.md",
+    "Pasted image 20241214183353.png",
+    "Pasted image 20241214175822.png",
     "Memo.md",
     "Produits/Babybot-01/Mechanical-01/Battery.md",
     "Produits/Babybot-01/Informatic-01/Create_environment/Create environment.md",
-    "Hours.md",
     "Produits/Babybot-01/Informatic-01/Deploy in reality.md",
-    "Pasted image 20241211143713.png",
     "Produits/Babybot-01/Informatic-01/Improve Spidy Env.md",
     "Produits/Babybot-01/Informatic-01/Spidy Reach.md",
     "Organisation/Organisation.md",
     "Organisation/idées.md",
     "Produits/Babybot-01/Informatic-01/InvestigateCPG/Investigate CPG.md",
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/NeuroMechFly.md",
-    "Pasted image 20241210132949.png",
     "Produits/Babybot-01/Informatic-01/WalkRL/Experiment Direct walk.md",
     "Produits/Babybot-01/Untitled.md",
     "Produits/Babybot-01/Informatic-01/LearnRL/Bipedal walker.md",
     "Produits/Babybot-01/Informatic-01/LearnRL/Ant.md",
-    "Pasted image 20241210105448.png",
-    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/outputs/cpg_controller/simple_cpg_rollout.png",
-    "Produits/Babybot-01/Informatic-01/NeuroMechFly/outputs/rule_based_controller/rules_graph.png",
-    "Produits/Babybot-01/Informatic-01/NeuroMechFly/outputs/rule_based_controller/preprogrammed_steps_call.png",
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/jupyter_server/i18n/README.md",
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/nbconvert/templates/skeleton/README.md",
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/nbconvert/templates/README.md",
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/mujoco-3.2.3.dist-info/LICENSES_THIRD_PARTY.md",
     "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/httpx-0.28.0.dist-info/licenses/LICENSE.md",
-    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/httpcore-1.0.7.dist-info/licenses/LICENSE.md",
-    "Produits/Babybot-01/Informatic-01/NeuroMechFly/flyEnv/lib/python3.10/site-packages/scipy/fft/_pocketfft/LICENSE.md",
     "Produits/Babybot-01/Mechanical-02/Mechanical-02.canvas",
     "Produits/Babybot-01/Informatic-01/LearnJetson/LearnJetson.canvas",
     "Produits/Babybot-01/Mechanical-01/Mechanical-01.canvas",
