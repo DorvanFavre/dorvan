@@ -14,11 +14,11 @@
 		{"id":"3ce7a2f6a4a51bd0","type":"file","file":"Produits/Babybot-01/Informatic-01/NeuroMechFly/NeuroMechFly.md","x":2780,"y":-160,"width":400,"height":400,"color":"4"},
 		{"id":"a390b6d838af5093","type":"file","file":"Produits/Babybot-01/Informatic-01/Investigate hierarchical RL.md","x":1920,"y":440,"width":400,"height":400},
 		{"id":"fe4a9d8c654fc411","type":"file","file":"Produits/Babybot-01/Informatic-01/Investigate VAE.md","x":2400,"y":440,"width":400,"height":400},
-		{"id":"a6c32cac03909082","type":"file","file":"Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/Walk With Simple CPG.md","x":3400,"y":-160,"width":400,"height":400,"color":"3"},
+		{"id":"a6c32cac03909082","type":"file","file":"Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/Walk With Simple CPG.md","x":3400,"y":-160,"width":400,"height":400,"color":"1"},
 		{"id":"3df32ff467acbbf3","type":"file","file":"Produits/Babybot-01/Informatic-01/LearnJetson/LearnJetson.md","x":2780,"y":-960,"width":400,"height":400,"color":"4"},
-		{"id":"282ea8dfaf57864b","type":"file","file":"Produits/Babybot-01/Informatic-01/First Walk With Jetson.md","x":3400,"y":-960,"width":400,"height":400,"color":"3"},
-		{"id":"9a92467947fdb858","x":4040,"y":-160,"width":400,"height":400,"type":"file","file":"Produits/Babybot-01/Informatic-01/Improve Spidy Env.md"},
-		{"id":"2309c90903350ad6","x":4720,"y":-160,"width":400,"height":400,"type":"file","file":"Produits/Babybot-01/Informatic-01/Spidy Reach.md"}
+		{"id":"282ea8dfaf57864b","type":"file","file":"Produits/Babybot-01/Informatic-01/Walk Jetson/First Walk With Jetson.md","x":3400,"y":-960,"width":400,"height":400,"color":"3"},
+		{"id":"9a92467947fdb858","type":"file","file":"Produits/Babybot-01/Informatic-01/SimpleEnv/SimpleEnv.md","x":4040,"y":-160,"width":400,"height":400},
+		{"id":"2309c90903350ad6","type":"file","file":"Produits/Babybot-01/Informatic-01/Spidy Reach.md","x":4720,"y":-160,"width":400,"height":400}
 	],
 	"edges":[
 		{"id":"f1751ae60dbf965a","fromNode":"d0c44f365cfa2d25","fromSide":"bottom","toNode":"15ea7db6c3ca8e7c","toSide":"top"},

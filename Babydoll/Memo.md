@@ -1,6 +1,11 @@
 
 ## Linux
 
+## Enter jetson
+
+ssh dorvan@192.168.1.100
+
+scp /path/to/local/file dorvan@192.168.1.100:/home/dorvan/Document
 ### No GUI
 sudo init 3
 dorvan

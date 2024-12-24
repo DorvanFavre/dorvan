@@ -30,7 +30,7 @@ ssh dorvan@192.168.1.100
 logout
 
 Send file
-scp /path/to/local/file dorvan@192.168.1.100:/path/to/destination/
+scp /path/to/local/file dorvan@192.168.1.100:/home/dorvan/Documents
 /home/dorvan/Documents
 
 
@@ -226,8 +226,18 @@ pins: https://github.com/NVIDIA/jetson-gpio/blob/master/lib/python/Jetson/GPIO/g
 GPIO.setmode(GPIO.BCM)
 output_pin = 18  # BCM pin 18, BOARD pin 12
 
+Not working alongside 12c
+
+mode is TEGRA_SOC
+Therfoe use "module pin name" in the 40 pin header table:
+![[Pasted image 20241218160631.png]]
+oe_pin = 'GP122'
+GPIO.setup(oe_pin, GPIO.OUT, initial=GPIO.HIGH)
+
 
 **6.3 Write python interface**
+
+ create a python class named "ServoDriver" that has a method that take as input the leg number [0,5], the servo number [0,2] and the angle  (default degree but can be specified as radian), return void. This method would print the angle with an offset for this specific servo/leg. the offset are specified in a separated file. There is another method named "calibrate". This method asks for a leg and servo number or to quit calibration mode. When servo and leg are given,  it asks ether to increase, decrease or save the new offset.
 
 **6.4 Calibration**
 

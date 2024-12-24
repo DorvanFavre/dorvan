@@ -152,3 +152,9 @@ Mais il trouve un minimum local: c'est mieux de rester sur place que de d'éloig
 ![[Pasted image 20241214183353.png]]
 
 Try to change the reward function again
+
+
+**06_reach_DQN**
+
+It seems that there is no reset after one epoch.
+There is reset but investigate why phase_biases does not reset (log every 1 step to see)

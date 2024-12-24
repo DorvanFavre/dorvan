@@ -10,8 +10,7 @@ import math
 import importlib.resources
 
 
-SIM_F = 60.0
-TIME_STEP = 1.0/SIM_F
+ 
 OBSERVATION_TYPE=np.float32
 ACTION_TYPE = np.float32
 
@@ -104,7 +103,7 @@ def exposed_to_triangle(exposed, triangle, exposed_phases_indexes):
     return triangle
 
 def normalize(phases):
-    return (phases / np.pi) - 1.
+    return ((phases ) / (np.pi)) - 1.
 
 def unnormalize(phases):
     return (phases +1) * np.pi
@@ -182,8 +181,8 @@ class CPGNetwork:
     # def set_coupling_weights(self, coupling_weights):
     #     self.coupling_weights = coupling_weights * 40
 
-    # def set_phase_biases(self, phase_biases):
-    #     self.phase_biases = phase_biases * 2 * np.pi
+    def set_phase_biases(self, phase_biases):
+        self.phase_biases = phase_biases
 
     def update_phase_biases(self, phase_biases_update):
         
@@ -229,15 +228,31 @@ Spidy Env
 class SpidyEnvV4_4(gym.Env):
     metadata = {"render_modes": ["human", "rgb_array", None]}
 
-    def __init__(self, render_mode=None, exposed_phases_indexes=[0,65], debug_mode=False):
+    def __init__(
+            self,
+            sim_frequence=60,
+            sim_factor:int = 1,
+            render_mode=None, 
+            exposed_phases_indexes=[0,65], 
+            action_mode = "discrete",
+            debug_mode=False):
         super().__init__()
+        self.sim_frequence = sim_frequence
+        self.sim_factor = sim_factor
+        self.time_step = 1. / self.sim_frequence
         self.exposed_phases_indexes = exposed_phases_indexes
         self.n_exposed_phases = len(exposed_phases_indexes)
-        self.observation_space = spaces.Box(low=-1.,high= 1., shape=(self.n_exposed_phases + 1,), dtype=OBSERVATION_TYPE)
-        
-        self.action_space = spaces.Discrete(5)
-        
+        self.action_mode = action_mode
 
+        self.observation_space = spaces.Box(low=-1.,high= 1., shape=(self.n_exposed_phases + 2,), dtype=OBSERVATION_TYPE)
+        
+        if self.action_mode == "discrete":
+            self.action_space = spaces.Discrete(5)
+        elif self.action_mode == "continuous":
+            self.action_space = spaces.Box(low=-1., high=1., shape=(self.n_exposed_phases,), dtype=ACTION_TYPE)
+        else:
+            print('Action mode unknown')
+            
         assert render_mode is None or render_mode in self.metadata["render_modes"]
         self.render_mode = render_mode
 
@@ -253,22 +268,22 @@ class SpidyEnvV4_4(gym.Env):
         intrinsic_amps = np.array([amp_x,amp_z,amp_x,amp_z,amp_x,amp_z,amp_x,amp_z,amp_x,amp_z,amp_x,amp_z])
 
         convergence_coefs = np.ones(num_cpg)
-        self.cpg_network = CPGNetwork(
-            timestep=TIME_STEP,
+        self.base_cpg_network = CPGNetwork(
+            timestep=self.time_step,
             intrinsic_freqs=intrinsic_freqs,
             intrinsic_amps=intrinsic_amps,
             coupling_weights=COUPLING_WHEIGHTS,
             phase_biases=PHASES_BIASES,
             convergence_coefs=convergence_coefs,
         )
-        
+        self.cpg_network = self.base_cpg_network
 
         # PyBullet
         p.connect(p.GUI if self.render_mode == "human" else p.DIRECT)
         p.setAdditionalSearchPath(pybullet_data.getDataPath())
         p.setGravity(0, 0, -9.81)
         p.setRealTimeSimulation(0)  # Use step simulation for better control
-        p.setTimeStep(TIME_STEP)  # Set a higher time step for smoother simulation
+        p.setTimeStep(self.time_step)  # Set a higher time step for smoother simulation
         p.setPhysicsEngineParameter(numSolverIterations=50) 
         camera_target_position = [0, 0, 0] # Position to look at
         camera_distance = 1 # Distance from the target
@@ -372,7 +387,12 @@ class SpidyEnvV4_4(gym.Env):
         # Normalize the angle to the range [-pi, pi]
         relative_angle = (relative_angle + np.pi) % (2 * np.pi) - np.pi
         relative_angle = relative_angle / np.pi
-        return np.append(exposed_normalized, relative_angle).astype(np.float32)
+        
+        distance = np.sqrt(dx**2 + dy**2)
+        
+        array = [relative_angle, distance/10.]
+
+        return np.append(exposed_normalized, array).astype(np.float32)
     
     def _get_info(self):
         triangle = square_to_triangle(self.cpg_network.phase_biases)
@@ -402,7 +422,6 @@ class SpidyEnvV4_4(gym.Env):
         p.resetBasePositionAndOrientation(self._robot_id,[0,0,0.2],[0,0,0,1])
         for i in self._revolute_joint_index.values():
             p.resetJointState(self._robot_id, i, 0)
-        self.cpg_network.coupling_weights = COUPLING_WHEIGHTS
         self.cpg_network.phase_biases = PHASES_BIASES
 
         observation = self._get_obs()
@@ -417,6 +436,7 @@ class SpidyEnvV4_4(gym.Env):
     def step(self, action):
 
 
+        # Debug Action
         if self.debug_mode == True:
             exposed = []
             for cursor in self.cursors:
@@ -425,69 +445,82 @@ class SpidyEnvV4_4(gym.Env):
             triangle = exposed_to_triangle(exposed,triangle, self.exposed_phases_indexes)
             self.cpg_network.phase_biases = triangle_to_square(triangle) 
 
-        # Action: modify CPG network parameters
-        a2a = [[0,0],[1,0],[-1,0],[0,1],[0,-1]]
-        triangle = np.zeros(66)
-        triangle = exposed_to_triangle(a2a[action], triangle, self.exposed_phases_indexes)
-        square = triangle_to_square(triangle)
-        square = square * 2. * np.pi
-        square = square * 0.01
-        self.cpg_network.update_phase_biases(square)
+        # Normal Action
+        else:
+            # Action: modify CPG network parameters
+            if self.action_mode == "discrete":
+                a2a = [[0,0],[1,0],[-1,0],[0,1],[0,-1]]
+                triangle = np.zeros(66)
+                triangle = exposed_to_triangle(a2a[action], triangle, self.exposed_phases_indexes)
+                square = triangle_to_square(triangle)
+                square = square * 2. * np.pi
+                square = square * 0.05
+                self.cpg_network.update_phase_biases(square)
+                
+            elif self.action_mode == "continuous":
+                action = np.array(action)
+                action = unnormalize(action)
+                triangle = square_to_triangle(self.cpg_network.phase_biases)
+                for i in range(self.n_exposed_phases):
+                    triangle[self.exposed_phases_indexes[i]] = action[i]
+                square = triangle_to_square(triangle)
+                self.cpg_network.set_phase_biases(square)
         
+        # Run simulation steps
+        for _ in range(self.sim_factor):
+            # Compute CPG values
+            phases, magnitudes = self.cpg_network.step()
+            values = np.sin(phases)
+
+            # Compute XZ pos according to base position and CPG 
+            x1 = 0.16
+            y2 = 0.24
+            y1 = 0.16
+            z1 = -0.07
+            base_positions = [[x1,y1,z1],[0,y2,z1],[-x1,y1,z1],[-x1,-y1,z1],[0,-y2,z1],[x1,-y1,z1]]
+            for leg_i in range(12 //2):
+                cpg_i = leg_i *2
+                base_positions[leg_i][0] += values[cpg_i] * magnitudes[cpg_i]
+                base_positions[leg_i][2] += values[cpg_i+1] * magnitudes[cpg_i+1]
+
+            # Get robot position and orientation
+            robot_state = p.getLinkState(self._robot_id,0)
+            robot_position = list(robot_state[0])
+            robot_orientation = list(robot_state[1])
+
+            # Transform end effector position according to robot pos and orientation
+            for i in range(6):
+                self.end_effector_world_position[i], end_effector_world_orientation = p.multiplyTransforms(robot_position,robot_orientation, base_positions[i], [0,0,0,1])
+
+
+            # Compute angle with IK
+            angles = p.calculateInverseKinematics2(self._robot_id, self.end_effector_index.values(), self.end_effector_world_position)
         
-        # Compute CPG values
-        phases, magnitudes = self.cpg_network.step()
-        values = np.sin(phases)
+            # Set motor angle
+            p.setJointMotorControlArray(self._robot_id, self._revolute_joint_index.values(), p.POSITION_CONTROL, angles, forces=[5]*self._num_revolute_joint, positionGains=[0.5]*self._num_revolute_joint)
+            
 
-        # Compute XZ pos according to base position and CPG 
-        x1 = 0.16
-        y2 = 0.24
-        y1 = 0.16
-        z1 = -0.07
-        base_positions = [[x1,y1,z1],[0,y2,z1],[-x1,y1,z1],[-x1,-y1,z1],[0,-y2,z1],[x1,-y1,z1]]
-        for leg_i in range(12 //2):
-            cpg_i = leg_i *2
-            base_positions[leg_i][0] += values[cpg_i] * magnitudes[cpg_i]
-            base_positions[leg_i][2] += values[cpg_i+1] * magnitudes[cpg_i+1]
+            # Step simulation
+            
+            p.stepSimulation()
+            if self.render_mode == 'human':
+                time.sleep(self.time_step)
+            
+            # Update camera
+            cam = p.getDebugVisualizerCamera()
+            p.resetDebugVisualizerCamera(
+            cameraDistance=cam[10],
+            cameraYaw=cam[8],
+            cameraPitch=cam[9],
+            cameraTargetPosition=robot_position)
 
-        # Get robot position and orientation
-        robot_state = p.getLinkState(self._robot_id,0)
-        robot_position = list(robot_state[0])
-        robot_orientation = list(robot_state[1])
-
-        # Transform end effector position according to robot pos and orientation
-        for i in range(6):
-            self.end_effector_world_position[i], end_effector_world_orientation = p.multiplyTransforms(robot_position,robot_orientation, base_positions[i], [0,0,0,1])
-
-
-        # Compute angle with IK
-        angles = p.calculateInverseKinematics2(self._robot_id, self.end_effector_index.values(), self.end_effector_world_position)
-    
-        # Set motor angle
-        p.setJointMotorControlArray(self._robot_id, self._revolute_joint_index.values(), p.POSITION_CONTROL, angles, forces=[5]*self._num_revolute_joint, positionGains=[0.5]*self._num_revolute_joint)
         
-
-        # Step simulation
-        p.stepSimulation()
-        if self.render_mode == 'human':
-            time.sleep(TIME_STEP)
-
-        # Update camera
-        cam = p.getDebugVisualizerCamera()
-        p.resetDebugVisualizerCamera(
-        cameraDistance=cam[10],
-        cameraYaw=cam[8],
-        cameraPitch=cam[9],
-        cameraTargetPosition=robot_position    )
 
 
         # Get observation
         observation = self._get_obs()
 
         # Calculate reward
-        
-
-        
         robot_state = p.getLinkState(self._robot_id,0)
         robot_position = list(robot_state[0])
         dx = self.target_position[0] - robot_position[0]
@@ -497,7 +530,7 @@ class SpidyEnvV4_4(gym.Env):
         new_distance = np.sqrt(dx**2 + dy**2)
         distance_improvement = self._distance - new_distance
         self._distance = new_distance
-        proximity_reward = distance_improvement * 300
+        proximity_reward = distance_improvement * 300 / self.sim_factor
 
         angle = observation[2]* np.pi
         alignement_reward = np.cos(angle)
