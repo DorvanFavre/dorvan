@@ -4,3 +4,4 @@ from simple_env.envs.grid_world_v3 import GridWorldEnv3
 from simple_env.envs.continuous_world import ContinuousWorldEnv
 from simple_env.envs.continuous_world_v2 import ContinuousWorldEnv2
 from simple_env.envs.continuous_world_v3 import ContinuousWorldEnv3
+from simple_env.envs.steering_world import SteeringWorldEnv

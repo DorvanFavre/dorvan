@@ -253,4 +253,8 @@ https://github.com/adafruit/Adafruit_CircuitPython_Motor/blob/main/adafruit_moto
 
 
 
+## 7 CPG
 
+Create a CPG class on the Jetson oring nano.
+
+Make sure that COUPLING_WHEIGHTS * INTRINSIC_AMPS = env 1.0

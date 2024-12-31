@@ -24,7 +24,10 @@ register(
     id="simple_env/ContinuousWorld-v3",
     entry_point="simple_env.envs:ContinuousWorldEnv3",
 )
-
+register(
+    id="simple_env/SteeringWorld-v1",
+    entry_point="simple_env.envs:SteeringWorldEnv",
+)
 
 
 

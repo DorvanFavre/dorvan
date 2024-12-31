@@ -310,3 +310,12 @@ Use another model that has as observation the target and angle and action is ste
 
 **Learn hierarchical modeling.**
 
+## 9. SteeringEnv
+
+New strategie: As the value of param1 and param2 will affect directly the steering of the agent, reward the steering instead of some far away goal.
+Create an environment dedicated to learn how to turn.
+
+Actions: continuous, set directly param1 and parma2.
+Observation : target steering value [ -1, 1], timestep
+reward: (2 - abs(target steering - actual steering) )/2
+physics : target steering changes incremetaly and randomly.
