@@ -110,5 +110,203 @@ takes a bit more time to converge but that's very good:
 
 ### 2. Other agent on Grid world
 
+Try with A2C.
+It is very efficient. I will need a harder env to see a real difference.
+![[Pasted image 20241225090412.png]]
 
+Try with PPO:
+Even better ! Use PPO from nowon.
+![[Pasted image 20241225090912.png]]
+
+### 3. Vectorize env
+
+Run on CPU : use SubprocVecEnv
+https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html
+
+Check cartpole.py to see how implementing vectorized env.
+https://github.com/Farama-Foundation/Gymnasium/blob/main/gymnasium/envs/classic_control/cartpole.py
+
+compare differences:
+
+Class name change.
+Inherits from VectorEnv
+no 'human' mode in metadata
+
+init:
+	num_envs
+	action space: batch space
+
+try another time.
+
+
+### 4. ActionSpace: Direction (GridWorld_v2)
+
+Instead of giving the next move (up,right,down,left), it will change the direction (keep going, increase 90deg, decrease 90deg)
+
+Change env:
+Intern variable: direction (0,1,2,3)
+Each timestep go in the direction.
+Action space as (do noting, steer right, steer left)
+
+Indeed, it struggle a little bit more than the ohter manner (PPO) (need 3x more steps to converge)
+![[Pasted image 20241225100752.png]]
+
+Try with DQN: HAHAHA DQN is better than PPO this time !
+![[Pasted image 20241225101247.png]]
+Try with A2C: worse than PPO
+![[Pasted image 20241225103508.png]]
+
+### 5 Continuous action space (gridworld_v3)
+
+It is in direct again.
+Action space [0,1]
+0- 0.25 go up, 0.25-0.5 go right, 0.5-0.75 go down and 0.75 - 1 go left
+
+Try with PPO: should give same result as env_v1
+Definetly struggle to converge
+![[Pasted image 20241225105548.png]]
+
+![[Pasted image 20241225110157.png]]
+
+
+Means that discretizing continuous action space may be good.
+
+### 6 ContinuousWorld
+
+Direct action
+
+Easy (PPO)
+![[Pasted image 20241225113140.png]]
+
+
+Change action space
+Continuous, 1 value : direction angle
+Take 10x more time
+![[Pasted image 20241225134849.png]]
+What if i also give the angle as observation ? risk that it maps directly the observed angle as the optimal action. so be it. let's try: Not at all. result is the same: optimum at 200k steps
+
+![[Pasted image 20241225140728.png]]
+
+Try another model: DDPG
+The training rate is 10x slower (50it/s)
+But so efficient ! reach optimum after 2k steps equivalent to 20k steps for DQN
+the display result is very smooth.
+![[Pasted image 20241225141033.png]]![[Pasted image 20241225141510.png]]
+
+Try PPO with discretised actions
+discretize 360 deg in 10 actions
+Reaches optimum after 20k steps
+![[Pasted image 20241225142433.png]]
+
+Try with DQN
+Takes more time (40k steps)
+![[Pasted image 20241225142801.png]]
+
+Try to increase action space (20 actions) to see if DQN is doing bad according to action space size.
+DQN: Same performance as before
+Try with 100 actions: SAME
+PPo: reach optimum at 25k steps. same as with 10 actions only
+The size of the action space does not influence so much the performences.
+
+
+### 7 Continuous world v2
+
+Steering actions ! 
+
+variable : direction -pi to pi
+action descrete : increase angle , decrease angle, do nothing
+each steps move in the direction
+obs: proximity, angle, direction ([-1,1], time
+
+increment is 0.25 / timestep (total is 2PI)
+
+Try with PPO: reach optimum after 150k steps: 6x more than with direct actions.
+Result is realllly nice to see. it takes more time to make revers turn obviously. That can explain the complexity
+![[Pasted image 20241225151211.png]]
+
+try DQN
+Same result faset (60k steps)
+![[Pasted image 20241225151533.png]]
+
+
+try now adjust steering value
+
+actions: more left, do nothing, more right
+action adjust steering [-pi/2, pi/2]
+steering adjust direction proportionaly
+add steering to observation
+
+The model is realistic now. It hase to do with " how much i want to adjust the steering of my car"
+
+Let's see what DQN is capable of:
+Needs a little more time but eventually reaches an optimal solution:
+![[Pasted image 20241225152951.png]]
+
+Try PPO.
+a bit more difficult. Display result is descent.
+
+![[Pasted image 20241225155601.png]]
+
+**Try to reduce observation space now.**
+
+Remove proximity obs.
+converge even faser.
+![[Pasted image 20241225163010.png]]
+
+remove time step: does not change much
+I remain with the 3  necessary value: steering, direction, angle
+PPO:
+![[Pasted image 20241225163712.png]]
+
+DQN:
+![[Pasted image 20241225165000.png]]
+
+
+try to remove direction. should be able to learn something but less efficiently.
+Indeed it take too long. put it back again
+![[Pasted image 20241225164302.png]]
+
+
+
+#### **Steering with continues value.** 
+action [-1,1] directly set steering value.
+Very good ! converge 2x faster
+![[Pasted image 20241225165736.png]]
+
+try DDPG (it/s goes 50x slower)
+result are better, but i retried and get bad results.. it may be a bit unstable.
+![[Pasted image 20241225170134.png]]
+![[Pasted image 20241225170513.png]]
+
+discreet actions with PPO (20 actions)
+Not so much changes. go back to continuous values.
+
+![[Pasted image 20241225171710.png]]
+
+steering obs is now useless. try to remove it.
+Work still very well.
+![[Pasted image 20241225172642.png]]
+Try with continuous action from [0,1] instead of [-1,1]
+result is worst. so keep range [-1,1] but not so big difference
+
+![[Pasted image 20241225173454.png]]
+### 8.  Simulate spidy ( continuous_world_v3)
+
+now, action set directly param1 and param2[-1,1]
+if param1 is in range 0.2 - 0.3 and param2 [-0.3, -0.2]]
+steering according to param1 value
+do the other way around
+
+add steering to observation
+
+**Results**
+It is relatively rare that botn param1 and param2 are in the target range. Thus the environment is too sparse. Let see with PPO 1M timesteps
+
+If not i should first teach the model how to tweak parm1 and parma2 in order to produce the desired steering. -> observation (desired steering, actual steering)
+reward, if the actual steering matches the desired steering at epsilon close.
+when this model is trained
+
+Use another model that has as observation the target and angle and action is steering. (like the model I strained before)
+
+**Learn hierarchical modeling.**
 

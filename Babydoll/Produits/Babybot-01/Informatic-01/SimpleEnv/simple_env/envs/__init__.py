@@ -1,1 +1,6 @@
 from simple_env.envs.grid_world import GridWorldEnv
+from simple_env.envs.grid_world_v2 import GridWorldEnv2
+from simple_env.envs.grid_world_v3 import GridWorldEnv3
+from simple_env.envs.continuous_world import ContinuousWorldEnv
+from simple_env.envs.continuous_world_v2 import ContinuousWorldEnv2
+from simple_env.envs.continuous_world_v3 import ContinuousWorldEnv3

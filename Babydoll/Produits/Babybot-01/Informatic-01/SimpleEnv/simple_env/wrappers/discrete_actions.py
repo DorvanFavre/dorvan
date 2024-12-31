@@ -9,4 +9,4 @@ class DiscreteActions(gym.ActionWrapper):
         self.action_space = Discrete(len(disc_to_cont))
 
     def action(self, act):
-        return self.disc_to_cont[act]
+        return [self.disc_to_cont[act]]

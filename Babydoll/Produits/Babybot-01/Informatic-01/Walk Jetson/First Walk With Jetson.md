@@ -4,11 +4,14 @@
 1. Assemble Jetson on the robot #Done
 2. Power Jetson #Done
 3. Learn how to access jetson from host computer via wifi #Done 
-4. Learn how to control jetson IO with python
-5. Setup 12c
-6. Write a program to control one servo
-7. Write a program to calibrate servos
-8. Simple forward walk with CPG an IK (no RL)
+4. Learn how to control jetson IO with python #Done 
+5. Setup 12c #Done
+6. Write a program to control one servo #Done
+7. Write a program to calibrate servos #Done
+8. IK #Done
+9. Adapt servo driver pwm #Done
+10. CPG
+11. Simple forward walk with CPG an IK (no RL)
 
 ## Tasks
 
@@ -239,6 +242,15 @@ GPIO.setup(oe_pin, GPIO.OUT, initial=GPIO.HIGH)
 
  create a python class named "ServoDriver" that has a method that take as input the leg number [0,5], the servo number [0,2] and the angle  (default degree but can be specified as radian), return void. This method would print the angle with an offset for this specific servo/leg. the offset are specified in a separated file. There is another method named "calibrate". This method asks for a leg and servo number or to quit calibration mode. When servo and leg are given,  it asks ether to increase, decrease or save the new offset.
 
-**6.4 Calibration**
+**6.4 Adapt servo driver pwm**
+
+I can calibrate to 90 but when i try to go to 180 it goes only to env. 160. PWM is not set correctly for the MG996R servo.
+
+With trails and errors i found that min=550 and max = 2550 us is the best for a perfect 180 deg angle range.
+self.kits[kit].servo[servo_index].set_pulse_width_range(min_pulse=550, max_pulse=2550)
+https://github.com/adafruit/Adafruit_CircuitPython_Motor/blob/main/adafruit_motor/servo.py
+
+
+
 
 
