@@ -22,7 +22,7 @@ class SteeringWorldEnv(gym.Env):
         self.speed = speed # pix / s
         self.freq = freq
 
-        self.observation_space = spaces.Box(shape=(2,), low=-1., high=1, dtype=np.float32)
+        self.observation_space = spaces.Box(shape=(1,), low=-1., high=1, dtype=np.float32)
 
         self.action_space = spaces.Box(shape=(2,), low=-1., high=1., dtype= np.float32)
 
@@ -65,12 +65,12 @@ class SteeringWorldEnv(gym.Env):
         noise = np.random.uniform(-1,1)
         
         # [*proximity, steering, angle, direction]
-        obs = np.array([target_steering, actual_steering])
+        obs = np.array([target_steering])
         return obs.astype(np.float32)
 
     def _get_info(self):
         return {
-            "direction": self._direction
+            "steering": self._steering
         }
 
     def reset(self, seed=None, options=None):
@@ -105,9 +105,9 @@ class SteeringWorldEnv(gym.Env):
         self._param2 = action[1]
         
         # calculate steering according to params
-        if 0.2 < self._param1 < 0.3 and -0.6 < self._param2 < -0.5:
-            self._steering = (self._param1 - 0.2) * 10 # steering [0,1]
-        elif -0.7 < self._param1 < -0.6 and 0.3 < self._param2 < 0.4:
+        # if 0.2 < self._param1 < 0.3 and -0.6 < self._param2 < -0.5:
+        #     self._steering = (self._param1 - 0.2) * 10 # steering [0,1]
+        if -0.7 < self._param1 < -0.6 and 0.3 < self._param2 < 0.4:
             self._steering = (self._param1 + 0.6) * 10 # steering [-1,0]
         else:
             self._steering = 0
@@ -135,8 +135,8 @@ class SteeringWorldEnv(gym.Env):
         info = self._get_info()
         
         
-        proximity_reward = (2. - abs(self._target_steering - self._steering)) / 2.
-        do_somthing_reward = 1
+        proximity_reward = (2. - abs(self._target_steering - self._steering)) / 4.
+        do_somthing_reward = 0.5
         steering_reward = proximity_reward + do_somthing_reward if self._steering != 0 else 0
         
         reward = steering_reward

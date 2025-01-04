@@ -316,6 +316,35 @@ New strategie: As the value of param1 and param2 will affect directly the steeri
 Create an environment dedicated to learn how to turn.
 
 Actions: continuous, set directly param1 and parma2.
-Observation : target steering value [ -1, 1], timestep
-reward: (2 - abs(target steering - actual steering) )/2
+Observation : target steering value [ -1, 1], actual steering value [-1,1]
+reward: (2 - abs(target steering - actual steering) )/2 if actual steering != 0 else 0
 physics : target steering changes incremetaly and randomly.
+
+train PPO on 1e5 steps: improvement but for from ep_rew = 3 / 1000
+train PPO on 1e6 steps : reaches 300/1000 after 500k steps 
+![[Pasted image 20250101145309.png]]
+
+it is weird that it gets stuck here.
+try DDPG
+Get stuck at 500 / 1000
+
+![[Pasted image 20250101171757.png]]
+Issue: actual_steering in obs is problematic.
+Do not put in observation a value that is directly correlated with the actions.
+
+![[Pasted image 20250101171931.png]]
+
+Try without actual steering. (DDPG)
+Way better ! 960/1000
+but there is a bromblem: negative target steering -> only positive steering
+
+![[Pasted image 20250101185344.png]]
+
+with PPO: and make total reward per step = 1
+
+Same problem. cannot learn the second configuration (steering negative.)
+
+450 / 500
+![[Pasted image 20250101195418.png]]
+
+make the target_steering completely random so there is equal probability for any state to be the next one.
