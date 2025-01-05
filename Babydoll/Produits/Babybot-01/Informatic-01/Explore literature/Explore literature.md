@@ -7,16 +7,16 @@ https://www.researchgate.net/publication/346504616_Reinforcement_Learning_Applie
 
 Combined Reinforcement Learning and CPG Algorithm to Generate Terrain-Adaptive Gait of Hexapod Robots
 [[Combined Reinforcement Learning and CPG Algorithm to Generate Terrain-Adaptive Gait of Hexapod Robots.pdf]]
-✅
+✅ (
 
 
 Terrain-adaptive Central Pattern Generators with Reinforcement Learning for Hexapod Locomotion
 [[Terrain-adaptive Central Pattern Generators with Reinforcement learning for Hexapod Locomotion.pdf]]
-✅
+✅ (
 
 Enhancing Hexapod Robot Mobility on Challenging Terrains: Optimizing Cpg-Generated Gait with Reinforcement Learning
 [[Enhancing Hexapod Robot Mobility on Challenging Terrains Optimizing Cpg-Generated Gait with Reinforcement Learning.pdf]]
-To read
+✅(bof) 
 
 Adaptive Locomotion Control of a Hexapod Robot via Bio-Inspired Learning
 [[Adaptive Locomotion Control of a Hexapod Robot via Bio-Inspired Learning.pdf]]
