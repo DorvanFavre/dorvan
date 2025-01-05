@@ -13,12 +13,12 @@
 		{"id":"a6c32cac03909082","type":"file","file":"Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/Walk With Simple CPG.md","x":2380,"y":400,"width":400,"height":400,"color":"1"},
 		{"id":"a390b6d838af5093","type":"file","file":"Produits/Babybot-01/Informatic-01/Investigate hierarchical RL.md","x":1000,"y":1080,"width":400,"height":400},
 		{"id":"fe4a9d8c654fc411","type":"file","file":"Produits/Babybot-01/Informatic-01/Investigate VAE.md","x":1520,"y":1080,"width":400,"height":400},
-		{"id":"9a92467947fdb858","type":"file","file":"Produits/Babybot-01/Informatic-01/SimpleEnv/SimpleEnv.md","x":2380,"y":960,"width":400,"height":400,"color":"3"},
-		{"id":"2309c90903350ad6","type":"file","file":"Produits/Babybot-01/Informatic-01/Spidy Reach.md","x":3280,"y":400,"width":400,"height":400},
+		{"id":"9a92467947fdb858","type":"file","file":"Produits/Babybot-01/Informatic-01/SimpleEnv/SimpleEnv.md","x":2380,"y":960,"width":400,"height":400,"color":"1"},
 		{"id":"75e10d2d1d751fef","type":"file","file":"Produits/Babybot-01/Informatic-01/LearnRL/Learn RL.md","x":760,"y":-960,"width":400,"height":400,"color":"4"},
 		{"id":"2f7f3510cec614e2","type":"file","file":"Produits/Babybot-01/Informatic-01/Read RL book.md","x":1320,"y":-960,"width":400,"height":400,"color":"4"},
 		{"id":"3df32ff467acbbf3","type":"file","file":"Produits/Babybot-01/Informatic-01/LearnJetson/LearnJetson.md","x":1980,"y":-960,"width":400,"height":400,"color":"4"},
-		{"id":"282ea8dfaf57864b","type":"file","file":"Produits/Babybot-01/Informatic-01/Walk Jetson/First Walk With Jetson.md","x":2600,"y":-960,"width":400,"height":400,"color":"3"}
+		{"id":"282ea8dfaf57864b","type":"file","file":"Produits/Babybot-01/Informatic-01/Walk Jetson/First Walk With Jetson.md","x":2580,"y":-960,"width":400,"height":400,"color":"3"},
+		{"id":"4b4e8879096619f6","type":"file","file":"Produits/Babybot-01/Informatic-01/Explore literature/Explore literature.md","x":3280,"y":-160,"width":400,"height":400,"color":"3"}
 	],
 	"edges":[
 		{"id":"f1751ae60dbf965a","fromNode":"d0c44f365cfa2d25","fromSide":"bottom","toNode":"15ea7db6c3ca8e7c","toSide":"top"},

@@ -108,9 +108,80 @@
               "icon": "lucide-file",
               "title": "SimpleEnv"
             }
+          },
+          {
+            "id": "570e744803d36af8",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "assets/Pasted image 20241127165724.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20241127165724"
+            }
+          },
+          {
+            "id": "03877895be5423d4",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Produits/Babybot-01/Mechanical-02/Mechanical-02.canvas",
+                "viewState": {
+                  "x": 1792.8530850545162,
+                  "y": 2239.074313986429,
+                  "zoom": -1
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Mechanical-02"
+            }
+          },
+          {
+            "id": "5b11127dfaa0f337",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Produits/Babybot-01/Mechanical-02/6.2 LiPo charger.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "6.2 LiPo charger"
+            }
+          },
+          {
+            "id": "d05cf8b97df11a0d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Produits/Babybot-01/Mechanical-02/1.1. ABS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1.1. ABS"
+            }
+          },
+          {
+            "id": "7ad59330558f270f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Produits/Babybot-01/Informatic-01/Explore literature/Explore literature.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Explore literature"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -252,57 +323,57 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "172dff88fc6b634d",
+  "active": "5b11127dfaa0f337",
   "lastOpenFiles": [
-    "Pasted image 20250101195418.png",
-    "Pasted image 20250101185344.png",
-    "Pasted image 20250101171931.png",
-    "Pasted image 20250101171757.png",
+    "Pasted image 20250105163903.png",
+    "Produits/Babybot-01/Mechanical-02/Mechanical-02.canvas",
+    "Memo.md",
+    "Produits/Babybot-01/Informatic-01/Explore literature/Explore literature.md",
+    "Produits/Babybot-01/Informatic-01/Explore literature/Adaptive Locomotion Control of a Hexapod Robot via Bio-Inspired Learning.pdf",
+    "Produits/Babybot-01/Informatic-01/Explore literature/Enhancing Hexapod Robot Mobility on Challenging Terrains Optimizing Cpg-Generated Gait with Reinforcement Learning.pdf",
+    "Produits/Babybot-01/Informatic-01/Explore literature/Terrain-adaptive Central Pattern Generators with Reinforcement learning for Hexapod Locomotion.pdf",
+    "Produits/Babybot-01/Informatic-01/Explore literature/Combined Reinforcement Learning and CPG Algorithm to Generate Terrain-Adaptive Gait of Hexapod Robots.pdf",
+    "Produits/Babybot-01/Informatic-01/Informatic-01.canvas",
+    "Produits/Babybot-01/Informatic-01/Explore literature",
+    "Produits/Babybot-01/Informatic-01/Informatic-01.md",
+    "Produits/Babybot-01/Informatic-01/Jetson-Orin-Nano-DevKit-Carrier-Board-Specification_SP-11324-001_v1.2.pdf",
+    "Produits/Babybot-01/Informatic-01/SimpleEnv/SimpleEnv.md",
+    "Produits/Babybot-01/Mechanical-02/1.1. ABS.md",
+    "assets/Pasted image 20241127165724.png",
+    "Produits/Babybot-01/Mechanical-02/Mechanical-02.md",
+    "Produits/Babybot-01/Mechanical-02/6.1 Find LiPo battery.md",
+    "Produits/Babybot-01/Untitled.md",
+    "assets/Pasted image 20250101195418.png",
+    "assets/Pasted image 20250101185344.png",
+    "assets/Pasted image 20250101171931.png",
+    "assets/Pasted image 20250101171757.png",
     "Produits/Babybot-01/Informatic-01/SimpleEnv/01_steering_world_ddpg/model/checkpoint_440000_steps.zip",
     "Produits/Babybot-01/Informatic-01/SimpleEnv/01_steering_world_ddpg/model/checkpoint_430000_steps.zip",
     "Produits/Babybot-01/Informatic-01/SimpleEnv/01_steering_world_ddpg/model/checkpoint_420000_steps.zip",
     "Produits/Babybot-01/Informatic-01/SimpleEnv/01_steering_world_ddpg/model/checkpoint_410000_steps.zip",
-    "Produits/Babybot-01/Informatic-01/SimpleEnv/01_steering_world_ddpg/model/checkpoint_400000_steps.zip",
-    "Produits/Babybot-01/Informatic-01/SimpleEnv/01_steering_world_ddpg/model/checkpoint_390000_steps.zip",
-    "Produits/Babybot-01/Informatic-01/SimpleEnv/01_steering_world_ddpg/model/checkpoint_380000_steps.zip",
-    "Produits/Babybot-01/Informatic-01/SimpleEnv/01_steering_world_ddpg/model/checkpoint_370000_steps.zip",
-    "Produits/Babybot-01/Informatic-01/SimpleEnv/01_steering_world_ddpg/model/checkpoint_360000_steps.zip",
-    "Produits/Babybot-01/Informatic-01/SimpleEnv/01_steering_world_ddpg/model/checkpoint_350000_steps.zip",
-    "Pasted image 20250101145309.png",
-    "Produits/Babybot-01/Mechanical-02/Mechanical-02.canvas",
-    "Produits/Babybot-01/Informatic-01/SimpleEnv/SimpleEnv.md",
+    "assets/Pasted image 20250101145309.png",
     "Produits/Babybot-01/Mechanical-01/Walk Arduino/MG996R (Amazon).md",
-    "Produits/Babybot-01/Informatic-01/Informatic-01.canvas",
     "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/Walk With Simple CPG.md",
     "Produits/Babybot-01/Informatic-01/Walk Jetson/First Walk With Jetson.md",
-    "6.4 Battery voltage sensor.md",
-    "6.2 LiPo charger.md",
-    "6.3 Wireless charging.md",
-    "6.1 Find LiPo battery.md",
+    "Produits/Babybot-01/Mechanical-02/6.4 Battery voltage sensor.md",
+    "Produits/Babybot-01/Mechanical-02/6.2 LiPo charger.md",
+    "Produits/Babybot-01/Mechanical-02/6.3 Wireless charging.md",
     "Produits/Babybot-01/Mechanical-02/6. Find power source solution.md",
     "Produits/Babybot-01/Mechanical-02/2.2 Measure servo consumption.md",
     "Produits/Babybot-01/Mechanical-02/2.1  Spline holder.md",
     "Produits/Babybot-01/Mechanical-02/2. Motors.md",
-    "Produits/Babybot-01/Mechanical-02/1.1. Filament material.md",
-    "Produits/Babybot-01/Mechanical-02/1.2 Post processing method.md",
+    "Produits/Babybot-01/Mechanical-02/1.2 Post processing abs.md",
     "Produits/Babybot-01/Mechanical-02/8.2 Draw leg.md",
     "Produits/Babybot-01/Mechanical-02/8.2.md",
     "Produits/Babybot-01/Mechanical-02/8.1 Create moodboard.md",
     "Hours.md",
-    "Memo.md",
-    "Pasted image 20241225173454.png",
-    "Pasted image 20241225173354.png",
-    "Pasted image 20241225172642.png",
-    "Pasted image 20241225171710.png",
-    "Pasted image 20241225170513.png",
-    "Pasted image 20241225170134.png",
+    "assets/Pasted image 20241225173454.png",
+    "assets/Pasted image 20241225173354.png",
+    "assets/Pasted image 20241225172642.png",
+    "assets/Pasted image 20241225171710.png",
     "Produits/Babybot-01/Informatic-01/SimpleEnv/README.md",
     "Produits/Babybot-01/Electronic-01/Electronic-01.canvas",
     "Produits/Babybot-01/Informatic-01/Untitled.md",
-    "Produits/Babybot-01/Mechanical-02/1. 3D printing méthod.md",
-    "Produits/Babybot-01/Informatic-01/ImproveRLSkills/Improve RL Skills.md",
-    "Produits/Babybot-01/Informatic-01/Credentials.md",
-    "Produits/Babybot-01/Informatic-01/First Walk With Jetson.md",
     "Produits/Babybot-01/Informatic-01/LearnJetson/LearnJetson.canvas",
     "Produits/Babybot-01/Mechanical-01/Mechanical-01.canvas",
     "Produits/Babybot-01/Babybot-01.canvas",

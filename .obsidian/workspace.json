@@ -46,15 +46,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Babybot/Produits/Babybot-01/Mechanical-01/Mechanical-01.canvas",
+                "file": "Babydoll/Produits/Produits.canvas",
                 "viewState": {
-                  "x": 3970.5,
-                  "y": 4445,
-                  "zoom": -1.9303973484931483
+                  "x": 227,
+                  "y": 91,
+                  "zoom": 0
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Mechanical-01"
+              "title": "Produits"
             }
           }
         ],
@@ -199,8 +199,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b65b180332b33953",
+  "active": "0935cbaa288c253e",
   "lastOpenFiles": [
+    "Babydoll/Produits/Babybot-01/Mechanical-02/1. Investigate 3D printing methods.md",
+    "Babydoll/Produits/Babybot-01/Mechanical-02/1. Investigate 3D printing méthods.md",
+    "Babydoll/Produits/Babybot-01/Mechanical-02/1. Investigate 3D printing méthod.md",
+    "Babydoll/Produits/Babybot-01/Mechanical-02/1.2 Post processing abs.md",
+    "Babydoll/Produits/Babybot-01/Mechanical-02/1.1. Try ABS printing.md",
+    "Babydoll/Produits/Babybot-01/Mechanical-02/8.3. Learn Fusion 360.md",
+    "Babydoll/Produits/Babybot-01/Mechanical-02/6.3 Wireless charging.md",
+    "Babydoll/Produits/Babybot-01/Mechanical-02/6.2 LiPo charger.md",
+    "Babydoll/Produits/Babybot-01/Mechanical-02/6.1 Find LiPo battery.md",
+    "Babydoll/Produits/Babybot-01/Mechanical-02/6.4 Battery voltage sensor.md",
+    "Babydoll/assets/Pasted image 20250101185344.png",
+    "Babydoll/assets/Pasted image 20250101171931.png",
+    "Babydoll/assets/Pasted image 20241127165724.png",
+    "Babydoll/assets/Pasted image 20250101195418.png",
     "Babybot/Produits/Babybot-01/Informatic-01/Informatic-01.canvas",
     "Babybot/Produits/Babybot-01/Informatic-01/Setup Jetson Orin Nano.md",
     "Babydoll/Produits/Babybot-01/Informatic-01/Setup Jetson Nano.md",

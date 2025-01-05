@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"id":"64de5853a9133f80","type":"file","file":"Produits/Babybot-01/Mechanical-02/1. 3D printing méthod.md","x":-1320,"y":1120,"width":400,"height":400,"color":"4"},
+		{"id":"64de5853a9133f80","type":"file","file":"Produits/Babybot-01/Mechanical-02/1. Investigate 3D printing methods.md","x":-1320,"y":1120,"width":400,"height":400,"color":"4"},
 		{"id":"e9f44c0334e27c6e","type":"file","file":"Produits/Babybot-01/Mechanical-02/2. Motors.md","x":-640,"y":1120,"width":400,"height":400,"color":"4"},
 		{"id":"8d38b98a2076796f","type":"file","file":"Produits/Babybot-01/Mechanical-02/2.1  Spline holder.md","x":-640,"y":1720,"width":400,"height":400},
 		{"id":"6a407a8c68f872ea","type":"file","file":"Produits/Babybot-01/Mechanical-02/3.  Find joint friction solution.md","x":-40,"y":1120,"width":400,"height":400},
@@ -11,15 +11,14 @@
 		{"id":"a28b0e94b75137c0","type":"file","file":"Produits/Babybot-01/Mechanical-02/8. Design leg FreeCAD.md","x":2760,"y":1120,"width":400,"height":400},
 		{"id":"72c06186cc6f25d4","type":"file","file":"Produits/Babybot-01/Mechanical-02/9. Design corpus.md","x":3360,"y":1120,"width":400,"height":400},
 		{"id":"23cc88a64c323d62","type":"file","file":"Produits/Babybot-01/Mechanical-02/2.2 Measure servo consumption.md","x":-640,"y":2320,"width":400,"height":400},
-		{"id":"579fa520879be232","type":"file","file":"Produits/Babybot-01/Mechanical-02/8.3. Improve FreeCAD knowledges.md","x":2760,"y":1720,"width":400,"height":400},
+		{"id":"579fa520879be232","type":"file","file":"Produits/Babybot-01/Mechanical-02/8.3. Learn Fusion 360.md","x":2760,"y":1720,"width":400,"height":400,"color":"3"},
 		{"id":"2bd8914c32ec3505","type":"file","file":"Produits/Babybot-01/Mechanical-02/8.2 Draw leg.md","x":2760,"y":520,"width":400,"height":400},
 		{"id":"d08040335d63ed7f","type":"file","file":"Produits/Babybot-01/Mechanical-02/8.1 Create moodboard.md","x":2760,"y":-80,"width":400,"height":400},
-		{"id":"db03b44173b0236f","type":"file","file":"6.1 Find LiPo battery.md","x":1640,"y":1640,"width":400,"height":400},
-		{"id":"4ea8c211b8fe047a","type":"file","file":"6.2 LiPo charger.md","x":1640,"y":2160,"width":400,"height":400},
-		{"id":"601e01be48a69b5f","type":"file","file":"6.3 Wireless charging.md","x":1640,"y":2680,"width":400,"height":400},
-		{"id":"a07f8fbaa10def4e","type":"file","file":"6.4 Battery voltage sensor.md","x":1640,"y":3200,"width":400,"height":400},
-		{"id":"e0a475a30653bad8","type":"file","file":"Produits/Babybot-01/Mechanical-02/1.2 Post processing method.md","x":-1320,"y":2320,"width":400,"height":400},
-		{"id":"c87ad3c2c9371d61","type":"file","file":"Produits/Babybot-01/Mechanical-02/1.1. Filament material.md","x":-1320,"y":1720,"width":400,"height":400}
+		{"id":"db03b44173b0236f","type":"file","file":"Produits/Babybot-01/Mechanical-02/6.1 Find LiPo battery.md","x":1640,"y":1640,"width":400,"height":400},
+		{"id":"4ea8c211b8fe047a","type":"file","file":"Produits/Babybot-01/Mechanical-02/6.2 LiPo charger.md","x":1640,"y":2160,"width":400,"height":400},
+		{"id":"601e01be48a69b5f","type":"file","file":"Produits/Babybot-01/Mechanical-02/6.3 Wireless charging.md","x":1640,"y":2680,"width":400,"height":400},
+		{"id":"a07f8fbaa10def4e","type":"file","file":"Produits/Babybot-01/Mechanical-02/6.4 Battery voltage sensor.md","x":1640,"y":3200,"width":400,"height":400},
+		{"id":"c87ad3c2c9371d61","type":"file","file":"Produits/Babybot-01/Mechanical-02/1.1. ABS.md","x":-1320,"y":1720,"width":400,"height":400}
 	],
 	"edges":[
 		{"id":"4525c3387bea2b1f","fromNode":"64de5853a9133f80","fromSide":"right","toNode":"e9f44c0334e27c6e","toSide":"left"},
@@ -39,7 +38,6 @@
 		{"id":"415741f9ba4b496f","fromNode":"579fa520879be232","fromSide":"top","toNode":"a28b0e94b75137c0","toSide":"bottom"},
 		{"id":"8e32d5f876fde276","fromNode":"8d38b98a2076796f","fromSide":"top","toNode":"e9f44c0334e27c6e","toSide":"bottom"},
 		{"id":"340cef3b4c2868c2","fromNode":"23cc88a64c323d62","fromSide":"top","toNode":"8d38b98a2076796f","toSide":"bottom"},
-		{"id":"cac423e64ad286aa","fromNode":"c87ad3c2c9371d61","fromSide":"top","toNode":"64de5853a9133f80","toSide":"bottom"},
-		{"id":"de21508baa7adbd0","fromNode":"e0a475a30653bad8","fromSide":"top","toNode":"c87ad3c2c9371d61","toSide":"bottom"}
+		{"id":"405bb205cc9dfa9c","fromNode":"64de5853a9133f80","fromSide":"bottom","toNode":"c87ad3c2c9371d61","toSide":"top"}
 	]
 }
