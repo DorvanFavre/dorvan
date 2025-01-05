@@ -12,7 +12,7 @@ Combined Reinforcement Learning and CPG Algorithm to Generate Terrain-Adaptive G
 
 Terrain-adaptive Central Pattern Generators with Reinforcement Learning for Hexapod Locomotion
 [[Terrain-adaptive Central Pattern Generators with Reinforcement learning for Hexapod Locomotion.pdf]]
-To read
+✅
 
 Enhancing Hexapod Robot Mobility on Challenging Terrains: Optimizing Cpg-Generated Gait with Reinforcement Learning
 [[Enhancing Hexapod Robot Mobility on Challenging Terrains Optimizing Cpg-Generated Gait with Reinforcement Learning.pdf]]
