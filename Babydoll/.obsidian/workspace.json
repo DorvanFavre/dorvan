@@ -48,14 +48,45 @@
               "state": {
                 "file": "Produits/Babybot-01/Informatic-01/Informatic-01.canvas",
                 "viewState": {
-                  "x": 2958.3419532330786,
-                  "y": -102.44920542852662,
-                  "zoom": -2.190890147846508
+                  "x": 3000.724831564041,
+                  "y": -32.93080800170321,
+                  "zoom": -1.6666666666666665
                 }
               },
               "pinned": true,
               "icon": "lucide-layout-dashboard",
               "title": "Informatic-01"
+            }
+          },
+          {
+            "id": "14e028e035523a77",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Produits/Babybot-01/Informatic-02/Informatic-02.canvas",
+                "viewState": {
+                  "x": -87,
+                  "y": 165,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Informatic-02"
+            }
+          },
+          {
+            "id": "b7bdfec99eca3261",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Produits/Babybot-01/Informatic-01/Use camera.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Use camera"
             }
           },
           {
@@ -83,9 +114,9 @@
               "state": {
                 "file": "Produits/Babybot-01/Mechanical-02/Mechanical-02.canvas",
                 "viewState": {
-                  "x": 1905.4213531130704,
-                  "y": 1483.3148717575737,
-                  "zoom": -1.9698703338156125
+                  "x": 59.54300584345992,
+                  "y": 1509.6710605330916,
+                  "zoom": -2.333333333333333
                 }
               },
               "pinned": true,
@@ -110,78 +141,33 @@
             }
           },
           {
-            "id": "570e744803d36af8",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "assets/Pasted image 20241127165724.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20241127165724"
-            }
-          },
-          {
             "id": "03877895be5423d4",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Produits/Babybot-01/Mechanical-02/Mechanical-02.canvas",
-                "viewState": {
-                  "x": 1792.8530850545162,
-                  "y": 2239.074313986429,
-                  "zoom": -1
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Mechanical-02"
-            }
-          },
-          {
-            "id": "5b11127dfaa0f337",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "Produits/Babybot-01/Mechanical-02/6.2 LiPo charger.md",
+                "file": "Produits/Babybot-01/Mechanical-02/8. Design leg (Fusion 360).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "6.2 LiPo charger"
+              "title": "8. Design leg (Fusion 360)"
             }
           },
           {
-            "id": "d05cf8b97df11a0d",
+            "id": "9aa6a88aa812e8a6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Produits/Babybot-01/Mechanical-02/1.1. ABS.md",
-                "mode": "source",
-                "source": false
+                "file": "Produits/Babybot-01/Informatic-01/Explore literature/Combined Reinforcement Learning and CPG Algorithm to Generate Terrain-Adaptive Gait of Hexapod Robots.pdf"
               },
-              "icon": "lucide-file",
-              "title": "1.1. ABS"
-            }
-          },
-          {
-            "id": "7ad59330558f270f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Produits/Babybot-01/Informatic-01/Explore literature/Explore literature.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Explore literature"
+              "icon": "lucide-file-text",
+              "title": "Combined Reinforcement Learning and CPG Algorithm to Generate Terrain-Adaptive Gait of Hexapod Robots"
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -323,63 +309,63 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5b11127dfaa0f337",
+  "active": "14e028e035523a77",
   "lastOpenFiles": [
-    "Pasted image 20250105163903.png",
-    "Produits/Babybot-01/Mechanical-02/Mechanical-02.canvas",
-    "Memo.md",
-    "Produits/Babybot-01/Informatic-01/Explore literature/Explore literature.md",
-    "Produits/Babybot-01/Informatic-01/Explore literature/Adaptive Locomotion Control of a Hexapod Robot via Bio-Inspired Learning.pdf",
-    "Produits/Babybot-01/Informatic-01/Explore literature/Enhancing Hexapod Robot Mobility on Challenging Terrains Optimizing Cpg-Generated Gait with Reinforcement Learning.pdf",
-    "Produits/Babybot-01/Informatic-01/Explore literature/Terrain-adaptive Central Pattern Generators with Reinforcement learning for Hexapod Locomotion.pdf",
-    "Produits/Babybot-01/Informatic-01/Explore literature/Combined Reinforcement Learning and CPG Algorithm to Generate Terrain-Adaptive Gait of Hexapod Robots.pdf",
+    "Produits/Babybot-01/Informatic-02/StandUp/venv/Lib/site-packages/__pycache__/typing_extensions.cpython-311.pyc",
+    "Produits/Babybot-01/Informatic-02/StandUp/venv/Lib/site-packages/__pycache__/nodeenv.cpython-311.pyc",
+    "Produits/Babybot-01/Informatic-02/StandUp/venv/Lib/site-packages/__pycache__/six.cpython-311.pyc",
+    "Produits/Babybot-01/Informatic-02/StandUp/venv/Lib/site-packages/__pycache__/cfgv.cpython-311.pyc",
+    "Produits/Babybot-01/Informatic-02/StandUp/venv/Lib/site-packages/__pycache__/pythoncom.cpython-311.pyc",
+    "Produits/Babybot-01/Informatic-02/StandUp/venv/Lib/site-packages/__pycache__/nest_asyncio.cpython-311.pyc",
+    "Produits/Babybot-01/Informatic-02/StandUp/venv/Lib/site-packages/__pycache__/jupyter.cpython-311.pyc",
+    "Produits/Babybot-01/Informatic-02/StandUp/venv/Lib/site-packages/__pycache__/ipykernel_launcher.cpython-311.pyc",
+    "Produits/Babybot-01/Informatic-02/StandUp/venv/Lib/site-packages/__pycache__/decorator.cpython-311.pyc",
+    "Produits/Babybot-01/Informatic-02/StandUp/venv/Lib/site-packages/__pycache__",
+    "Produits/Babybot-01/Informatic-02/StandUp/venv/Lib/site-packages/matplotlib_inline-0.1.7.dist-info/WHEEL",
+    "Produits/Babybot-01/Informatic-02/StandUp/venv/Lib/site-packages/pyzmq-26.2.0.dist-info/licenses/LICENSE.md",
+    "Produits/Babybot-01/Informatic-02/StandUp/venv/Lib/site-packages/gymnasium/envs/toy_text/img/taxi_background.png",
+    "Produits/Babybot-01/Informatic-02/StandUp/venv/Lib/site-packages/gymnasium/envs/toy_text/img/ST.png",
+    "Produits/Babybot-01/Informatic-02/StandUp/venv/Lib/site-packages/gymnasium/envs/toy_text/img/SJ.png",
+    "Produits/Babybot-01/Informatic-02/StandUp/venv/Lib/site-packages/gymnasium/envs/toy_text/img/SQ.png",
+    "Produits/Babybot-01/Informatic-02/StandUp/venv/Lib/site-packages/gymnasium/envs/toy_text/img/stool.png",
+    "Produits/Babybot-01/Informatic-02/StandUp/venv/Lib/site-packages/gymnasium/envs/toy_text/img/SK.png",
+    "Produits/Babybot-01/Informatic-02/StandUp/venv/Lib/site-packages/gymnasium/envs/toy_text/img/S9.png",
+    "Produits/Babybot-01/Informatic-02/StandUp/venv/Lib/site-packages/gymnasium/envs/toy_text/img/SA.png",
+    "Produits/Babybot-01/Informatic-02/StandUp/venv/Lib/site-packages/gymnasium/envs/toy_text/img/S8.png",
+    "Produits/Babybot-01/Informatic-02/StandUp/venv/Lib/site-packages/gymnasium/envs/toy_text/img/S6.png",
+    "Produits/Babybot-01/Informatic-02/StandUp/venv/Lib/site-packages/debugpy/_vendored/pydevd/pydevd_plugins/extensions/README.md",
+    "Produits/Babybot-01/Informatic-02/StandUp/venv/Lib/site-packages/zmq/backend/cffi/README.md",
+    "Produits/Babybot-01/Informatic-02/StandUp/StandUp.md",
+    "Produits/Babybot-01/Informatic-02/StandUp/venv/Lib/site-packages/numpy/random/LICENSE.md",
+    "Produits/Babybot-01/Informatic-02/StandUp/standup_env/README.md",
+    "Produits/Babybot-01/Informatic-02/StandUp/README.md",
+    "Produits/Babybot-01/Informatic-02/StandUp/Stand Up.md",
+    "Produits/Babybot-01/Informatic-02/Informatic-02.canvas",
+    "Produits/Babybot-01/Informatic-02/Informatic-02.md",
     "Produits/Babybot-01/Informatic-01/Informatic-01.canvas",
-    "Produits/Babybot-01/Informatic-01/Explore literature",
-    "Produits/Babybot-01/Informatic-01/Informatic-01.md",
-    "Produits/Babybot-01/Informatic-01/Jetson-Orin-Nano-DevKit-Carrier-Board-Specification_SP-11324-001_v1.2.pdf",
+    "Produits/Babybot-01/Mechanical-02/Mechanical-02.canvas",
+    "Produits/Babybot-01/Mechanical-02/8. Design leg (Fusion 360).md",
+    "Produits/Babybot-01/Informatic-01/venv/hostEnv/Lib/site-packages/debugpy/_vendored/pydevd/pydevd_plugins/extensions/README.md",
+    "Produits/Babybot-01/Informatic-01/venv/hostEnv/Lib/site-packages/pyzmq-26.2.0.dist-info/licenses/LICENSE.md",
+    "Produits/Babybot-01/Informatic-01/venv/hostEnv/Lib/site-packages/zmq/backend/cffi/README.md",
+    "Produits/Babybot-01/Informatic-01/Use camera.md",
     "Produits/Babybot-01/Informatic-01/SimpleEnv/SimpleEnv.md",
     "Produits/Babybot-01/Mechanical-02/1.1. ABS.md",
-    "assets/Pasted image 20241127165724.png",
+    "Produits/Babybot-01/Informatic-01/Explore literature/Explore literature.md",
+    "Produits/Babybot-01/Mechanical-02/Battery voltage sensor.md",
+    "Produits/Babybot-01/Mechanical-02/Material.md",
+    "Produits/Babybot-01/Mechanical-02/6.2 LiPo charger.md",
+    "Memo.md",
+    "Produits/Babybot-01/Informatic-01/Informatic-01.md",
     "Produits/Babybot-01/Mechanical-02/Mechanical-02.md",
     "Produits/Babybot-01/Mechanical-02/6.1 Find LiPo battery.md",
     "Produits/Babybot-01/Untitled.md",
-    "assets/Pasted image 20250101195418.png",
-    "assets/Pasted image 20250101185344.png",
-    "assets/Pasted image 20250101171931.png",
-    "assets/Pasted image 20250101171757.png",
-    "Produits/Babybot-01/Informatic-01/SimpleEnv/01_steering_world_ddpg/model/checkpoint_440000_steps.zip",
-    "Produits/Babybot-01/Informatic-01/SimpleEnv/01_steering_world_ddpg/model/checkpoint_430000_steps.zip",
-    "Produits/Babybot-01/Informatic-01/SimpleEnv/01_steering_world_ddpg/model/checkpoint_420000_steps.zip",
-    "Produits/Babybot-01/Informatic-01/SimpleEnv/01_steering_world_ddpg/model/checkpoint_410000_steps.zip",
-    "assets/Pasted image 20250101145309.png",
-    "Produits/Babybot-01/Mechanical-01/Walk Arduino/MG996R (Amazon).md",
-    "Produits/Babybot-01/Informatic-01/WalkWithSimpleCPG/Walk With Simple CPG.md",
-    "Produits/Babybot-01/Informatic-01/Walk Jetson/First Walk With Jetson.md",
-    "Produits/Babybot-01/Mechanical-02/6.4 Battery voltage sensor.md",
-    "Produits/Babybot-01/Mechanical-02/6.2 LiPo charger.md",
-    "Produits/Babybot-01/Mechanical-02/6.3 Wireless charging.md",
-    "Produits/Babybot-01/Mechanical-02/6. Find power source solution.md",
-    "Produits/Babybot-01/Mechanical-02/2.2 Measure servo consumption.md",
-    "Produits/Babybot-01/Mechanical-02/2.1  Spline holder.md",
-    "Produits/Babybot-01/Mechanical-02/2. Motors.md",
-    "Produits/Babybot-01/Mechanical-02/1.2 Post processing abs.md",
-    "Produits/Babybot-01/Mechanical-02/8.2 Draw leg.md",
-    "Produits/Babybot-01/Mechanical-02/8.2.md",
-    "Produits/Babybot-01/Mechanical-02/8.1 Create moodboard.md",
-    "Hours.md",
-    "assets/Pasted image 20241225173454.png",
-    "assets/Pasted image 20241225173354.png",
-    "assets/Pasted image 20241225172642.png",
-    "assets/Pasted image 20241225171710.png",
-    "Produits/Babybot-01/Informatic-01/SimpleEnv/README.md",
     "Produits/Babybot-01/Electronic-01/Electronic-01.canvas",
-    "Produits/Babybot-01/Informatic-01/Untitled.md",
     "Produits/Babybot-01/Informatic-01/LearnJetson/LearnJetson.canvas",
     "Produits/Babybot-01/Mechanical-01/Mechanical-01.canvas",
     "Produits/Babybot-01/Babybot-01.canvas",
     "Produits/Produits.canvas",
     "Entreprise.canvas",
-    "Produits/Babybot-01/POC/POC.canvas",
-    "Produits/Babydoll-01/POC/POC.canvas"
+    "Produits/Babybot-01/POC/POC.canvas"
   ]
 }

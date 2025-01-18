@@ -2,3 +2,4 @@ jetsonEnv/
 hostEnv/
 flyEnv/
 .venv
+venv/

@@ -17,8 +17,9 @@
 		{"id":"75e10d2d1d751fef","type":"file","file":"Produits/Babybot-01/Informatic-01/LearnRL/Learn RL.md","x":760,"y":-960,"width":400,"height":400,"color":"4"},
 		{"id":"2f7f3510cec614e2","type":"file","file":"Produits/Babybot-01/Informatic-01/Read RL book.md","x":1320,"y":-960,"width":400,"height":400,"color":"4"},
 		{"id":"3df32ff467acbbf3","type":"file","file":"Produits/Babybot-01/Informatic-01/LearnJetson/LearnJetson.md","x":1980,"y":-960,"width":400,"height":400,"color":"4"},
-		{"id":"282ea8dfaf57864b","type":"file","file":"Produits/Babybot-01/Informatic-01/Walk Jetson/First Walk With Jetson.md","x":2580,"y":-960,"width":400,"height":400,"color":"3"},
-		{"id":"4b4e8879096619f6","type":"file","file":"Produits/Babybot-01/Informatic-01/Explore literature/Explore literature.md","x":3280,"y":-160,"width":400,"height":400,"color":"3"}
+		{"id":"282ea8dfaf57864b","type":"file","file":"Produits/Babybot-01/Informatic-01/Walk Jetson/First Walk With Jetson.md","x":2580,"y":-960,"width":400,"height":400,"color":"4"},
+		{"id":"e67e2b6d864dbf45","type":"file","file":"Produits/Babybot-01/Informatic-01/Use camera.md","x":3200,"y":-960,"width":400,"height":400},
+		{"id":"4b4e8879096619f6","type":"file","file":"Produits/Babybot-01/Informatic-01/Explore literature/Explore literature.md","x":3200,"y":-160,"width":400,"height":400,"color":"4"}
 	],
 	"edges":[
 		{"id":"f1751ae60dbf965a","fromNode":"d0c44f365cfa2d25","fromSide":"bottom","toNode":"15ea7db6c3ca8e7c","toSide":"top"},
@@ -32,6 +33,7 @@
 		{"id":"6da261679657b216","fromNode":"3df32ff467acbbf3","fromSide":"right","toNode":"282ea8dfaf57864b","toSide":"left"},
 		{"id":"d4f58563e19c18f3","fromNode":"22cd5a76af23116a","fromSide":"right","toNode":"17365ea509837e11","toSide":"left"},
 		{"id":"adc993eece6f4d2c","fromNode":"17365ea509837e11","fromSide":"right","toNode":"a6c32cac03909082","toSide":"left"},
-		{"id":"4c01fc560b3a825b","fromNode":"17365ea509837e11","fromSide":"right","toNode":"9a92467947fdb858","toSide":"left"}
+		{"id":"4c01fc560b3a825b","fromNode":"17365ea509837e11","fromSide":"right","toNode":"9a92467947fdb858","toSide":"left"},
+		{"id":"27072ddaf8352dea","fromNode":"282ea8dfaf57864b","fromSide":"right","toNode":"e67e2b6d864dbf45","toSide":"left"}
 	]
 }

@@ -10,8 +10,8 @@
 7. Write a program to calibrate servos #Done
 8. IK #Done
 9. Adapt servo driver pwm #Done
-10. CPG
-11. Simple forward walk with CPG an IK (no RL)
+10. CPG #Done
+11. Simple forward walk with CPG an IK (no RL) #Done
 
 ## Tasks
 
