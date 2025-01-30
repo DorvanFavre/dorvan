@@ -3,3 +3,6 @@ hostEnv/
 flyEnv/
 .venv
 venv/
+venv2/
+model/
+venv3/

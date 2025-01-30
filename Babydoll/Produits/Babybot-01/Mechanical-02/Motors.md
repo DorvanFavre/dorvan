@@ -38,3 +38,16 @@ or 270±3°(PWM500～2500usec)
 
 Make your pet
 https://www.youtube.com/watch?v=h_SWpU3rmG4&list=PLBRNvqLTPp3t6Fx51njF1azckju8SDwsT&index=5&ab_channel=MakeYourPet
+
+## Test
+
+Voltage: 6v
+180 deg at full speed, no load:
+3A the first 30ms
+400mA afterward
+env. 800ms to do 180deg
+
+Add load draws mor current (obvious)
+with quite some strength (block half the speed), draw 1A
+
+
